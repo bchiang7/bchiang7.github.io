@@ -11,8 +11,8 @@ keep_files:
 
 # Site settings
 baseurl: ""
-title: Brittany Chiang | Front End Software Engineer
 name: Brittany Chiang
+title: Brittany Chiang | Front End Software Engineer
 description: Design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.
 url: http://brittanychiang.com # the base hostname & protocol for your site
 email: brittany.chiang@gmail.com
