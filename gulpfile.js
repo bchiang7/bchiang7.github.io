@@ -3,13 +3,13 @@ var browserSync = require('browser-sync');
 var cp          = require('child_process');
 var htmlmin     = require('gulp-htmlmin');
 var sass        = require('gulp-sass');
+var cssnano     = require('gulp-cssnano');
 var cleanCSS    = require('gulp-clean-css');
 var prefix      = require('gulp-autoprefixer');
 var jshint      = require('gulp-jshint');
 var babel       = require('gulp-babel');
 var uglify      = require('gulp-uglify');
 var imagemin    = require('gulp-imagemin');
-var deploy      = require('gulp-gh-pages');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -46,19 +46,20 @@ gulp.task('htmlmin', function() {
 
 // Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
 gulp.task('styles', function() {
-  return gulp.src('_scss/main.scss')
+  return gulp.src('_scss/*.scss')
   .pipe(sass({
     includePaths: ['scss'],
     onError: browserSync.notify
     })
   )
   .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
+  .pipe(cssnano())
   .pipe(gulp.dest('_site/css'))
   .pipe(browserSync.reload({stream:true}))
   .pipe(gulp.dest('css'));
   });
 
-
+// Compile files from js folder into both _site/js folder (for live injecting)
 gulp.task('scripts', function() {
   return gulp.src('js/*.js')
   .pipe(jshint())
@@ -74,7 +75,7 @@ gulp.task('scripts', function() {
 gulp.task('watch', function () {
   gulp.watch(['_scss/**/*.scss','_scss/*.scss'], ['styles']);
   gulp.watch(['js/*.js'], ['scripts']);
-  gulp.watch(['index.html', '404.html', '_layouts/*.html', '_posts/*', '_includes/*.html', '_drafts/*', '**/*.html'], ['htmlmin', 'jekyll-rebuild']);
+  gulp.watch(['index.html', '404.html', '_layouts/*.html', '_posts/*', '_includes/*.html', '_drafts/*', '**/*.html'], ['jekyll-rebuild']);
   });
 
 // Build the Jekyll Site in production mode
@@ -86,13 +87,13 @@ gulp.task('jekyll-prod', function (done) {
 
 // Identical Sass compilation task to development mode, with an additional minification step thrown in using clean-css
 gulp.task('styles-prod', function () {
-  return gulp.src('_sass/styles.scss')
+  return gulp.src('_scss/*.scss')
   .pipe(sass({
     includePaths: ['scss'],
     onError: browserSync.notify
     }))
   .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-  .pipe(cleanCSS({compatibility: 'ie8'}))
+  .pipe(cssnano())
   .pipe(gulp.dest('_site/css'))
   .pipe(gulp.dest('css'));
   });
@@ -120,9 +121,3 @@ gulp.task('default', ['browser-sync', 'watch']);
 
 // Build task, run using gulp build to compile Sass and Javascript ready for deployment.
 gulp.task('build', ['fonts', 'images', 'styles-prod', 'scripts-prod', 'jekyll-prod']);
-
-// deploy to github pages
-gulp.task('deploy', ["jekyll-build"], function () {
-  return gulp.src("./_site/**/*")
-  .pipe(deploy());
-  });

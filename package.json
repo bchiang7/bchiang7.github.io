@@ -1,5 +1,5 @@
 {
-  "name": "Brittany Chiang",
+  "name": "v2",
   "author": "Brittany Chiang",
   "version": "0.0.0",
   "description": "Personal website of Brittany Chiang",
@@ -11,8 +11,7 @@
     "gulp-autoprefixer": "3.1.1",
     "gulp-babel": "^6.1.2",
     "gulp-clean-css": "^2.1.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-gh-pages": "^0.5.4",
+    "gulp-cssnano": "^2.1.2",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.1.1",
     "gulp-jshint": "^2.0.4",
@@ -32,6 +31,5 @@
     "gulp",
     "sass",
     "browsersync"
-  ],
-  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync"
+  ]
 }
