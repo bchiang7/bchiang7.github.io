@@ -1,0 +1,50 @@
+#about-section {
+  .section-subheading {
+    width: 60%;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 1em;
+    @include MQ(ML) {
+      width: 100%;
+    }
+  }
+  .about-wrapper {
+    padding-right: 20px;
+    @include MQ(MM) {
+      padding: 0;
+    }
+    .about-text-wrapper {
+      display: inline-block;
+      width: 60%;
+      vertical-align: top;
+      @include MQ(MM) {
+        width: 100%;
+      }
+      .about-text {
+        margin-bottom: 10px;
+        font-size: 1.15em;
+      }
+    }
+    .headshot {
+      display: inline-block;
+      width: 35%;
+      height: auto;
+      border-radius: 50%;
+      margin-top: -100px;
+      float: right;
+      max-width: 450px;
+      @include MQ(ML) {
+        margin-top: 0px;
+      }
+      @include MQ(MM) {
+        float: none;
+        margin: 10px 0 40px 0;
+        width: 300px;
+      }
+      @include MQ(S400) {
+        width: 250px;
+      }
+    }
+  }
+}

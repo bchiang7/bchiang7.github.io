@@ -1,0 +1,110 @@
+.four-oh-four {
+  font-family: $Gotham, $sans-serif-stack;
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: appear 1.4s ease 0s normal forwards 1 running;
+    background-color: #070525;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('http://brittanychiang.com/img/404-bg.jpg');
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #141E30;
+      background: -webkit-linear-gradient(to bottom, #141E30 , #243B55);
+      background: linear-gradient(to bottom, #141E30 , #243B55);
+      opacity: 0.7;
+    }
+  }
+  .count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    display: none;
+  }
+  .js-count-particles {
+    font-size: 1.1em;
+  }
+  #stats,
+  .count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  #stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  .count-particles {
+    border-radius: 0 0 3px 3px;
+  }
+  .text-container {
+    text-align: center;
+    cursor: default;
+    position: relative;
+    top: 25vh;
+    .text {
+      display: inline-block;
+      color: #fff;
+      font-weight: 500;
+      line-height: 1;
+      text-transform: uppercase;
+      z-index: 2;
+      position: relative;
+      h1 {
+        font-family: $Gotham, $sans-serif-stack;
+        font-size: 10em;
+        font-weight: 500;
+        margin: 0 auto;
+        text-shadow: 0 5px 5px rgba(0,0,0,.5);
+      }
+      h3 {
+        font-size: 1em;
+        font-weight: 700;
+        margin: 15px 0 75px;
+        text-shadow: 0 3px 5px rgba(0,0,0,.5);
+      }
+      a {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        color: $white;
+        background: #ab473c;
+        font-size: 0.95em;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 30px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+        &:hover {
+          background: #c74739;
+        }
+      }
+    }
+  }
+}

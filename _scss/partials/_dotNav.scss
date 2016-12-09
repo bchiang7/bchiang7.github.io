@@ -1,0 +1,55 @@
+#dot-nav {
+  position: fixed;
+  right: 34px;
+  @include center(y);
+  z-index: 1;
+  display: none;
+  @include MQ(M) {
+    display: none;
+  }
+  .dot-container {
+    text-align: right;
+  }
+  a {
+    display: inline-block;
+    @include clearfix;
+    backface-visibility: hidden;
+    span {
+      float: right;
+      display: inline-block;
+      transform: scale(0.6);
+    }
+    &:hover span {
+      transform: scale(0.75);
+    }
+    &:hover .dot-label {
+      opacity: 1;
+    }
+    &.is-selected .dot {
+      background-color: $blue;
+    }
+  }
+  .dot {
+    position: relative;
+    top: 7px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.25);
+    transition: transform 0.2s, background-color 0.5s;
+    transform-origin: 50% 50%;
+  }
+  .dot-label {
+    position: relative;
+    top: 3px;
+    padding: 0.4em .5em;
+    color: $white;
+    font-family: $Gotham, $sans-serif-stack;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: transform 0.2s, opacity 0.2s;
+    transform-origin: 100% 50%;
+  }
+}

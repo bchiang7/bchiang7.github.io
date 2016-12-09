@@ -1,0 +1,34 @@
+<section id="experience-section" class="section gap">
+  <div class="bg" data-anchor-target="#experience-section"
+  data-bottom-top="transform: translate3d(0px, -150px, 0px);"
+  data-top-bottom="transform: translate3d(0px, 150px, 0px);"
+  ></div>
+  <div class="overlay-wrapper">
+    <div class="fade-in">
+      <div class="center">
+        <h1 class="section-heading">Experience</h1>
+        <span class="divider center"></span>
+        <!-- <p class="experience-description">Thanks to Northeastern's co-op program, I've been fortunate enough to complete two awesome six-month co-ops at <a href="http://us.mullenlowe.com/" target="_blank">Mullen Lowe U.S.</a> and <a href="https://starry.com/" target="_blank">Starry</a>. As I head into my fifth and final year of undergrad, I'm on the search for an amazing last co-op.</p> -->
+        <p class="experience-description">As a part of Northeastern's five year co-op program, I alternate semesters of academic study with semesters of full-time employment. I had the privilege of completing my first co-op at <a href="http://us.mullenlowe.com/" target="_blank">Mullen Lowe U.S.</a> as a Creative Technologist, and I am currently working at <a href="https://starry.com/" target="_blank">Starry</a> as a software engineer for my second co-op.</p>
+      </div>
+      <div class="experience-wrapper">
+        <div id="timeline">
+          {% for item in site.data.timeline %}
+          <div class="timeline-block">
+            <div class="timeline-content">
+              <h2 class="position">{{item.position}}</h2>
+              <h3 class="company"><a href="{{item.url}}" target="_blank">{{item.company}}</a></h3>
+              <p class="job-desc">{{item.description}}</p>
+            </div>
+            <div class="timeline-img">
+              <div class="sprite {{item.sprite}}"></div>
+            </div>
+            <span class="date">{{item.date}}</span>
+          </div>
+          {% endfor %}
+        </div>
+        <i class="down-arrow"></i>
+      </div>
+    </div>
+  </div>
+</section>

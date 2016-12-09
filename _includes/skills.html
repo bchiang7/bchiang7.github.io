@@ -1,0 +1,55 @@
+<section id="skills-section" class="section">
+  <div class="section-wrapper">
+    <div class="fade-in">
+      <h1 class="section-heading">Skills</h1>
+      <span class="divider"></span>
+      <div class="skills-flex-wrapper">
+        <div class="flex-item dev-wrapper">
+          <h2 class="skills-heading">
+            <span class="sprite dev"></span>
+            <span>Development</span>
+          </h2>
+          <ul>
+            {% for dev in site.data.skills.development %}
+            <li class="dev-item">{{dev.item}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="flex-item design-wrapper">
+          <h2 class="skills-heading">
+            <span class="sprite design"></span>
+            <span>Design</span>
+          </h2>
+          <ul>
+            {% for design in site.data.skills.design %}
+            <li class="design-item"><img class="item-img" src="img/icons/{{design.item}}.png" alt=""></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="flex-item check-wrapper">
+          <div class="tools-wrapper">
+            <h2 class="skills-heading">
+              <span class="sprite tools"></span>
+              <span>Tools</span>
+            </h2>
+            <ul class="list">
+              {% for tool in site.data.skills.tools %}
+              <li class="list-item"><img class="item-svg" src="img/icons/checkmark.svg"/>{{tool.item}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="knowledge-wrapper">
+            <h2 class="skills-heading">
+              <span class="sprite knowledge"></span>
+              <span>Knowledge</span></h2>
+              <ul class="list">
+                {% for thing in site.data.skills.knowledge %}
+                <li class="list-item"><img class="item-svg" src="img/icons/checkmark.svg"/>{{thing.item}}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

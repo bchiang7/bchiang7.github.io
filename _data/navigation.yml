@@ -1,0 +1,28 @@
+- section: intro
+  title: Intro
+  number: 1
+
+- section: about
+  title: About
+  number: 2
+
+- section: services
+  title: What I Do
+  number: 3
+
+- section: skills
+  title: Skills
+  number: 4
+
+- section: experience
+  title: Experience
+  number: 5
+
+- section: portfolio
+  title: Portfolio
+  number: 6
+
+- section: contact
+  title: Contact
+  number: 7
+

@@ -1,0 +1,172 @@
+#intro-section {
+  .intro-wrapper {
+    // background: linear-gradient(45deg, $blueRGBA , $purpleRGBA );
+    padding: 0;
+    padding-bottom: 20px;
+    .intro-body {
+      width: 100%;
+      height: 101vh;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include reveal(reveal-up, 100%);
+      @include reveal(reveal-down, -100%);
+      @keyframes loading-mask {
+        0%,
+        100% {
+          transform: scaleX(0);
+        }
+        40%,
+        60% {
+          transform: scaleX(1);
+        }
+      }
+      .intro-content {
+        text-align: center;
+        padding: 0 5%;
+        width: 100%;
+        position: relative;
+        top: -5%;
+        .heading,
+        .heading .name,
+        .subtext,
+        .btn {
+          opacity: 0;
+          animation-duration: 0.8s;
+          animation-delay: 0.3s;
+          animation-fill-mode: forwards;
+          .no-cssanimations & {
+            opacity: 1;
+          }
+        }
+        .heading {
+          font-size: 4.5em;
+          font-weight: 700;
+          position: relative;
+          padding-bottom: 10px;
+          color: transparent;
+          overflow: hidden;
+          opacity: 1;
+          @include MQ(M) {
+            .name:before {
+              top: calc(100% + 18px);
+            }
+          }
+          @include MQ(SM) {
+            font-size: 4em;
+          }
+          &:after {
+            content: attr(data-content);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            color: $white;
+            animation-name: reveal-up;
+            animation-fill-mode: backwards;
+            animation-duration: 0.4s;
+            animation-delay: 0.7s;
+          }
+          .name {
+            position: relative;
+            display: inline-block;
+            opacity: 1;
+            &:before {
+              /* this is the line */
+              content: '';
+              position: absolute;
+              top: calc(100% + 8px);
+              left: -1em;
+              height: 2px;
+              width: calc(100% + 2em);
+              background-color: $white;
+              animation: loading-mask 1s .3s both;
+            }
+          }
+        }
+        .action-wrapper {
+          overflow: hidden;
+          .subtext {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            animation-name: reveal-down;
+            animation-duration: 0.4s;
+            animation-delay: 0.7s;
+            .btn {
+              display: inline-block;
+              padding: 1.2em 0;
+              font-size: 1.3rem;
+              font-weight: 500;
+              line-height: 1.5;
+              color: $white;
+              text-transform: uppercase;
+              font-family: $Gotham, $sans-serif-stack;
+              opacity: 1;
+              margin: 0;
+              @include MQ(SM) {
+                font-size: 1.1em;
+              }
+            }
+          }
+        }
+      }
+      .scroll-down-wrapper {
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        color: $white;
+        .scroll-down {
+          display: block;
+          width: 70px;
+          margin: 0 auto;
+          transition: all 0.3s ease;
+          &:hover {
+            transition: all 0.3s ease;
+            .logo {
+              opacity: 0;
+            }
+            .scroll-down-text {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+          .logo {
+            width: 35px;
+            transition: opacity 0.5s ease, visibility 0.5s;
+          }
+          .scroll-down-text {
+            color: $white;
+            font-family: $Gotham, $sans-serif-stack;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+            text-align: center;
+            height: 100%;
+            opacity: 0;
+            padding-top: 0.5em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            transition: opacity 0.5s ease, visibility 0.5s;
+            visibility: hidden;
+            width: 100%;
+            .chevron {
+              transform: rotate(90deg);
+              height: 20px;
+              display: block;
+              margin: 10px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

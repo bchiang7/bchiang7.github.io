@@ -1,0 +1,31 @@
+development:
+  - item: JavaScript
+  - item: HTML5
+  - item: CSS3
+  - item: Sass
+  - item: NodeJS
+  - item: Handlebars
+  - item: Backbone
+  - item: MongoDB
+  - item: Python
+
+design:
+  - item: adobe-photoshop
+  - item: adobe-indesign
+  - item: adobe-illustrator
+  - item: invision
+  - item: zeplin
+
+tools:
+  - item: Git, Github
+  - item: Command Line
+  - item: Chrome DevTools
+  - item: Grunt/Gulp
+  - item: Postman
+
+knowledge:
+  - item: CSS Detangling
+  - item: ES6
+  - item: Usability
+  - item: Wireframing
+  - item: SEO

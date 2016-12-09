@@ -1,0 +1,177 @@
+#skills-section {
+  .skills-flex-wrapper,
+  .flex-item,
+  .check-wrapper {
+    display: flex;
+  }
+  .skills-flex-wrapper {
+    font: 100 30px 'Whitney';
+    height: 17em;
+    flex-flow: column wrap;
+    @include MQ(M) {
+      display: block;
+      height: auto;
+    }
+    .skills-heading {
+      font-family: $Gotham, $sans-serif-stack;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.5vw;
+      @include MQ(M) {
+        font-size: 18px;
+      }
+      .sprite {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        position: relative;
+        top: 7px;
+        display: inline-block;
+        vertical-align: text-bottom;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+        &.dev {
+          background-image: url('../img/icons/settings.png');
+        }
+        &.design {
+          background-image: url('../img/icons/design.png');
+          background-size: 90%;
+        }
+        &.tools {
+          background-image: url('../img/icons/repair-tools.png');
+          background-size: 90%;
+        }
+        &.knowledge {
+          background-image: url('../img/icons/light-bulb.png');
+        }
+      }
+    }
+    .flex-item {
+      flex: 0 0 auto;
+      min-height: 200px;
+      background: transparent;
+      padding: 15px;
+      @include MQ(L) {
+        padding-right: 0;
+      }
+      @include MQ(SM) {
+        padding: 0;
+      }
+      @include MQ(S440) {
+        display: block;
+      }
+      &:nth-child(1) {
+        width: 40%;
+        max-width: 400px;
+        min-height: 450px;
+        @include MQ(L) {
+          width: 37%;
+        }
+        @include MQ(ML) {
+          width: 45%;
+        }
+        @include MQ(M) {
+          width: 100%;
+          min-height: 50px;
+        }
+      }
+      &:nth-child(2) {
+        width: 60%;
+        min-height: 151px;
+        @include MQ(ML) {
+          width: 55%;
+        }
+        @include MQ(M) {
+          width: 100%;
+        }
+      }
+      &:nth-child(3) {
+        min-height: 299px;
+        width: 60%;
+        @include MQ(ML) {
+          width: 55%;
+        }
+        @include MQ(M) {
+          width: 100%;
+        }
+      }
+    }
+    .dev-wrapper {
+      display: block;
+      .dev-item {
+        display: inline-block;
+        border: 2px solid rgba(57,57,57,.5);
+        border-radius: 50%;
+        text-align: center;
+        margin: 10px 10px 10px 0;
+        padding: 0px;
+        width: 100px;
+        height: 100px;
+        line-height: 7;
+        font-size: 14px;
+        @include MQ(L) {
+          width: 80px;
+          height: 80px;
+          font-size: 14px;
+          line-height: 5.5;
+          margin: 5px 5px 5px 0;
+        }
+        @include MQ(M) {
+          width: 100px;
+          height: 100px;
+          line-height: 7;
+          margin: 1%;
+        }
+        @include MQ(SM) {
+          width: 80px;
+          height: 80px;
+          line-height: 5.5;
+        }
+      }
+    }
+    .design-wrapper {
+      display: block;
+      .design-item {
+        display: inline-block;
+        margin: 10px;
+        @include MQ(L) {
+          margin: 10px 5px;
+        }
+        .item-img {
+          height: 40px;
+          filter: grayscale(100%);
+        }
+      }
+    }
+  }
+  .check-wrapper {
+    .tools-wrapper,
+    .knowledge-wrapper {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+      overflow: hidden;
+      white-space: nowrap;
+      @include MQ(S440) {
+        display: block;
+        width: 100%;
+      }
+      .list {
+        margin-top: 30px;
+        margin-left: 20px;
+        .list-item {
+          margin: 10px 0;
+          font-size: 16px;
+          .item-svg {
+            margin-right: 10px;
+            width: 12px;
+            height: 12px;
+            color: #fff;
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+- row: row1
+  services:
+    - heading: Web Development
+      sprite: webdev
+      text: I love using HTML, CSS, and JavaScript with pre-processors and build tools such as Sass and Grunt to produce pixel-perfect websites and apps with semantic, modular front-end code and dry, efficient back-end code for the web.
+
+    - heading: Responsive UI Design
+      sprite: ui
+      text: A user interface is like a joke. If you have to explain it, it's not that good. I strive to develop and implement responsive and aesthetically pleasing interfaces for websites and apps that adapt to any type of device, platform, or browser.
+
+- row: row2
+  services:
+    - heading: Experience Design
+      sprite: xd
+      text: There have been far too many times where I've been trying to accomplish a simple task on a website, and ended up wanting to throw my computer out the window in frustration. Needless to say, user experience is an aspect of software I am always focused on perfecting.
+
+    - heading: Inclusivity in Tech
+      sprite: wit
+      text: Coding and designing aside, I am a strong advocate for diversifying the tech industry, especially for women. I currently lead Northeastern Women in Tech, and was a 2016 <a href="http://ghc.anitaborg.org/" target="_blank">Grace Hopper Conference</a> Scholar.

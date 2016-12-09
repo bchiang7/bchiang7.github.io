@@ -1,0 +1,12 @@
+<section id="footer" class="section">
+  <div class="section-wrapper">
+    <ul class="soc">
+      {% for link in site.social %}
+      <li class="soc-item"><a href="{{link.url}}" target="_blank" class="icon {{link.title}}" title="{{link.title}}"><img src="img/icons/{{link.title}}.svg" alt="{{link.title}}"></a></li>
+      {% endfor %}
+    </ul>
+    <div class="copyright-wrapper center">
+      <p>&copy;&nbsp;&nbsp;{{site.name}} 2016</p>
+    </div>
+  </div>
+</section>

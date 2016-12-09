@@ -1,0 +1,37 @@
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "*.gemspec"
+
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
+
+# Site settings
+baseurl: ""
+title: Brittany Chiang | Front End Software Engineer
+name: Brittany Chiang
+description: Design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.
+url: http://brittanychiang.com # the base hostname & protocol for your site
+email: brittany.chiang@gmail.com
+cover: http://brittanychiang.com/img/og.jpg
+logo: http://brittanychiang.com/img/logo-black.png
+resume: http://brittanychiang.com/resume.pdf
+social:
+  - title: email
+    url: mailto:brittany.chiang@gmail.com
+  - title: twitter
+    url: https://twitter.com/bchiang7
+  - title: instagram
+    url: https://instagram.com/bchiang7
+  - title: codepen
+    url: http://codepen.io/bchiang7
+  - title: github
+    url: https://github.com/bchiang7
+  - title: linkedin
+    url: https://www.linkedin.com/in/bchiang7
+
+# Build settings
+markdown: kramdown
