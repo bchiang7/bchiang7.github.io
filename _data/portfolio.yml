@@ -38,7 +38,7 @@
 - title: Old Personal Website
   demo: http://brittanychiang.com/v1
   code: https://github.com/bchiang7/website_2015/
-  description: This was my first portfolio website I built in 2014. It's a simple one-pager like this current site, but relied heavily on Bootstrap. Since then, I think my web development and design skills have increased immensely.
+  description: This was my first portfolio website I built in 2014. It's a simple one-pager like this one, but relied heavily on Bootstrap. Since then, I think my web development and design skills have expanded immensely.
   img: websitev1
   used:
   - thing: HTML

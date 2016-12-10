@@ -6,7 +6,7 @@
 
     - heading: Responsive UI Design
       sprite: ui
-      text: A user interface is like a joke. If you have to explain it, it's not that good. I strive to develop and implement responsive and aesthetically pleasing interfaces for websites and apps that adapt to any type of device, platform, or browser.
+      text: <strong><em>"A user interface is like a joke. If you have to explain it, it's not that good."</em></strong> I strive to develop and implement responsive and aesthetically pleasing interfaces for websites and apps that adapt to any type of device, platform, or browser.
 
 - row: row2
   services:
