@@ -1,14 +1,14 @@
 - position: Northeastern University
   company: NU College of Computer &amp; Information Science
   url: http://www.ccis.northeastern.edu/program/information-science-bs/
-  description: Candidate for Bachelor of Science in Information Science with a concentration in Human Computer Interaction (HCI) and a minor in Interaction Design.<br>Expected graduation May 2018
+  description: Candidate for Bachelor of Science in Information Science with a concentration in Human Computer Interaction (HCI) and a minor in Interaction Design. <strong>Graduating in May 2018.</strong>
   sprite: university
   date: 2013 - Present
 
 - position: HCI Research Assistant
   company: NU College of Computer &amp; Information Science
   url: http://www.ccis.northeastern.edu/
-  description: CAssisted a computer science PhD student in the development of a software prototype built with HTML, CSS, JavaScript, and jQuery to facilitate better understanding of parent-child communication preferences in low-SES (Socio-Economic Status) families. Developed remotely to meet weekly deadlines and project checkpoints.
+  description: Assisted a computer science PhD student in the development of a software prototype built with HTML, CSS, JavaScript, and jQuery to facilitate better understanding of parent-child communication preferences in low-SES (Socio-Economic Status) families. Developed remotely to meet weekly deadlines and project checkpoints.
   sprite: research
   date: Mar - May 2015
 

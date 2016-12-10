@@ -173,9 +173,12 @@
           @include MQ(S660) {
             font-size: 14px;
             padding: 7px 10px;
+            position: relative;
+            top: -5px;
           }
           @include MQ(S600) {
             margin: 0 10px 30px 0;
+            top: 0px;
           }
           &:hover {
             background: $blue;

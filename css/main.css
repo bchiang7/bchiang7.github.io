@@ -1381,10 +1381,13 @@
       @media only screen and (max-width: 660px) {
         #portfolio-section .portfolio-row .description-title-container .description-buttons a {
           font-size: 14px;
-          padding: 7px 10px; } }
+          padding: 7px 10px;
+          position: relative;
+          top: -5px; } }
       @media only screen and (max-width: 600px) {
         #portfolio-section .portfolio-row .description-title-container .description-buttons a {
-          margin: 0 10px 30px 0; } }
+          margin: 0 10px 30px 0;
+          top: 0px; } }
       #portfolio-section .portfolio-row .description-title-container .description-buttons a:hover {
         background: #00b7c7;
         color: #f2f2f2; }

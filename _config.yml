@@ -1,21 +1,9 @@
-exclude:
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "README.md"
-  - "*.gemspec"
-  - "node_modules"
-
-keep_files:
-  - "CNAME"
-  - ".git"
-  - ".gitignore"
-
 # Site settings
-baseurl: ""
 name: Brittany Chiang
 title: Brittany Chiang | Front End Software Engineer
 description: Design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.
-url: http://brittanychiang.com # the base hostname & protocol for your site
+url: http://brittanychiang.com
+baseurl: ""
 email: brittany.chiang@gmail.com
 cover: http://brittanychiang.com/img/og.jpg
 logo: http://brittanychiang.com/img/logo-black.png
@@ -36,6 +24,20 @@ social:
 
 # Build settings
 markdown: kramdown
+
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "*.gemspec"
+  - "README.md"
+  - "node_modules"
+  - "gulpfile.js"
+  - "package.json"
+
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
 
 gems:
   - jekyll-minifier

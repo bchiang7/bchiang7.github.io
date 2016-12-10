@@ -2,11 +2,11 @@ development:
   - item: JavaScript
   - item: HTML5
   - item: CSS3
-  - item: Sass
-  - item: NodeJS
   - item: Handlebars
   - item: Backbone
-  - item: MongoDB
+  - item: NodeJS
+  - item: Jekyll
+  - item: React
   - item: Python
 
 design:
