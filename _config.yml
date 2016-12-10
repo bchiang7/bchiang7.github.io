@@ -3,6 +3,7 @@ exclude:
   - "Gemfile.lock"
   - "README.md"
   - "*.gemspec"
+  - "node_modules"
 
 keep_files:
   - "CNAME"
@@ -35,3 +36,6 @@ social:
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-minifier

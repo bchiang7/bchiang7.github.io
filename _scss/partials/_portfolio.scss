@@ -220,6 +220,7 @@
       display: block;
       width: 90%;
       font-family: $Gotham, $sans-serif-stack;
+      margin-top: 30px;
       margin-bottom: 100px;
       @include MQ(M) {
         margin-bottom: 70px;

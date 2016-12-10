@@ -1,5 +1,4 @@
 $(function() {
-  // ==================== VERTICAL NAV ==================== //
   var contentSections = $('.section'),
   navigationItems = $('#dot-nav a'),
   overlayItems = $('#overlay a');
