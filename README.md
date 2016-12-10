@@ -1,9 +1,8 @@
-# Personal Website V2
-http://brittanychiang.com
+# Personal Website V2 🚀🔥
 
 Hello! Thanks for checking out the repo for my latest portfolio website. This website isn't just my new portfolio, but also a personal project in and of itself. I think I've grown quite a bit as a developer & designer in the past year, so I wanted to create something to showcase some of what I've learned and done.
 
-Some things I used:
+## What I used
 - [Sublime Text 3](https://www.sublimetext.com/3) my ride-or-die
 - [Github Pages](https://pages.github.com/) for easy push-to-deploy hosting
 - [Jekyll](https://jekyllrb.com/) for a static site generator
