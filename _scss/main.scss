@@ -23,6 +23,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::selection {
+  background: $midpointBlue;
+}
+
 html,
 body {
   margin: 0;
