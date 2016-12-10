@@ -41,3 +41,4 @@ keep_files:
 
 gems:
   - jekyll-minifier
+  - jekyll-sitemap
