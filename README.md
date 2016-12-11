@@ -14,6 +14,4 @@ Hello! Thanks for checking out the repo for my latest portfolio website. This we
 - [Skrollr.js](https://github.com/Prinzhorn/skrollr) for parallax effects
 - [Formspree](https://formspree.io/) for a simple, sans-PHP contact form
 
-Other than the things listed above, everything else from the design to the code of this site came from the brain of yours truly.
-
 Let me know what you think!
