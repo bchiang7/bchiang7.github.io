@@ -1,0 +1,212 @@
+<html>
+<head>
+  <title>Resume | Brittany Chiang</title>
+  <meta charset="UTF-8"><!--[if IE]><![endif]-->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Brittany Chiang | Web Developer &amp; UX Enthusiast</title>
+  <link rel="shortcut icon" href="http://brittanychiang.com/img/logo-black.png" hreflang="en-us">
+
+  <meta property="og:title" content="Resume | Brittany Chiang" />
+  <meta property="og:description" content="Design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.brittanychiang.com/resume" />
+  <meta property="og:site_name" content="Resume | Brittany Chiang" />
+  <meta property="og:image" content="http://brittanychiang.com/img/og.png" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="672" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:locale" content="en_US">
+
+  <meta name="description" content="Design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design.">
+  <meta name="keywords" content="design, development, web, bchiang7, brittany, chiang, javascript, northeastern">
+  <meta name="google-site-verification" content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk" />
+
+  <meta itemprop="name" content="Resume | Brittany Chiang">
+  <meta itemprop="description" content="Design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design.">
+  <meta itemprop="image" content="http://brittanychiang.com/img/og.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://brittanychiang.com/resume">
+  <meta name="twitter:site" content="@bchiang7">
+  <meta name="twitter:creator" content="@bchiang7">
+  <meta name="twitter:title" content="Resume | Brittany Chiang">
+  <meta name="twitter:description" content="Design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design.">
+  <meta name="twitter:image:src" content="http://brittanychiang.com/img/og.png">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="content"></div>
+  <script src="https://fb.me/react-0.14.6.js"></script>
+  <script src="https://fb.me/react-dom-0.14.6.js"></script>
+  <script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
+  <script type="text/jsx">
+
+    var DATA = {
+      name: "Hey, I'm Brittany",
+      subtext: "Developer & designer based in Boston, MA",
+      jobStatus: "Software Engineer Co-op @ Starry Internet",
+      twitterURL: 'https://twitter.com/bchiang7',
+      instaURL: 'https://www.instagram.com/bchiang7/',
+      githubURL: 'https://github.com/bchiang7',
+      linkedinURL: 'https://www.linkedin.com/in/bchiang7',
+      resumeURL: 'http://brittanychiang.com/resume2017.pdf'
+    }
+
+    var App = React.createClass({
+      render: function() {
+        return(
+          <div className="app">
+            <Left
+              name={this.props.profileData.name}
+              subtext={this.props.profileData.subtext}
+              jobStatus={this.props.profileData.jobStatus}
+              twitterURL={this.props.profileData.twitterURL}
+              instaURL={this.props.profileData.instaURL}
+              githubURL={this.props.profileData.githubURL}
+              linkedinURL={this.props.profileData.linkedinURL}
+            />
+            <Right
+              intro={this.props.profileData.intro}
+              resumeURL={this.props.profileData.resumeURL}
+            />
+          </div>
+        );
+      }
+    });
+
+    var Left = React.createClass({
+      render: function() {
+        return(
+          <div className="left">
+            <div className="bg-img"></div>
+            <div className="left-inner">
+              <div className="info">
+                <h2 className="name">{this.props.name}</h2>
+                <div className="subtext">{this.props.subtext}</div>
+                <div className="jobStatus">{this.props.jobStatus}</div>
+                <div className="social-links">
+                  <a href={this.props.twitterURL} target="_blank"><i className="fa fa-twitter"></i></a>
+                  <a href={this.props.instaURL} target="_blank"><i className="fa fa-instagram"></i></a>
+                  <a href={this.props.githubURL} target="_blank"><i className="fa fa-github"></i></a>
+                  <a href={this.props.linkedinURL}  target="_blank"><i className="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      }
+    });
+
+    var Right = React.createClass({
+      render: function() {
+        return(
+          <div className="right">
+            <div className="right-inner">
+              <div className="introduction">
+                <h4>Intro</h4>
+                <div className="content">
+                  <p className="intro-p">I&#39;m currently in my fourth year (out of five) studying computer science and interaction design at Northeastern University.</p>
+                  <p className="intro-p">I enjoy being the bridge between engineering and design, and feel right at home as a front end engineer. I&#39;m experienced in developing and designing products for the web, from simple landing pages to full-fledged web apps.</p>
+                  <span className="intro-p job-pls">I&#39;m currently looking for my third and final co-op (from July to December 2017) before I graduate in 2018!</span>
+                </div>
+              </div>
+              <div className="skills">
+                <h4>Skills</h4>
+                <div className="content">
+                  <div className="skill-category">
+                    <strong>Languages: &nbsp;</strong>
+                    <span>JavaScript (ES6), HTML5, CSS3, Java, Python</span>
+                  </div>
+                  <div className="skill-category">
+                    <strong>Libraries &amp; Frameworks: &nbsp;</strong>
+                    <span>jQuery, Bootstrap, Foundation, Handlebars, Node, Backbone, Marionette, Cordova, MongoDB, Angular, Express, React</span>
+                  </div>
+                  <div className="skill-category">
+                    <strong>Tools: &nbsp;</strong>
+                    <span>Git &amp; Github, Command Line, Grunt, Postman, Adobe Photoshop, InDesign</span>
+                  </div>
+                </div>
+              </div>
+              <div className="education">
+                <h4>Education</h4>
+                <div className="content">
+                  <div className="university"><a href="http://www.northeastern.edu/" target="_blank">Northeastern University</a></div>
+                  <div className="college"><a href="http://www.ccis.northeastern.edu/" target="_blank">College of Computer and Information Science</a></div>
+                  <div className="major"><strong>Major:</strong> Information Science</div>
+                  <div className="minor"><strong>Minor:</strong> Interaction Design</div>
+                  <div className="conc"><strong>Concentration:</strong> Human Computer Interaction</div>
+                  <div className="study-abroad"><strong>Study Abroad:</strong> Experience Design of Travel in Budapest, Hungary</div>
+                  <div className="grad-date">Expected Graduation: May 2018</div>
+                </div>
+              </div>
+              <div className="experience">
+                <h4>Experience</h4>
+                <div className="content">
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="https://starry.com/" target="_blank">Starry, Inc.</a>
+                      <div className="duration">July 2016 &mdash; Present</div>
+                    </div>
+                    <div className="title">Software Engineer Co-op</div>
+                    <ul className="description">
+                      <li>Build out major features of Starry’s customer-facing android app with Cordova, utilizing JavaScript (ES6), Handlebars, CSS3, Node.js, and Backbone.js</li>
+                      <li>Propose and implement design and engineering solutions to ensure optimal and coherent user experiences for Starry’s iOS and android apps</li>
+                      <li>Engineer and maintain RESTful cloud services responsible for communicating with the Starry Station router</li>
+                    </ul>
+                  </div>
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="http://us.mullenlowe.com/" target="_blank">Mullen Lowe U.S.</a>
+                      <div className="duration">July &mdash; Dec 2015</div>
+                    </div>
+                    <div className="title">Creative Technologist Co-op</div>
+                    <ul className="description">
+                      <li>Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery</li>
+                      <li>Tested code in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness</li>
+                      <li>Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Dept. of Defense, and more</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="projects">
+                <h4>Projects</h4>
+                <div className="content">
+                  <div className="project-item">
+                    <a className="project-title" href="http://brittanychiang.com/" target="_blank">brittanychiang.com</a>
+                    <p className="project-desc">Portfolio site designed and coded from scratch to showcase my skills and past work</p>
+                  </div>
+                  <div className="project-item">
+                    <div className="project-title">CourseSource</div>
+                    <p className="project-desc">Web app built on the MEAN (MongoDB, Express, Angular, Node) stack for my web development class. Created with the intention of providing students a better experience browsing the courses offered at Northeastern</p>
+                  </div>
+                  <div className="project-item">
+                    <a className="project-title" href="http://nuwit.ccs.neu.edu/" target="_blank">NU Women in Tech</a>
+                    <p className="project-desc">Club website redesigned and redeveloped as while serving as web chair on e-board</p>
+                  </div>
+                  <div className="project-item">
+                    <a className="project-title" href="http://onecardforall.mullenloweus.com/" target="_blank">One Card For All</a>
+                    <p className="project-desc">2015 Mullen Lowe U.S. holiday site built around an algorithm that generated a holiday greeting to each and every person on the planet</p>
+                  </div>
+                </div>
+              </div>
+              <a className="resume" href={this.props.resumeURL} target="_blank"><div className="resume-link">Grab a PDF of my full resume</div></a>
+            </div>
+          </div>
+        );
+      }
+    });
+
+    ReactDOM.render(
+      <App profileData={DATA}/>,
+      document.getElementById('content')
+    );
+
+
+  </script>
+</body>
+</html>

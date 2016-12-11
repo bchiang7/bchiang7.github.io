@@ -1,0 +1,1351 @@
+@import url('fonts.css');
+
+// Variables & Mixins *********************************************************
+$font-stack: Helvetica, sans-serif;
+$primary-color: #111;
+$yellow: #ECD078;
+$orange: #D95B43;
+$red: #C02942;
+$burgundy: #542437;
+$teal: #53777A;
+$smallerPhone: 330px;
+$smallPhone: 360px;
+$mobile: 480px;
+$mid600: 600px;
+$tablet: 768px;
+$bigTablet: 900px;
+$desktop: 1024px;
+$bigDesktop: 1200px;
+@mixin small330 {
+    @media (max-width: #{$smallerPhone}) {
+        @content;
+    }
+}
+@mixin small360 {
+    @media (max-width: #{$smallPhone}) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+@mixin mid600 {
+    @media (max-width: #{$mid600}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+@mixin big900 {
+    @media (max-width: #{$bigTablet}) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (max-width: #{$desktop}) {
+        @content;
+    }
+}
+@mixin big1200 {
+    @media (max-width: #{$bigDesktop}) {
+        @content;
+    }
+}
+// ****************************************************************************
+html,
+body {
+    font-family: $font-stack;
+    color: $primary-color;
+    padding: 0;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+a {
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: 400;
+}
+.white {
+    color: #fff;
+    font-weight: 300;
+}
+.black-overlay {
+    background: linear-gradient( rgba(20,20,20, .5), rgba(20,20,20, .5));
+}
+.site-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    .intro {
+        background: #070707;
+        .intro-wrapper {
+            position: relative;
+            width: 900px;
+            margin: 0 auto;
+            @include big900 {
+                width: 90%;
+            }
+            .site-title {
+                margin-top: 70px;
+                text-align: center;
+                font-family: 'Playfair Display', serif;
+                color: #fff;
+                .top {
+                    font-size: 160px;
+                    @include big900 {
+                        font-size: 120px;
+                    }
+                    @include tablet {
+                        font-size: 80px;
+                    }
+                    @include mobile {
+                        font-size: 60px;
+                    }
+                    @include small360 {
+                        font-size: 50px;
+                    }
+                }
+                .bottom {
+                    font-size: 48px;
+                    font-style: italic;
+                    @include big900 {
+                        font-size: 36px;
+                    }
+                    @include tablet {
+                        font-size: 24px;
+                    }
+                }
+            }
+            .colophon {
+                width: 100%;
+                margin: 50px auto;
+                font-size: 14px;
+                color: #bbb;
+                @include tablet {
+
+                    // width: 480px;
+                }
+                a {
+                    text-decoration: underline;
+                    color: #bbb;
+                }
+                p {
+                    text-align: left;
+
+                    // font-family: 'Roboto Condensed', sans-serif;
+                    font-family: 'Source Sans Pro', sans-serif;
+
+                    // font-family: 'alright_sanslight';
+                    font-weight: 100;
+                    letter-spacing: 0.3px;
+                    margin: 5px auto;
+                    line-height: 1.5;
+                }
+                .column1 {
+                    display: inline-block;
+                    width: 66%;
+                    margin: 10px 10px 10px 25px;
+                    vertical-align: top;
+                    @include tablet {
+                        width: 90%;
+                        display: block;
+                        margin: 25px auto;
+                    }
+                }
+                .column2 {
+                    display: inline-block;
+                    width: 25%;
+                    margin: 10px;
+                    vertical-align: top;
+                    @include tablet {
+                        width: 90%;
+                        display: block;
+                        margin: 25px auto;
+                    }
+                }
+            }
+        }
+    }
+    .container-1 {
+        background: $yellow;
+    }
+    .container-2 {
+        background: $orange;
+    }
+    .container-3 {
+        background: $red;
+    }
+    .container-4 {
+        background: $burgundy;
+    }
+    .container-5 {
+        background: $teal;
+    }
+    .photo-1 {
+        background: url(../images/photo-1.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-2 {
+        background: url(../images/photo-2.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-3 {
+        background: url(../images/photo-3.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-4 {
+        background: url(../images/photo-4.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-5 {
+        background: url(../images/photo-5.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-6 {
+        background: url(../images/photo-6.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-7 {
+        background: url(../images/photo-7.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-8 {
+        background: url(../images/photo-8.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-9 {
+        background: url(../images/photo-9.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-10 {
+        background: url(../images/photo-10.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-11 {
+        background: url(../images/photo-11.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-12 {
+        background: url(../images/photo-12.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-13 {
+        background: url(../images/photo-13.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-14 {
+        background: url(../images/photo-14.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-15 {
+        background: url(../images/photo-15.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-16 {
+        background: url(../images/photo-16.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-17 {
+        background: url(../images/photo-17.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-18 {
+        background: url(../images/photo-18.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-19 {
+        background: url(../images/photo-19.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .photo-20 {
+        background: url(../images/photo-20.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .footer {
+        width: 100%;
+        height: 20px;
+        background: #070707;
+        color: #bbb;
+        margin: 0;
+        padding: 15px 0;
+        .copyright {
+            margin: 0 auto;
+            text-align: center;
+            p {
+                font-family: 'alright_sanslight';
+                margin: 0;
+                a {
+                    color: #bbb;
+                }
+            }
+        }
+    }
+    .container {
+        width: 100%;
+        height: 700px;
+        padding: 50px 0;
+        .font-pair {
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-top: 50px;
+            margin-left: 100px;
+            font-family: 'Roboto Condensed', sans-serif;
+            @include tablet {
+                margin-left: 10%;
+            }
+            p {
+                margin: 0;
+                .white {
+                    color: #fff;
+                    font-weight: 300;
+                }
+            }
+            a {
+                .white {
+                    color: #fff;
+                    font-weight: 300;
+                }
+            }
+        }
+        .text-wrapper {
+            margin: 100px auto;
+            width: 600px;
+            @include big900 {
+                width: 80%;
+            }
+        }
+        #latoRobotoSlab {
+            @include big900 {
+                width: 80%;
+            }
+            h2 {
+                font-family: 'Lato', sans-serif;
+                text-transform: uppercase;
+                font-size: 36px;
+                font-weight: 700;
+            }
+            p {
+                margin-top: 30px;
+                font-family: 'Roboto Slab', serif;
+                font-weight: 300;
+                line-height: 1.5;
+                font-size: 16px;
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #ralewayLusitana {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            color: #fff;
+            text-align: center;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'Raleway', sans-serif;
+                text-transform: uppercase;
+                font-size: 60px;
+                font-weight: 700;
+                @include mid600 {
+                    font-size: 40px;
+                }
+            }
+            p {
+                margin-top: 40px;
+                font-family: 'Lusitana', serif;
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 1.5;
+                @include mid600 {
+                    font-size: 16px;
+                }
+            }
+        }
+        #nixieLibre {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            h2 {
+                font-family: 'Nixie One', cursive;
+                font-size: 60px;
+                font-weight: 700;
+                @include mid600 {
+                    font-size: 50px;
+                }
+            }
+            p {
+                margin-top: 40px;
+                margin-left: 60px;
+                font-family: 'Libre Baskerville', serif;
+                font-size: 14px;
+                line-height: 1.5;
+                @include mid600 {
+                    margin-left: 0;
+                }
+            }
+        }
+        #playfairSourceSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            text-align: center;
+            width: 400px;
+
+            // color: #fff;
+            // a {
+            //     color: #fff;
+            // }
+            h2 {
+                font-family: 'Playfair Display', serif;
+                font-size: 60px;
+                font-weight: 700;
+                @include mid600 {
+                    font-size: 44px;
+                }
+            }
+            p {
+                margin-top: 30px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        }
+        #droidSerifLato {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            color: #fff;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'Droid Serif', serif;
+                font-size: 60px;
+                font-weight: 500;
+                @include mid600 {
+                    font-size: 50px;
+                }
+            }
+            p {
+                margin-top: 30px;
+                font-family: 'Lato', sans-serif;
+                font-size: 20px;
+                line-height: 1.5;
+                font-weight: 200;
+                letter-spacing: 0.5px;
+                @include mid600 {
+                    font-size: 15px;
+                }
+            }
+        }
+        #openSansSourceSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            text-align: center;
+            width: 400px;
+            h2 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 36px;
+                font-weight: 700;
+                text-transform: uppercase;
+                a {
+                    font-weight: 700;
+                }
+            }
+            p {
+                margin-top: 30px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                font-weight: 400;
+
+                // letter-spacing: 0.5px;
+            }
+        }
+        #latoMerriweather {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            text-align: center;
+            width: 500px;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'Lato', sans-serif;
+                font-size: 70px;
+                font-weight: 200;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                a {
+                    font-weight: 200;
+                }
+            }
+            p {
+                margin-top: 50px;
+                font-family: 'Merriweather', serif;
+                font-size: 16px;
+                line-height: 2;
+                font-weight: 100;
+                letter-spacing: 0.2px;
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #rufinaSintony {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            margin: 100px 150px;
+            width: 500px;
+            h2 {
+                font-family: 'Rufina', serif;
+                font-size: 70px;
+                font-weight: 700;
+                @include mid600 {
+                    font-size: 45px;
+                }
+            }
+            p {
+                margin-top: 30px;
+                font-family: 'Sintony', sans-serif;
+                font-size: 16px;
+                line-height: 2;
+                font-weight: 100;
+                @include mid600 {
+                    line-height: 1.5;
+                    font-size: 16px;
+                }
+            }
+        }
+        #robotoSlabRoboto {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 800px;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'Roboto Slab', serif;
+                font-size: 80px;
+                font-weight: 100;
+                @include mid600 {
+                    font-size: 50px;
+                }
+                a {
+                    font-weight: 100;
+                }
+            }
+            p {
+                margin-top: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                line-height: 2;
+                font-weight: 300;
+                letter-spacing: 0.3px;
+                @include mid600 {
+                    font-size: 15px;
+                    letter-spacing: 0.2px;
+                    line-height: 1.5;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #yesevaMerriweather {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 500px;
+            margin-top: 50px;
+            margin-right: 100px;
+            text-align: right;
+
+            // color: #fff;
+            // a {
+            //     color: #fff;
+            // }
+            h2 {
+                font-family: 'Yeseva One', cursive;
+                font-size: 65px;
+                font-weight: 100;
+                @include mid600 {
+                    font-size: 50px;
+                }
+            }
+            h3 {
+                margin-top: 10px;
+                font-family: 'Merriweather', serif;
+                font-size: 20px;
+                font-weight: 100;
+                font-style: italic;
+                @include mid600 {
+                    font-size: 14px;
+                }
+            }
+            p {
+                margin-top: 30px;
+                font-family: 'Merriweather Sans', sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                font-weight: 300;
+
+                // letter-spacing: 0.3px;
+            }
+        }
+        #oxygenSourceSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 800px;
+
+            // color: #fff;
+            // a {
+            //     color: #fff;
+            // }
+            h2 {
+                font-family: 'Oxygen', sans-serif;
+                font-size: 80px;
+                font-weight: 100;
+                @include mid600 {
+                    font-size: 40px;
+                }
+            }
+            p {
+                margin-top: 30px;
+                margin-left: 70px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 20px;
+                line-height: 1.5;
+                font-weight: 300;
+                letter-spacing: 0.3px;
+                @include mid600 {
+                    margin-left: 0;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #vidalokaNotoSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 850px;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'Vidaloka', serif;
+                font-size: 80px;
+                font-weight: 100;
+                @include mid600 {
+                    font-size: 60px;
+                }
+            }
+            p {
+                font-family: 'Noto Sans', sans-serif;
+                font-size: 20px;
+                line-height: 1.5;
+                font-weight: 300;
+                letter-spacing: 0.3px;
+                @include mid600 {
+                    font-size: 16px;
+                }
+                a {
+                    font-weight: 100;
+                }
+            }
+        }
+        #abrilJosefin {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            text-align: center;
+            h2 {
+                font-family: 'Abril Fatface', cursive;
+                font-size: 80px;
+                font-weight: 100;
+                @include mid600 {
+                    font-size: 40px;
+                }
+            }
+            p {
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 20px;
+                line-height: 1.5;
+                font-weight: 400;
+                letter-spacing: 0.3px;
+                @include mid600 {
+                    font-size: 16px;
+                }
+            }
+        }
+        #merriweatherSourceSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 450px;
+
+            // color: #fff;
+            margin-right: 100px;
+            text-align: right;
+
+            // a {
+            //     color: #fff;
+            // }
+            h2 {
+                font-family: 'Merriweather', serif;
+                font-size: 40px;
+                font-weight: 700;
+
+                // text-transform: uppercase;
+                letter-spacing: 1px;
+                a {
+                    font-weight: 700;
+                }
+            }
+            p {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                font-weight: 300;
+                letter-spacing: 0.3px;
+                margin-top: 30px;
+            }
+        }
+        #robotoNotoSerif {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 700px;
+            text-align: left;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 60px;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                @include mid600 {
+                    font-size: 36px;
+                }
+            }
+            p {
+                font-family: 'Noto Serif', serif;
+                font-size: 16px;
+                line-height: 2;
+                font-weight: 400;
+                letter-spacing: 0.5px;
+                margin-top: 30px;
+                @include mid600 {
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+            }
+        }
+        #quattrocentoSerifSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 700px;
+            text-align: center;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'Quattrocento', serif;
+                font-size: 60px;
+                font-weight: 700;
+
+                // text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            p {
+                font-family: 'Quattrocento Sans', sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                font-weight: 300;
+                letter-spacing: 0.3px;
+                margin-top: 30px;
+            }
+        }
+        #ralewayPlayfair {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 800px;
+            text-align: center;
+            color: #fff;
+            margin-top: 130px;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'Raleway', sans-serif;
+                font-size: 80px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            p {
+                font-family: 'Playfair Display', serif;
+                font-size: 24px;
+                line-height: 1.5;
+                font-weight: 300;
+                font-style: italic;
+                letter-spacing: 1px;
+                margin-top: 30px;
+            }
+        }
+        #martelSerifSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 800px;
+            text-align: left;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'Martel', serif;
+                font-size: 50px;
+                font-weight: 400;
+
+                // text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            p {
+                font-family: 'Martel Sans', sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+        }
+        #surannaOpenSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+
+            // width: 800px;
+            text-align: left;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'Suranna', serif;
+                font-size: 70px;
+                letter-spacing: 3px;
+                @include mid600 {
+                    line-height: 1;
+                }
+            }
+            p {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.5;
+                font-weight: 100;
+                letter-spacing: 1px;
+                margin-left: 50px;
+                @include mid600 {
+                    margin-left: 0;
+                }
+                a {
+                    font-weight: 100;
+                }
+            }
+        }
+        #ovoOxygen {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 500px;
+            text-align: right;
+            margin-right: 100px;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'Ovo', serif;
+                font-size: 70px;
+
+                // font-weight: 900;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+            p {
+                font-family: 'Oxygen', sans-serif;
+                font-size: 14px;
+                line-height: 1.5;
+                font-weight: 100;
+                letter-spacing: 1px;
+            }
+        }
+        #argonQuattrocentoSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            text-align: left;
+            h2 {
+                font-family: 'argon';
+                font-size: 90px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                @include mid600 {
+                    font-size: 70px;
+                    letter-spacing: 0;
+                }
+            }
+            p {
+                font-family: 'Quattrocento Sans', sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                font-weight: 100;
+                @include mid600 {
+                    font-size: 15px;
+                }
+            }
+        }
+        #sanchezProxima {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 500px;
+            text-align: right;
+            margin-right: 100px;
+
+            // color: #fff;
+            // a {
+            //     color: #fff;
+            // }
+            h2 {
+                font-family: 'Sanchez', serif;
+                font-size: 50px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+            p {
+                font-family: 'proximanova';
+                font-size: 20px;
+                line-height: 1.5;
+                font-weight: 100;
+                @include mid600 {
+                    font-size: 18px;
+                }
+            }
+        }
+        #proximaSourceSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+
+            // width: 500px;
+            // text-align: right;
+            // margin-right: 100px;
+            // color: #fff;
+            // a {
+            //     color: #fff;
+            // }
+            h2 {
+                font-family: 'proximanova';
+                font-size: 50px;
+
+                // text-transform: uppercase;
+                // letter-spacing: 3px;
+            }
+            p {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 20px;
+                line-height: 1.5;
+                font-weight: 100;
+                @include mid600 {
+                    font-size: 18px;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #harrietAlright {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 750px;
+
+            // text-align: right;
+            margin-top: 70px;
+            margin-left: 100px;
+
+            // color: #fff;
+            // a {
+            //     color: #fff;
+            // }
+            h2 {
+                font-family: 'harriet_displaybold';
+                font-size: 50px;
+            }
+            p {
+                font-family: 'alright_sanslight';
+                font-size: 20px;
+                line-height: 1.5;
+                font-weight: 100;
+                @include mid600 {
+                    font-size: 18px;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #salomeOxygen {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+
+            // width: 750px;
+            text-align: center;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'salomeregular';
+                font-size: 70px;
+            }
+            p {
+                font-family: 'Oxygen', sans-serif;
+                font-size: 20px;
+                line-height: 2;
+                font-weight: 100;
+                @include mid600 {
+                    font-size: 16px;
+                    line-height: 1.5;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #butlerAvenir {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 800px;
+            text-align: right;
+            margin-right: 100px;
+            h2 {
+                font-family: 'butlerbold';
+                font-size: 70px;
+                @include mid600 {
+                    line-height: 1;
+                }
+            }
+            p {
+                font-family: 'AvenirLTStd-Book';
+                font-size: 20px;
+                line-height: 1.5;
+                font-weight: 100;
+                @include mid600 {
+                    font-size: 18px;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #moonLora {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            text-align: center;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'moonlight';
+                font-size: 70px;
+                @include mid600 {
+                    font-size: 40px;
+                }
+            }
+            p {
+                font-family: 'Lora', serif;
+                font-size: 18px;
+                line-height: 2;
+                font-weight: 100;
+                @include mid600 {
+                    font-size: 16px;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #unnaAzo {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 800px;
+            margin-top: 30px;
+            margin-left: 100px;
+            h2 {
+                font-family: 'unnabold';
+                font-size: 70px;
+                @include mid600 {
+                    font-size: 50px;
+                }
+            }
+            p {
+                font-family: 'azo_sanslight';
+                font-size: 18px;
+                line-height: 2;
+                margin-left: 100px;
+                @include mid600 {
+                    font-size: 16px;
+                    margin-left: 0;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #aleoLato {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            color: #fff;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'aleoregular';
+                font-size: 60px;
+                @include mid600 {
+                    font-size: 40px;
+                }
+            }
+            p {
+                font-family: 'Lato', sans-serif;
+                font-size: 18px;
+                line-height: 2;
+                font-weight: 100;
+                @include mid600 {
+                    line-height: 1.5;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #quartoIdeal {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            margin-left: 100px;
+            h2 {
+                font-family: 'quartobold';
+                font-size: 60px;
+                letter-spacing: 3px;
+                @include mid600 {
+                    font-size: 50px;
+                    letter-spacing: 1px;
+                }
+            }
+            p {
+                font-family: 'Ideal Sans Book';
+                font-size: 18px;
+                line-height: 2;
+                font-weight: 100;
+                @include mid600 {
+                    line-height: 1.5;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #freightSansText {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            text-align: center;
+            h2 {
+                font-family: 'freightsansmedium';
+                font-size: 60px;
+                @include mid600 {
+                    font-size: 40px;
+                }
+            }
+            p {
+                font-family: 'freighttextbook';
+                font-size: 18px;
+                line-height: 2;
+                font-weight: 100;
+                letter-spacing: 0.3px;
+                @include mid600 {
+                    line-height: 1.5;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #freightBigSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 400px;
+            margin-top: 50px;
+            margin-right: 100px;
+            text-align: right;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+            h2 {
+                font-family: 'freightbigboldregular';
+                font-size: 60px;
+                @include mid600 {
+                    font-size: 50px;
+                }
+            }
+            p {
+                font-family: 'freightsanslight';
+                font-size: 18px;
+                line-height: 1.5;
+                font-weight: 100;
+                letter-spacing: 0.5px;
+                @include mid600 {
+                    font-size: 16px;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #keplerWhitney {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+
+            // width: 500px;
+            // text-align: right;
+            // margin-right: 100px;
+            // color: #fff;
+            // a {
+            //     color: #fff;
+            // }
+            h2 {
+                font-family: 'Kepler Std';
+                font-size: 60px;
+            }
+            p {
+                font-family: 'Whitney';
+                font-size: 20px;
+                line-height: 1.5;
+                font-weight: 100;
+                @include mid600 {
+                    font-size: 18px;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+        #utopiaSourceSans {
+            @include big900 {
+                width: 80%;
+                margin: 70px auto;
+            }
+            width: 700px;
+            text-align: center;
+            h2 {
+                font-family: 'Utopia Std';
+                font-size: 60px;
+                @include mid600 {
+                    font-size: 40px;
+                }
+            }
+            a {
+                color: #fff;
+            }
+            p {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 20px;
+                line-height: 1.5;
+                font-weight: 100;
+                letter-spacing: 0.3px;
+                @include mid600 {
+                    line-height: 1.5;
+                }
+                a {
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
