@@ -3,8 +3,10 @@ var browserSync = require('browser-sync');
 var cp          = require('child_process');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
+var cleanCSS    = require('gulp-clean-css');
 var jshint      = require('gulp-jshint');
 var babel       = require('gulp-babel');
+var uglify      = require('gulp-uglify');
 var imagemin    = require('gulp-imagemin');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
@@ -42,6 +44,7 @@ gulp.task('styles', function() {
     onError: browserSync.notify
     }))
   .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
+  .pipe(cleanCSS({compatibility: 'ie8'}))
   .pipe(gulp.dest('_site/css'))
   .pipe(browserSync.reload({stream:true}))
   .pipe(gulp.dest('css'));
@@ -49,20 +52,22 @@ gulp.task('styles', function() {
 
 // Compile files from js folder into both _site/js folder (for live injecting)
 gulp.task('scripts', function() {
-  return gulp.src('js/*.js')
+  return gulp.src('_scripts/*.js')
   .pipe(jshint())
   .pipe(babel({
     presets: ['es2015']
     }))
+  .pipe(uglify())
   .pipe(gulp.dest('_site/js'))
-  .pipe(browserSync.reload({stream:true}));
+  .pipe(browserSync.reload({stream:true}))
+  .pipe(gulp.dest('js'));
   });
 
 // Watch scss files for changes & recompile
 // Watch html/md files, run jekyll & reload BrowserSync
 gulp.task('watch', function () {
   gulp.watch(['_scss/**/*.scss','_scss/*.scss'], ['styles']);
-  gulp.watch(['js/*.js'], ['scripts']);
+  gulp.watch(['_scripts/*.js'], ['scripts']);
   gulp.watch(['index.html', '404.html', '_layouts/*.html', '_includes/*.html', '_data/*.yml', '_posts/*', '_drafts/*', '**/*.html'], ['jekyll-rebuild']);
   });
 
@@ -82,13 +87,20 @@ gulp.task('styles-prod', function () {
     onError: browserSync.notify
     }))
   .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
+  .pipe(cleanCSS({compatibility: 'ie8'}))
   .pipe(gulp.dest('_site/css'))
   .pipe(gulp.dest('css'));
   });
 
 gulp.task('scripts-prod', function() {
-  return gulp.src(['js/*.js'])
-  .pipe(gulp.dest('_site/js'));
+  return gulp.src(['_scripts/*.js'])
+  .pipe(jshint())
+  .pipe(babel({
+    presets: ['es2015']
+    }))
+  .pipe(uglify())
+  .pipe(gulp.dest('_site/js'))
+  .pipe(gulp.dest('js'));
   });
 
 gulp.task('images', function() {
