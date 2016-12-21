@@ -37,7 +37,7 @@
         background-color: $grey;
         bottom: 0;
         left: 0;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-in-out;
       }
       &:after {
         background-color: #00b7c7;
@@ -48,7 +48,7 @@
         height: 2px;
         bottom: 0;
         left: 0;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-in-out;
       }
       .input-label {
         display: block;
@@ -57,7 +57,7 @@
         font-weight: 500;
         transform: translateY(25px);
         color: $white;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-in-out;
       }
       .contact-input {
         position: relative;
