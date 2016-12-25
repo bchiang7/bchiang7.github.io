@@ -17,15 +17,15 @@ design:
   - item: zeplin
 
 tools:
-  - item: Git, Github
+  - item: Git + Github
   - item: Command Line
   - item: Chrome DevTools
-  - item: Grunt/Gulp
+  - item: Grunt + Gulp
   - item: Postman
 
 knowledge:
   - item: CSS Detangling
-  - item: ES6
+  - item: ECMAScript 6
+  - item: Search Engine Optimization
+  - item: Test Driven Development
   - item: Usability
-  - item: Wireframing
-  - item: SEO
