@@ -4,7 +4,7 @@ development:
   - item: CSS3
   - item: Handlebars
   - item: Backbone
-  - item: NodeJS
+  - item: Node.js
   - item: Jekyll
   - item: React
   - item: Python
