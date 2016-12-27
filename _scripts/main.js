@@ -1,56 +1,45 @@
 $(function() {
-  const contentSections = $('.section');
-  const navigationItems = $('#dot-nav a');
-  const overlayItems = $('#overlay a');
-
-  // ==================== VERTICAL NAV ON SCROLL ==================== //
-
-  updateNavigation();
-
-  $(window).on('scroll', function() {
-    updateNavigation();
-  });
-
-  //smooth scroll to the section
-  navigationItems.on('click', function(event) {
-    event.preventDefault();
-    smoothScroll($(this.hash));
-  });
-
-  overlayItems.on('click', function(event) {
-    event.preventDefault();
-    smoothScroll($(this.hash));
-    $('#toggle').click();
-  });
-
-  // smooth scroll to second section
-  $('.scroll-down').on('click', function(event) {
-    event.preventDefault();
-    smoothScroll($(this.hash));
-  });
-
-  // close navigation on touch devices when selectinG an elemnt from the list
-  $('.touch #dot-nav a').on('click', function() {
-    $('.touch #dot-nav').removeClass('open');
-  });
-
 
   function updateNavigation() {
-    contentSections.each(function() {
-      const $this = $(this);
-      const activeSection = $('#dot-nav a[href="#' + $this.attr('id') + '"]').data('number') - 1;
+    $('.section').each(function() {
+      const activeSection = $('#dot-nav a[href="#' + $(this).attr('id') + '"]').data('number');
+      const offsetTop = $(this).offset().top;
+      const halfWindowHeight = $(window).height() / 2;
+      const distanceFromTop = $(window).scrollTop();
+      const cond1 = offsetTop - halfWindowHeight < distanceFromTop;
+      const cond2 = offsetTop + $(this).height() - halfWindowHeight > distanceFromTop;
 
-      if (($this.offset().top - $(window).height() / 2 < $(window).scrollTop()) && ($this.offset().top + $this.height() - $(window).height() / 2 > $(window).scrollTop())) {
-        navigationItems.eq(activeSection).addClass('is-selected');
+      if (cond1 && cond2) {
+        $('#dot-nav a').eq(activeSection).addClass('is-selected');
       } else {
-        navigationItems.eq(activeSection).removeClass('is-selected');
+        $('#dot-nav a').eq(activeSection).removeClass('is-selected');
       }
     });
   }
 
+  updateNavigation();
+  window.addEventListener('scroll', updateNavigation);
+
+
   function smoothScroll(target) {
-    $('body,html').animate({ 'scrollTop': target.offset().top + 50 }, 600);
+    $('body').animate({ 'scrollTop': target.offset().top + 50 }, 500);
   }
+
+  $('.scroll-down').on('click', function(ev) {
+    ev.preventDefault();
+    smoothScroll($(this.hash));
+  });
+
+  $('#dot-nav a').on('click', function(ev) {
+    ev.preventDefault();
+    smoothScroll($(this.hash));
+  });
+
+  $('#overlay a').on('click', function(ev) {
+    ev.preventDefault();
+    smoothScroll($(this.hash));
+    $('#toggle').click();
+  });
 
 });
 
@@ -161,6 +150,6 @@ const limit = 300;
 function autoExpand() {
   textarea.style.height = "";
   textarea.style.height = `${Math.min(textarea.scrollHeight, limit)}px`;
-};
+}
 
 textarea.addEventListener('input', autoExpand);

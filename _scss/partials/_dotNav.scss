@@ -20,7 +20,7 @@
   a {
     display: inline-block;
     @include clearfix;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     span {
       float: right;
       display: inline-block;
