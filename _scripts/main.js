@@ -3,6 +3,8 @@ $(function() {
   const navigationItems = $('#dot-nav a');
   const overlayItems = $('#overlay a');
 
+  // ==================== VERTICAL NAV ON SCROLL ==================== //
+
   updateNavigation();
 
   $(window).on('scroll', function() {
@@ -32,17 +34,6 @@ $(function() {
     $('.touch #dot-nav').removeClass('open');
   });
 
-  // ==================== VERTICAL NAV ON SCROLL ==================== //
-  $(document).scroll(function() {
-    const x = $(window).width();
-    const y = $(this).scrollTop();
-    const $nav = $('#dot-nav');
-    if (x > 768 && y > 500) {
-      $nav.fadeIn();
-    } else {
-      $nav.fadeOut();
-    }
-  });
 
   function updateNavigation() {
     contentSections.each(function() {
@@ -61,84 +52,115 @@ $(function() {
     $('body,html').animate({ 'scrollTop': target.offset().top + 50 }, 600);
   }
 
-  // ==================== MOBILE MENU ==================== //
-  $('#toggle').click(function(e) {
-    $(this).toggleClass('active');
-    $('#overlay').toggleClass('open');
-    $('body').toggleClass('noScroll');
-  });
-
-  $(window).on('resize', function(event) {
-    const windowWidth = $(window).width();
-    const isOpen = $('#overlay').hasClass('open');
-
-    if (windowWidth > 768) {
-      $('#dot-nav').show();
-      if (isOpen) {
-        $('#toggle').removeClass('active');
-        $('#overlay').removeClass('open');
-      }
-    } else if (windowWidth < 768) {
-      $('#dot-nav').hide();
-    }
-  });
-
-  // ==================== CONTACT FORM ==================== //
-  const $contactInput = $('.contact-input');
-
-  $contactInput.focus(function() {
-    $(this).parent().addClass('is-active is-completed');
-  });
-
-  $contactInput.focusout(function() {
-    if ($(this).val() === "") {
-      $(this).parent().removeClass('is-completed');
-    }
-    $(this).parent().removeClass('is-active');
-  });
-
-  $(document).one('focus.textarea', '.autoExpand', function() {
-    const savedValue = this.value;
-    this.value = '';
-    this.baseScrollHeight = this.scrollHeight;
-    this.value = savedValue;
-  }).on('input.textarea', '.autoExpand', function() {
-    const minRows = this.getAttribute('data-min-rows') | 0;
-    this.rows = minRows;
-    const rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 17);
-    this.rows = minRows + rows;
-  });
-
-  const isMobile = {
-    Android: function() {
-      return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-      return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-      return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-      return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-      return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-  };
-
-  if (!isMobile.any()) {
-    skrollr.init({
-      render: function(data) {
-        //Debugging - Log the current scroll position.
-        // console.log(data.curTop);
-      },
-      smoothScrolling: false,
-      forceHeight: false
-    });
-  }
-
 });
+
+
+// hide dot nav if we are on the intro section
+const dotNav = document.querySelector('#dot-nav');
+const about = document.querySelector('#about-section');
+
+function handleDotNav() {
+  const isDesktop = window.innerWidth > 768;
+  const topOfAbout = about.offsetTop - (about.offsetTop / 4);
+  const isBelowIntro = window.scrollY > topOfAbout;
+
+  if (isDesktop && isBelowIntro) {
+    dotNav.classList.add('active');
+  } else {
+    dotNav.classList.remove('active');
+  }
+}
+
+window.addEventListener('scroll', handleDotNav);
+
+
+// hide or show hamburger menu depending on window width
+const hamburger = document.querySelector('#toggle');
+const overlay = document.querySelector('#overlay');
+
+function switchNavs() {
+  const isDesktop = window.innerWidth > 768;
+  const menuOpen = overlay.classList.contains('open');
+
+  if (isDesktop) {
+    dotNav.classList.add('active');
+    if (menuOpen) {
+      hamburger.classList.remove('active');
+      overlay.classList.remove('open');
+    }
+  } else {
+    dotNav.classList.remove('active');
+  }
+}
+
+window.addEventListener('resize', switchNavs);
+
+
+// Toggle mobile menu open and closed
+function toggleMenu() {
+  this.classList.toggle('active');
+  overlay.classList.toggle('open');
+  document.body.classList.toggle('noScroll');
+}
+
+hamburger.addEventListener('click', toggleMenu);
+
+
+const isMobile = {
+  Android() {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry() {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS() {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera() {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows() {
+    return navigator.userAgent.match(/IEMobile/i);
+  },
+  any() {
+    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+  }
+};
+
+// turn off parallax effect on mobile devices
+if (!isMobile.any()) {
+  skrollr.init({
+    render: function(data) {
+      //Debugging - Log the current scroll position.
+      // console.log(data.curTop);
+    },
+    smoothScrolling: false,
+    forceHeight: false
+  });
+}
+
+
+// toggle contact input classes on focus or blur
+const contactInput = document.querySelectorAll('.contact-input');
+
+function focusInput() {
+  this.parentElement.classList.add('is-active', 'is-completed');
+}
+function blurInput() {
+  this.parentElement.classList.remove('is-active', 'is-completed');
+}
+
+contactInput.forEach(input => input.addEventListener('focus', focusInput));
+contactInput.forEach(input => input.addEventListener('blur', blurInput));
+
+
+// dynamically expand textarea
+const textarea = document.querySelector('#message');
+const limit = 300;
+
+function autoExpand() {
+  textarea.style.height = "";
+  textarea.style.height = `${Math.min(textarea.scrollHeight, limit)}px`;
+};
+
+textarea.addEventListener('input', autoExpand);

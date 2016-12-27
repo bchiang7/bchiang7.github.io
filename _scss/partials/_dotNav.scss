@@ -1,9 +1,16 @@
 #dot-nav {
   position: fixed;
   right: 34px;
-  @include center(y);
   z-index: 1;
-  display: none;
+  @include center(y);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s ease;
+  }
   @include MQ(M) {
     display: none;
   }

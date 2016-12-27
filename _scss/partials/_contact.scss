@@ -52,11 +52,13 @@
       }
       .input-label {
         display: block;
-        padding-left: 4px;
-        font-size: 1.15em;
-        font-weight: 500;
+        font-family: $Gotham, $sans-serif-stack;
+        font-size: 0.9em;
+        font-weight: 700;
+        text-transform: uppercase;
         transform: translateY(25px);
         color: $white;
+        margin-bottom: 10px;
         transition: all 0.5s ease-in-out;
       }
       .contact-input {
@@ -92,7 +94,7 @@
       color: #00b7c7;
     }
     .is-completed .input-label {
-      font-size: 14px;
+      font-size: 0.75em;
       font-weight: 700;
       transform: translateY(0);
       padding: 0;
