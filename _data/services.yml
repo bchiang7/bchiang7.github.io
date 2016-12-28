@@ -2,7 +2,7 @@
   services:
     - heading: Web Development
       sprite: webdev
-      text: I love using HTML, CSS, and JavaScript with pre-processors and build tools such as Sass and Grunt to produce pixel-perfect websites and apps with semantic, modular front-end code and dry, efficient back-end code for the web.
+      text: Using HTML, CSS, and JavaScript with pre-processors and build tools such as Sass and Grunt, I have a passion for developing pixel-perfect websites and apps while maintaining a semantic, modular, and DRY code base.
 
     - heading: Responsive UI Design
       sprite: ui
@@ -12,7 +12,7 @@
   services:
     - heading: Experience Design
       sprite: xd
-      text: There have been far too many times where I've been trying to accomplish a simple task on a website, and ended up wanting to throw my computer out the window in frustration. Needless to say, user experience is an aspect of software I am always focused on perfecting.
+      text: There have been far too many times where I've been trying to accomplish a simple task on a website, and ended up wanting to throw my computer out the window in frustration. Needless to say, user experience is an aspect of software I believe is vital to a successful product.
 
     - heading: Inclusivity in Tech
       sprite: wit
