@@ -43,51 +43,33 @@ $(function() {
 
 });
 
-
-// hide dot nav if we are on the intro section
 const dotNav = document.querySelector('#dot-nav');
 const about = document.querySelector('#about-section');
-
-function handleDotNav() {
-  const isDesktop = window.innerWidth > 768;
-  const topOfAbout = about.offsetTop - (about.offsetTop / 4);
-  const isBelowIntro = window.scrollY > topOfAbout;
-
-  if (isDesktop && isBelowIntro) {
-    dotNav.classList.add('active');
-  } else {
-    dotNav.classList.remove('active');
-  }
-}
-
-window.addEventListener('scroll', handleDotNav);
-
-
-// hide or show hamburger menu depending on window width
 const hamburger = document.querySelector('#toggle');
 const overlay = document.querySelector('#overlay');
 
-function switchNavs() {
+function handleNavs() {
   const isDesktop = window.innerWidth > 768;
+  const topOfAbout = about.offsetTop - (about.offsetTop / 4);
+  const isBelowIntro = window.scrollY > topOfAbout;
   const menuOpen = overlay.classList.contains('open');
 
-  if (isDesktop) {
+  if (isDesktop && isBelowIntro) {
     dotNav.classList.add('active');
-    if (menuOpen) {
-      hamburger.classList.remove('active');
-      overlay.classList.remove('open');
-    }
+  } else if (isDesktop && menuOpen) {
+    toggleMenu();
   } else {
     dotNav.classList.remove('active');
   }
 }
 
-window.addEventListener('resize', switchNavs);
+window.addEventListener('scroll', handleNavs);
+window.addEventListener('resize', handleNavs);
 
 
 // Toggle mobile menu open and closed
 function toggleMenu() {
-  this.classList.toggle('active');
+  hamburger.classList.toggle('active');
   overlay.classList.toggle('open');
   document.body.classList.toggle('noScroll');
 }
