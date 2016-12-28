@@ -26,6 +26,6 @@ tools:
 knowledge:
   - item: CSS Detangling
   - item: ECMAScript 6
-  - item: Search Engine Optimization
-  - item: Test Driven Development
   - item: Usability
+  - item: SEO
+  - item: TDD
