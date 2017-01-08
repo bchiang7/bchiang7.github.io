@@ -21,6 +21,10 @@
       overflow: hidden;
       display: block;
       width: 95%;
+      margin-left: 10px;
+      @include MQ(S660) {
+        margin-left: 0;
+      }
       &:before,
       &:after {
         box-sizing: inherit;

@@ -1,3 +1,11 @@
+- title: HackerNews Theme Redesign
+  demo: https://github.com/bchiang7/hackernews-userstyles
+  code: https://github.com/bchiang7/hackernews-userstyles
+  description: Upon coming across the <a href="https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe" target="_blank">Stylish</a> Chrome Extension, I decided to fork a theme for <a href="https://news.ycombinator.com/" target="_blank">HackerNews</a> to tweak myself. I've always enjoyed reading the articles on HackerNews, but always hated actually looking at the website. The content is good, but the styling is awful. So, I whipped up some quick CSS to make the site easier on the eyes while maintaining a similar look to the original style. Give the theme a try by following the instructions in the github repo linked above.
+  img: hackernews
+  used:
+    - thing: CSS
+
 - title: Weather Widget
   demo: http://quiet-dusk-89245.herokuapp.com/
   code: https://github.com/bchiang7/DemoWebApp
