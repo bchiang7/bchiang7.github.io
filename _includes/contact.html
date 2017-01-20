@@ -11,7 +11,8 @@
         <p class="contact-description">Have a sweet project in mind or just want to say hi? Feel free to send me a message!</p>
       </div>
       <div class="contact-wrapper">
-        <form class="form-wrapper" autocomplete="off" method="post" action="https://formspree.io/brittany.chiang@gmail.com">
+        <form id="contactform" class="form-wrapper" method="POST" autocomplete="off">
+          <input type="text" name="_gotcha" style="display:none" >
           <div class="input-wrapper">
             <label for="name" class="input-label">Name</label>
             <input type="text" name="name" class="contact-input" id="name" required>
@@ -28,7 +29,6 @@
             <label for="message" class="input-label" id="message-label">Message</label>
             <textarea name="message" class="contact-input autoExpand" id="message" required></textarea>
           </div>
-          <input type="text" name="_gotcha" style="display:none" />
           <button type="submit" name="submit" class="message-btn">
             <span>Send Message</span>
           </button>
