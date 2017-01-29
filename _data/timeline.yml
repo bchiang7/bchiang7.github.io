@@ -34,8 +34,22 @@
   date: May 2016 - Present
 
 - position: Software Engineer Co-op
-  company: Starry, Inc.
+  company: Starry
   url: https://starry.com/
   description: Engineered and maintained major features of Starry's customer-facing web app using ES6, Handlebars, Backbone, Marionette, and CSS. Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with Starry Station. Worked closely with designers and other developers to ensure thoughtful and coherent user experiences across Starry’s mobile apps.
   sprite: industry
   date: July - Dec 2016
+
+- position: Developer
+  company: Scout Studio
+  url: http://www.northeastern.edu/scout/
+  description: Worked with a small team of designers within Northeastern University's student-led design studio.
+  sprite: university
+  date: Jan 2017 - Present
+
+# - position: UI Engineer Co-op
+#   company: Apple
+#   url: http://www.apple.com/
+#   description: Worked on iTunes using Ember.js
+#   sprite: industry
+#   date: July - Dec 2017
