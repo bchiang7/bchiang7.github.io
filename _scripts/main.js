@@ -22,7 +22,7 @@ $(function() {
 
 
   function smoothScroll(target) {
-    $('body').animate({ 'scrollTop': target.offset().top + 50 }, 500);
+    $('body, html').animate({ 'scrollTop': target.offset().top + 50 }, 500);
   }
 
   $('.scroll-down').on('click', function(ev) {
