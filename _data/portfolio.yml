@@ -96,7 +96,7 @@
 
 - title: One Card For All
   demo: http://onecardforall.org
-  description: At MullenLowe, I helped build this 2015 holiday site around an algorithm that generated a holiday greeting to each and every person on the planet. We also accounted for newcomers being added at an amazing rate. Overall, the website is a tranquil, animated experience. As new names appear, visitors can watch them fall, like snowflakes, onto a stylized world map. Users can also find their own name and see it as part of the world collective. Check out this short <a href="https://vimeo.com/152734803" target="_blank">video</a> describing the project!
+  description: At MullenLowe, I helped build this 2015 holiday site around an algorithm that generated a holiday greeting to each and every person on the planet. We also accounted for newcomers being added at an amazing rate. Overall, the website is a tranquil, animated experience. As new names appear, visitors can watch them fall, like snowflakes, onto a stylized world map. Users can also find their own name and see it as part of the world collective. Check out this short <a href="http://us.mullenlowe.com/work/one-card-for-all/" target="_blank">video</a> describing the project!
   img: onecard
   used:
     - thing: HTML
@@ -106,7 +106,7 @@
 
 - title: JetBlue HumanKinda
   demo: http://jetbluehumankinda.com
-  description: During my first co-op as a creative technologist at Mullen Lowe, I played a major role in the development of this Tumblr site to complement JetBlue's HumanKinda campaign and documentary. The site houses the video documentary at the top, the many graphics created by Mullen for the campaign, and an interactive quiz to determine how "HumanKinda" you are. This project was featured on <a href="http://www.adweek.com/adfreak/jetblue-makes-16-minute-film-about-being-less-busy-and-its-surprisingly-fun-167714" target="_blank">AdWeek</a>, <a href="http://www.fastcocreate.com/3052562/see-how-ridiculously-busy-we-all-are-in-humankinda-a-short-film-from-jetblue" target="_blank">Fast Company</a>, and <a href="http://digiday.com/brands/humankinda-jetblue-makes-first-foray-longform-content/" target="_blank">Digiday</a>!
+  description: During my first co-op as a creative technologist at Mullen Lowe, I played a major role in the development of this Tumblr site to complement JetBlue's HumanKinda campaign and documentary. The site houses the video documentary at the top, the many graphics created by Mullen for the campaign, and an interactive quiz to determine how "HumanKinda" you are. Learn more about this project <a href="http://us.mullenlowe.com/work/humankinda/" target="_blank">here</a>!
   img: humankinda
   used:
     - thing: HTML
