@@ -127,7 +127,7 @@
           width: 70px;
           margin: 0 auto;
           transition: all 0.3s ease;
-          &:hover {
+          &:hover, &:focus {
             transition: all 0.3s ease;
             .logo {
               opacity: 0;

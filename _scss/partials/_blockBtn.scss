@@ -14,7 +14,7 @@
   letter-spacing: 1px;
   overflow: hidden;
   transition: background-color 0.5s linear;
-  &:hover {
+  &:hover, &:focus {
     background: $blue;
     transition: all 0.3s ease;
     .resume-text {

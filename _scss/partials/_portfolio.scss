@@ -184,7 +184,7 @@
             margin: 0 10px 30px 0;
             top: 0px;
           }
-          &:hover {
+          &:hover, &:focus {
             background: $blue;
             color: $white;
           }

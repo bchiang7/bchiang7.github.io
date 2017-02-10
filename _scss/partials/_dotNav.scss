@@ -26,10 +26,12 @@
       display: inline-block;
       transform: scale(0.6);
     }
-    &:hover span {
+    &:hover span,
+    &:focus span {
       transform: scale(0.75);
     }
-    &:hover .dot-label {
+    &:hover .dot-label,
+    &:focus .dot-label {
       opacity: 1;
     }
     &.is-selected .dot {

@@ -201,7 +201,7 @@
             margin-left: 50px;
             padding: 1.5em 1em 2.5em;
           }
-          &:hover {
+          &:hover, &:focus {
             opacity: 1;
             + .timeline-img {
               background: $blue;
@@ -246,7 +246,7 @@
               color: $blue;
               display: inline;
               transition: all 0.3s ease;
-              &:hover {
+              &:hover, &:focus {
                 color: #00dded;
               }
             }
