@@ -1,8 +1,8 @@
 'use strict';
 
 const gulp        = require('gulp');
-const browserSync = require('browser-sync');
-const cp          = require('child_process');
+// const browserSync = require('browser-sync');
+// const cp          = require('child_process');
 // const sass        = require('gulp-sass');
 // const prefix      = require('gulp-autoprefixer');
 // const cleanCSS    = require('gulp-clean-css');
@@ -15,39 +15,39 @@ const sass    = require('./build/sass');
 const scripts = require('./build/scripts');
 const images  = require('./build/images');
 const fonts   = require('./build/fonts');
-// const sync    = require('./build/browsersync');
+const sync    = require('./build/browsersync');
 
-const jekyll      = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
+// const jekyll      = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 
-// Build the Jekyll Site
-gulp.task('jekyll-build', done => {
-  return cp.spawn( jekyll , ['build', '--drafts', '--config', '_config.yml'], {stdio: 'inherit'})
-  .on('close', done);
-});
+// // Build the Jekyll Site
+// gulp.task('jekyll-build', done => {
+//   return cp.spawn( jekyll , ['build', '--drafts', '--config', '_config.yml'], {stdio: 'inherit'})
+//   .on('close', done);
+// });
 
-// Rebuild Jekyll & reload the page
-gulp.task('jekyll-rebuild', ['jekyll-build'], () => {
-  browserSync.reload();
-});
+// // Rebuild Jekyll & reload the page
+// gulp.task('jekyll-rebuild', ['jekyll-build'], () => {
+//   browserSync.reload();
+// });
 
-// Wait for jekyll-build task to complete, then launch the Server
-gulp.task('browser-sync', ['sass', 'scripts', 'jekyll-build'], () => {
-  browserSync({
-    server: {
-      baseDir: '_site'
-    }
-  });
-});
+// // Wait for jekyll-build task to complete, then launch the Server
+// gulp.task('browser-sync', ['sass', 'scripts', 'jekyll-build'], () => {
+//   browserSync({
+//     server: {
+//       baseDir: '_site'
+//     }
+//   });
+// });
 
-const scssPath = ['_scss/**/*.scss','_scss/*.scss'];
-const jsPath = ['_scripts/*.js'];
-const templatePath = ['index.html', '404.html', '_layouts/*.html', '_includes/*.html', '_data/*.yml', '_posts/*', '_drafts/*', '**/*.html'];
+// const scssPath = ['_scss/**/*.scss','_scss/*.scss'];
+// const jsPath = ['_scripts/*.js'];
+// const templatePath = ['index.html', '404.html', '_layouts/*.html', '_includes/*.html', '_data/*.yml', '_posts/*', '_drafts/*', '**/*.html'];
 
-gulp.task('watch', () => {
-  gulp.watch(scssPath, ['sass', 'jekyll-rebuild']);
-  gulp.watch(jsPath, ['scripts', 'jekyll-rebuild']);
-  gulp.watch(templatePath, ['jekyll-rebuild']);
-});
+// gulp.task('watch', () => {
+//   gulp.watch(scssPath, ['sass', 'jekyll-rebuild']);
+//   gulp.watch(jsPath, ['scripts', 'jekyll-rebuild']);
+//   gulp.watch(templatePath, ['jekyll-rebuild']);
+// });
 
 // gulp.task('styles', () => {
 //   return gulp.src('_scss/*.scss')
@@ -83,10 +83,10 @@ gulp.task('watch', () => {
 //   .pipe(gulp.dest('_site/fonts'));
 // });
 
-[ sass, scripts, images, fonts ].forEach( task => {
+// gulp.task('serve', ['browser-sync', 'watch']);
+
+[ sass, scripts, images, fonts, sync ].forEach( task => {
   task( gulp );
 });
-
-gulp.task('serve', ['browser-sync', 'watch']);
 
 gulp.task('build', ['sass', 'scripts', 'images', 'fonts', 'jekyll-build']);
