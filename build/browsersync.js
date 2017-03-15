@@ -1,4 +1,4 @@
-const browserSync  = require('browser-sync');
+const browserSync  = require('browser-sync').create();
 const cp           = require('child_process');
 
 const jekyll       = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
@@ -20,21 +20,16 @@ module.exports = gulp => {
     browserSync.reload();
   });
 
-  // Wait for jekyll-build task to complete, then launch the Server
-  gulp.task('browser-sync', ['sass', 'scripts', 'jekyll-build'], () => {
-    browserSync({
+  gulp.task('serve', ['jekyll-build'], () => {
+    browserSync.init({
       server: {
         baseDir: '_site'
       }
     });
-  });
 
-  gulp.task('watch', () => {
     gulp.watch(scssPath, ['sass', 'jekyll-rebuild']);
     gulp.watch(jsPath, ['scripts', 'jekyll-rebuild']);
     gulp.watch(templatePath, ['jekyll-rebuild']);
   });
-
-  gulp.task('serve', ['browser-sync', 'watch']);
 
 }
