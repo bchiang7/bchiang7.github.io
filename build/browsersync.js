@@ -9,9 +9,9 @@ const templatePath = [ '**/*.html', '**/*.yml', '_posts/*', '_drafts/*'];
 
 module.exports = gulp => {
 
-  // Build the Jekyll Site
+  // run `jekyll build`
   gulp.task('jekyll-build', done => {
-    return cp.spawn( jekyll , ['build', '--drafts', '--config', '_config.yml'], {stdio: 'inherit'})
+    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
     .on('close', done);
   });
 
