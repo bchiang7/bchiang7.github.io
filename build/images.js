@@ -7,7 +7,7 @@ module.exports = gulp => {
 
   gulp.task('images', () => {
     return gulp.src( imgPath )
-    .pipe(imagemin())
+    .pipe( imagemin() )
     .pipe(gulp.dest( destPath ));
   });
 

@@ -1,8 +1,8 @@
-const jshint      = require('gulp-jshint');
-const babel       = require('gulp-babel');
-const uglify      = require('gulp-uglify');
+const jshint   = require('gulp-jshint');
+const babel    = require('gulp-babel');
+const uglify   = require('gulp-uglify');
 
-const jsPath = '_scripts/*.js';
+const jsPath   = '_scripts/*.js';
 const destPath = '_site/js';
 
 module.exports = gulp => {
@@ -13,7 +13,7 @@ module.exports = gulp => {
     .pipe(babel({
       presets: ['es2015']
     }))
-    .pipe(uglify())
+    .pipe( uglify() )
     .pipe(gulp.dest( destPath ))
     .pipe(gulp.dest( 'js' ));
   });
