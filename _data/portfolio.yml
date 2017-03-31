@@ -34,7 +34,7 @@
   - thing: Cordova
 
 - title: Online Resume
-  demo: http://brittanychiang.com/resume
+  demo: http://brittanychiang.com/react-profile/
   code: https://github.com/bchiang7/react-profile/
   description: This is just an online version of my resume I made for fun. I was interested in learning React.js, so I found this <a href="https://medium.com/learning-new-stuff/building-your-first-react-js-app-d53b0c98dc#.1439cdewq">simple tutorial</a> and it kind of spun into this weekend project. I probably didn't need to use React at all, but hey, at least I learned a few things!
   img: resume

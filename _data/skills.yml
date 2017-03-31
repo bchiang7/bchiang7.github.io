@@ -2,19 +2,19 @@ development:
   - item: JavaScript
   - item: HTML5
   - item: CSS3
-  - item: Handlebars
+  - item: Jekyll
+  - item: Python
+  - item: React
   - item: Backbone
   - item: Node.js
-  - item: Jekyll
-  - item: React
-  - item: Python
+  - item: Angular
 
 design:
+  - item: sketch
   - item: adobe-photoshop
   - item: adobe-indesign
   - item: adobe-illustrator
   - item: invision
-  - item: zeplin
 
 tools:
   - item: Git + Github
