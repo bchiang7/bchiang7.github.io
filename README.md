@@ -4,7 +4,7 @@ Hello! Thanks for checking out the repo for my latest portfolio website. This we
 
 ## Getting started
 - `npm install`
-- `gulp` to start a dev server
+- `gulp serve` to start a dev server
 - `gulp build` for prod
 
 ## What I used
