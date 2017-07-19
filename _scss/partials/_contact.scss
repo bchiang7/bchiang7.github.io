@@ -21,7 +21,7 @@
       padding: 0;
       margin-bottom: 10px;
       position: relative;
-      transition: all 0.5s ease;
+      transition: all 0.25s ease;
       @include MQ(M) {
         margin-bottom: 10px;
       }
@@ -76,7 +76,7 @@
         display: block;
         overflow: hidden;
         box-sizing: padding-box;
-        transition: all 0.5s ease;
+        transition: all 0.25s ease;
         &:focus {
           outline: 0;
           color: $white;

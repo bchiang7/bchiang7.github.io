@@ -1,0 +1,209 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  // background: $midpointBlue;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $Whitney, $sans-serif-stack;
+  height: 100%;
+  color: $white;
+  background-color: $dark-grey;
+}
+
+h1 {
+  font-family: $Chronicle, $serif-stack;
+  margin: 0;
+}
+
+h2, h3 {
+  font-family: $Gotham, $sans-serif-stack;
+  margin: 10px 0;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $Whitney, $sans-serif-stack;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.noScroll {
+  overflow: hidden;
+  height: 100%
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  min-height: 700px;
+  padding: 0;
+  overflow: hidden;
+  color: $white;
+  position: relative;
+  &:first-of-type {
+    background-color: #0054c7
+  }
+  &:nth-of-type(odd) {
+    background-color: #5b5b5b;
+  }
+  &:nth-of-type(even) {
+    background-color: $dark-grey;
+  }
+  a {
+    display: block;
+  }
+  .overlay-wrapper,
+  .section-wrapper {
+    padding: 100px;
+    @include MQ(MM) {
+      padding: 100px 50px;
+    }
+    @include MQ(S400) {
+      padding: 100px 25px;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.3em;
+      line-height: 1.5em;
+      @include MQ(SM) {
+        font-size: 1em;
+      }
+    }
+    .divider {
+      display: block;
+      margin: 30px 0px;
+      width: 100px;
+      height: 2px;
+      background-color: $blue;
+    }
+    .center {
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+  }
+  .overlay-wrapper {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, $overlayOpacity), rgba(0, 0, 0, $overlayOpacity), rgba(0, 0, 0, $overlayOpacity), rgba(0, 0, 0, $overlayOpacity), rgba(0, 0, 0, $overlayOpacity));
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.skrollr-desktop body {
+  height: 100% !important;
+}
+
+#skrollr-body {
+  height: 100%;
+  overflow: visible;
+  position: relative;
+}
+
+.gap,
+.skrollr .gap {
+  background: transparent !important;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#intro-section .bg {
+  z-index: 0;
+  background-image: url('../img/bg-intro/intro-xl.jpg');
+  @include MQ(L) {
+    background-image: url('../img/bg-intro/intro-lg.jpg');
+  }
+  @include MQ(MM) {
+    background-image: url('../img/bg-intro/intro-md.jpg');
+  }
+  @include MQ(S660) {
+    background-image: url('../img/bg-intro/intro-sm.jpg');
+  }
+  @include MQ(SM) {
+    background-image: url('../img/bg-intro/intro-xs.jpg');
+  }
+}
+
+#services-section .bg {
+  background-image: url('../img/bg-services/services-xl.jpg');
+  @include MQ(L) {
+    background-image: url('../img/bg-services/services-lg.jpg');
+  }
+  @include MQ(MM) {
+    background-image: url('../img/bg-services/services-md.jpg');
+  }
+  @include MQ(S660) {
+    background-image: url('../img/bg-services/services-sm.jpg');
+  }
+  @include MQ(SM) {
+    background-image: url('../img/bg-services/services-xs.jpg');
+  }
+}
+
+#experience-section .bg {
+  background-image: url('../img/bg-experience/experience-xl.jpg');
+  @include MQ(L) {
+    background-image: url('../img/bg-experience/experience-lg.jpg');
+  }
+  @include MQ(MM) {
+    background-image: url('../img/bg-experience/experience-md.jpg');
+  }
+  @include MQ(S660) {
+    background-image: url('../img/bg-experience/experience-sm.jpg');
+  }
+  @include MQ(SM) {
+    background-image: url('../img/bg-experience/experience-xs.jpg');
+  }
+}
+
+#contact-section .bg {
+  background-image: url('../img/bg-contact/contact-xl.jpg');
+  @include MQ(L) {
+    background-image: url('../img/bg-contact/contact-lg.jpg');
+  }
+  @include MQ(MM) {
+    background-image: url('../img/bg-contact/contact-md.jpg');
+  }
+  @include MQ(S660) {
+    background-image: url('../img/bg-contact/contact-sm.jpg');
+  }
+  @include MQ(SM) {
+    background-image: url('../img/bg-contact/contact-xs.jpg');
+  }
+}
