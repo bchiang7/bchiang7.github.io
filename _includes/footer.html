@@ -1,12 +1,20 @@
-<section id="footer" class="section">
-  <div class="section-wrapper">
-    <ul class="soc">
-      {% for link in site.social %}
-      <li class="soc-item"><a href="{{link.url}}" target="_blank" class="icon {{link.title}}" title="{{link.title}}"><img src="img/icons/{{link.title}}.svg" alt="{{link.title}}"></a></li>
-      {% endfor %}
-    </ul>
-    <div class="copyright-wrapper center">
-      <p>&copy;&nbsp;&nbsp;{{site.name}} 2017</p>
+<footer class="footer">
+  <div class="footer__copyright">
+    <div class="top">
+      <span>Designed &amp; Developed by</span>
+    </div>
+    <div class="bottom">
+      <span>Brittany Chiang</span>
+      <img class="emoji" src="{{site.baseurl}}/img/emojis/rockon.png" alt="emoji">
+      <span>2017</span>
     </div>
   </div>
-</section>
+  <div class="footer__links">
+    {% for link in site.social %}
+    <a href="{{link.url}}" target="_blank" title="{{link.title}}">
+      <span class="text">{{link.title}}</span>
+      <img src="{{site.baseurl}}/img/social/{{link.title}}.svg" alt="{{link.title}}">
+    </a>
+    {% endfor %}
+  </div>
+</footer>

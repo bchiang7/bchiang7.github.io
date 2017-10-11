@@ -2,6 +2,9 @@
   "root": true,
   "extends": "starry",
   "rules": {
-    "no-var": 0,
+    "starry/space-in-parens": ["error", "never"],
+    "starry/computed-property-spacing": ["error", "never"],
+    "object-curly-spacing": [2, "never"],
+    "array-bracket-spacing": ["error", "never"]
   }
 }

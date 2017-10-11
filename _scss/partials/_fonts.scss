@@ -1,89 +1,106 @@
-@font-face {
-  font-family: 'Chronicle Display Bold';
-  src: url('../fonts/chronicle-display/ChronicleDisplay-Bold.eot');
-  src: url('../fonts/chronicle-display/ChronicleDisplay-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/chronicle-display/ChronicleDisplay-Bold.woff2') format('woff2'), url('../fonts/chronicle-display/ChronicleDisplay-Bold.woff') format('woff'), url('../fonts/chronicle-display/ChronicleDisplay-Bold.ttf') format('truetype'), url('../fonts/chronicle-display/ChronicleDisplay-Bold.svg#ChronicleDisplay-Bold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* ===== WHITNEY ===== */
-/* - Book 400
-** - Book Italic 400
+/* ===== APERCU ===== */
+/* - Light 300
+** - Light Italic 300
+** - Regular 400
+** - Regular Italic 400
 ** - Medium 500
 ** - Medium Italic 500
 ** - Bold  700
+** - Bold Italic  700
 */
 
 @font-face {
-  font-family: 'Whitney';
-  src: url('../fonts/whitney/whitney-book.woff2') format('woff2'), url('../fonts/whitney/whitney-book.woff') format('woff'), url('../fonts/whitney/whitney-book.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Apercu';
+  src: url('../fonts/apercu/Apercu-Light.eot');
+  src: url('../fonts/apercu/Apercu-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/apercu/Apercu-Light.woff2') format('woff2'),
+    url('../fonts/apercu/Apercu-Light.woff') format('woff'),
+    url('../fonts/apercu/Apercu-Light.ttf') format('truetype'),
+    url('../fonts/apercu/Apercu-Light.svg#Apercu-Light') format('svg');
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Whitney';
-  src: url('../fonts/whitney/whitney-bookitalic.woff2') format('woff2'), url('../fonts/whitney/whitney-bookitalic.woff') format('woff'), url('../fonts/whitney/whitney-bookitalic.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Apercu';
+  src: url('../fonts/apercu/Apercu-LightItalic.eot');
+  src: url('../fonts/apercu/Apercu-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/apercu/Apercu-LightItalic.woff2') format('woff2'),
+    url('../fonts/apercu/Apercu-LightItalic.woff') format('woff'),
+    url('../fonts/apercu/Apercu-LightItalic.ttf') format('truetype'),
+    url('../fonts/apercu/Apercu-LightItalic.svg#Apercu-LightItalic') format('svg');
+  font-weight: 300;
   font-style: italic;
 }
+
 @font-face {
-  font-family: 'Whitney';
-  src: url('../fonts/whitney/whitney-medium.woff2') format('woff2'), url('../fonts/whitney/whitney-medium.woff') format('woff'), url('../fonts/whitney/whitney-medium.ttf') format('truetype');
+  font-family: 'Apercu';
+  src: url('../fonts/apercu/Apercu-Regular.eot');
+  src: url('../fonts/apercu/Apercu-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/apercu/Apercu-Regular.woff2') format('woff2'),
+    url('../fonts/apercu/Apercu-Regular.woff') format('woff'),
+    url('../fonts/apercu/Apercu-Regular.ttf') format('truetype'),
+    url('../fonts/apercu/Apercu-Regular.svg#Apercu-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu';
+  src: url('../fonts/apercu/Apercu-Italic.eot');
+  src: url('../fonts/apercu/Apercu-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/apercu/Apercu-Italic.woff2') format('woff2'),
+    url('../fonts/apercu/Apercu-Italic.woff') format('woff'),
+    url('../fonts/apercu/Apercu-Italic.ttf') format('truetype'),
+    url('../fonts/apercu/Apercu-Italic.svg#Apercu-Italic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Apercu';
+  src: url('../fonts/apercu/Apercu-Medium.eot');
+  src: url('../fonts/apercu/Apercu-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/apercu/Apercu-Medium.woff2') format('woff2'),
+    url('../fonts/apercu/Apercu-Medium.woff') format('woff'),
+    url('../fonts/apercu/Apercu-Medium.ttf') format('truetype'),
+    url('../fonts/apercu/Apercu-Medium.svg#Apercu-Medium') format('svg');
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
-  font-family: 'Whitney';
-  src: url('../fonts/whitney/whitney-mediumitalic.woff2') format('woff2'), url('../fonts/whitney/whitney-mediumitalic.woff') format('woff'), url('../fonts/whitney/whitney-mediumitalic.ttf') format('truetype');
+  font-family: 'Apercu';
+  src: url('../fonts/apercu/Apercu-MediumItalic.eot');
+  src: url('../fonts/apercu/Apercu-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/apercu/Apercu-MediumItalic.woff2') format('woff2'),
+    url('../fonts/apercu/Apercu-MediumItalic.woff') format('woff'),
+    url('../fonts/apercu/Apercu-MediumItalic.ttf') format('truetype'),
+    url('../fonts/apercu/Apercu-MediumItalic.svg#Apercu-MediumItalic') format('svg');
   font-weight: 500;
   font-style: italic;
 }
+
 @font-face {
-  font-family: 'Whitney';
-  src: url('../fonts/whitney/whitney-bold.woff2') format('woff2'), url('../fonts/whitney/whitney-bold.woff') format('woff'), url('../fonts/whitney/whitney-bold.ttf') format('truetype');
+  font-family: 'Apercu';
+  src: url('../fonts/apercu/Apercu-Bold.eot');
+  src: url('../fonts/apercu/Apercu-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/apercu/Apercu-Bold.woff2') format('woff2'),
+    url('../fonts/apercu/Apercu-Bold.woff') format('woff'),
+    url('../fonts/apercu/Apercu-Bold.ttf') format('truetype'),
+    url('../fonts/apercu/Apercu-Bold.svg#Apercu-Bold') format('svg');
   font-weight: 700;
   font-style: normal;
 }
 
-/* ===== GOTHAM ===== */
-/* - Book 400
-** - Medium 500
-** - Bold  700
-*/
-
 @font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/gotham/Gotham-Book.eot');
-  src: url('../fonts/gotham/Gotham-Book.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/gotham/Gotham-Book.woff2') format('woff2'),
-    url('../fonts/gotham/Gotham-Book.woff') format('woff'),
-    url('../fonts/gotham/Gotham-Book.ttf') format('truetype'),
-    url('../fonts/gotham/Gotham-Book.svg#Gotham-Book') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/gotham/Gotham-Medium.eot');
-  src: url('../fonts/gotham/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/gotham/Gotham-Medium.woff2') format('woff2'),
-    url('../fonts/gotham/Gotham-Medium.woff') format('woff'),
-    url('../fonts/gotham/Gotham-Medium.ttf') format('truetype'),
-    url('../fonts/gotham/Gotham-Medium.svg#Gotham-Medium') format('svg');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/gotham/Gotham-Bold.eot');
-  src: url('../fonts/gotham/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/gotham/Gotham-Bold.woff2') format('woff2'),
-    url('../fonts/gotham/Gotham-Bold.woff') format('woff'),
-    url('../fonts/gotham/Gotham-Bold.ttf') format('truetype'),
-    url('../fonts/gotham/Gotham-Bold.svg#Gotham-Bold') format('svg');
-  font-weight: bold;
-  font-style: normal;
+  font-family: 'Apercu';
+  src: url('../fonts/apercu/Apercu-BoldItalic.eot');
+  src: url('../fonts/apercu/Apercu-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/apercu/Apercu-BoldItalic.woff2') format('woff2'),
+    url('../fonts/apercu/Apercu-BoldItalic.woff') format('woff'),
+    url('../fonts/apercu/Apercu-BoldItalic.ttf') format('truetype'),
+    url('../fonts/apercu/Apercu-BoldItalic.svg#Apercu-BoldItalic') format('svg');
+  font-weight: 700;
+  font-style: italic;
 }

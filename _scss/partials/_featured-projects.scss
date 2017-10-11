@@ -1,0 +1,73 @@
+.featured-projects {
+  a:after {
+    display: none;
+  }
+  .project {
+    display: flex;
+    margin-bottom: 100px;
+    margin-left: -5%;
+    width: 125%;
+    @include thirteen {
+      width: 115%;
+    }
+    @include desktop {
+      width: 105%;
+    }
+    @include tablet {
+      width: 100%;
+      display: block;
+      margin-bottom: 70px;
+    }
+    &.screentime {
+      margin-bottom: 70px;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &__pic {
+      max-width: 700px;
+      overflow: visible;
+      margin: 0;
+      a {
+        display: block;
+      }
+      &.phones {
+        a {
+          display: flex;
+          justify-content: space-between;
+        }
+        .phone {
+          margin: 0 -7%;
+          &:first-of-type {
+            margin-left: -5%;
+          }
+        }
+      }
+      img {
+        width: 100%;
+        max-width:100%;
+        vertical-align: bottom;
+      }
+    }
+    &__caption {
+      width: 125px;
+      flex-shrink: 0;
+      margin-left: 30px;
+      @include tablet {
+        width: 100%;
+        margin-top: 25px;
+        margin-left: 0;
+      }
+    }
+    &__name {
+      margin-bottom: 10px;
+      a {
+        font-weight: 700;
+      }
+    }
+    p {
+      font-size: 0.8rem;
+      line-height: 1.3;
+    }
+  }
+}

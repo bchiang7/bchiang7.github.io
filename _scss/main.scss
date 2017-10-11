@@ -1,18 +1,13 @@
-@import 'bourbon/bourbon';
-@import 'partials/mixins';
-@import 'partials/variables';
+@import 'partials/globals';
 @import 'partials/fonts';
 @import 'partials/base';
-@import 'partials/dotNav';
-@import 'partials/mobileMenu';
-@import 'partials/blockBtn';
+@import 'partials/switch';
 @import 'partials/intro';
-@import 'partials/about';
-@import 'partials/services';
+@import 'partials/background';
 @import 'partials/skills';
 @import 'partials/experience';
-@import 'partials/portfolio';
-@import 'partials/contact';
+@import 'partials/employment-status';
+@import 'partials/featured-projects';
+@import 'partials/other-projects';
 @import 'partials/footer';
 @import 'partials/404';
-

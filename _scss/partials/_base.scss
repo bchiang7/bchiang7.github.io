@@ -7,203 +7,224 @@
 }
 
 ::selection {
-  // background: $midpointBlue;
+  background: $yellow;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
-  font-family: $Whitney, $sans-serif-stack;
-  height: 100%;
-  color: $white;
-  background-color: $dark-grey;
-}
+  background-color: $white;
+  color: $dark-grey;
+  font-family: $Apercu, $sans-serif-stack;
+  line-height: 1.5;
 
-h1 {
-  font-family: $Chronicle, $serif-stack;
-  margin: 0;
-}
-
-h2, h3 {
-  font-family: $Gotham, $sans-serif-stack;
-  margin: 10px 0;
-}
-
-p {
-  margin: 0;
-  margin-bottom: 10px;
-  font-family: $Whitney, $sans-serif-stack;
-}
-
-a {
-  text-decoration: none;
-  color: $white;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.noScroll {
-  overflow: hidden;
-  height: 100%
-}
-
-.center {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.section {
-  width: 100%;
-  height: auto;
-  min-height: 700px;
-  padding: 0;
-  overflow: hidden;
-  color: $white;
-  position: relative;
-  &:first-of-type {
-    background-color: #0054c7
-  }
-  &:nth-of-type(odd) {
-    background-color: #5b5b5b;
-  }
-  &:nth-of-type(even) {
-    background-color: $dark-grey;
-  }
   a {
-    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    color: $black;
+    transition: all 0.25s ease-in-out;
   }
-  .overlay-wrapper,
-  .section-wrapper {
-    padding: 100px;
-    @include MQ(MM) {
-      padding: 100px 50px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  strong {
+    font-weight: 700;
+    color: $black;
+  }
+
+  &.night {
+    background-color: $night;
+    color: $slate;
+    ::selection {
+      color: $black;
+      background: $yellow;
     }
-    @include MQ(S400) {
-      padding: 100px 25px;
-    }
-    h1 {
-      font-size: 3em;
-    }
-    p {
-      font-size: 1.3em;
-      line-height: 1.5em;
-      @include MQ(SM) {
-        font-size: 1em;
+    .switch-wrapper {
+      .sun {
+        background: url('../img/switch/sun-white.svg') no-repeat center;
+        background-size: 100%;
+      }
+      .moon {
+        background: url('../img/switch/moon-white.svg') no-repeat center;
+        background-size: 100%;
       }
     }
-    .divider {
+    a,
+    strong,
+    .intro,
+    .skills .skillz__category__label,
+    .experience .job__time,
+    .footer__copyright {
+      color: $off-white;
+    }
+    .section__content .underline-link:after {
+      background: $off-white;
+    }
+  }
+
+
+  .emoji {
+    display: inline-block;
+    vertical-align: text-top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .section {
+    display: flex;
+    justify-content: center;
+    padding: 100px 170px;
+    @include thirteen {
+      padding: 100px;
+    }
+    @include desktop {
+      padding: 50px;
+    }
+    @include tablet {
       display: block;
-      margin: 30px 0px;
-      width: 100px;
-      height: 2px;
-      background-color: $blue;
     }
-    .center {
-      margin-right: auto;
-      margin-left: auto;
-      text-align: center;
+    @include mobile {
+      padding: 50px 35px;
+    }
+    &__title {
+      flex-shrink: 0;
+      width: 200px;
+      margin-right: 70px;
+      color: $blue;
+      text-transform: uppercase;
+      text-align: right;
+      font-weight: 700;
+      letter-spacing: 2px;
+      @include desktop {
+        margin-right: 50px;
+      }
+      @include little-desktop {
+        width: 150px;
+      }
+      @include tablet {
+        text-align: left;
+        width: auto;
+      }
+    }
+    &__content {
+      font-weight: 300;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 650px;
+      @include tablet {
+        padding-top: 30px;
+        padding-left: 50px;
+      }
+      @include mobile {
+        padding-left: 30px;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 25px;
+      }
+      .underline-link {
+        position: relative;
+        display: inline-block;
+        &:after {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: $black;
+          content: '';
+          opacity: 0;
+          transition: height 0.3s, opacity 0.3s, transform 0.3s;
+          transform: translateY(-5px);
+        }
+        &:hover:after,
+        &:focus:after {
+          height: 2px;
+          border-radius: 3px;
+          opacity: 1;
+          transform: translateY(-2px);
+        }
+      }
     }
   }
-  .overlay-wrapper {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, $overlayOpacity), rgba(0, 0, 0, $overlayOpacity), rgba(0, 0, 0, $overlayOpacity), rgba(0, 0, 0, $overlayOpacity), rgba(0, 0, 0, $overlayOpacity));
-    width: 100%;
-    height: 100%;
+
+  .arrow-link {
+    font-weight: 700;
+    display: inline-block;
+    transition: all 0.15s ease-in-out;
+    background-color: transparent;
+    white-space: nowrap;
+    &:after {
+      position: relative;
+      bottom: 2px;
+      margin-left: 15px;
+      content: "";
+      background: url('../img/arrow.png') no-repeat center;
+      background-size: 100%;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transition: all .15s ease-in-out;
+    }
+    &:hover:after {
+      transform: translateX(7px);
+    }
   }
+
+  .small {
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-top: 15px;
+    &:after {
+      display: none;
+    }
+  }
+
+  #top-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 40px;
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: none;
+    @include desktop {
+      bottom: 20px;
+      right: 7px;
+      width: 35px;
+    }
+    @include mobile {
+      bottom: 15px;
+      right: 3px;
+    }
+
+    &:hover, &:focus {
+      transform: translateY(-10px);
+    }
+    img {
+      width: 100%;
+    }
+  }
+
 }
 
-.skrollr-desktop body {
-  height: 100% !important;
+
+.waypoint {
+ opacity: 0;
+ transform: translate3d(0,20px,0);
+ transition: opacity .6s cubic-bezier(.694,0,.335,1),transform .6s cubic-bezier(.694,0,.335,1);
 }
 
-#skrollr-body {
-  height: 100%;
-  overflow: visible;
-  position: relative;
-}
-
-.gap,
-.skrollr .gap {
-  background: transparent !important;
-}
-
-.bg {
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-  overflow: hidden;
-}
-
-#intro-section .bg {
-  z-index: 0;
-  background-image: url('../img/bg-intro/intro-xl.jpg');
-  @include MQ(L) {
-    background-image: url('../img/bg-intro/intro-lg.jpg');
-  }
-  @include MQ(MM) {
-    background-image: url('../img/bg-intro/intro-md.jpg');
-  }
-  @include MQ(S660) {
-    background-image: url('../img/bg-intro/intro-sm.jpg');
-  }
-  @include MQ(SM) {
-    background-image: url('../img/bg-intro/intro-xs.jpg');
-  }
-}
-
-#services-section .bg {
-  background-image: url('../img/bg-services/services-xl.jpg');
-  @include MQ(L) {
-    background-image: url('../img/bg-services/services-lg.jpg');
-  }
-  @include MQ(MM) {
-    background-image: url('../img/bg-services/services-md.jpg');
-  }
-  @include MQ(S660) {
-    background-image: url('../img/bg-services/services-sm.jpg');
-  }
-  @include MQ(SM) {
-    background-image: url('../img/bg-services/services-xs.jpg');
-  }
-}
-
-#experience-section .bg {
-  background-image: url('../img/bg-experience/experience-xl.jpg');
-  @include MQ(L) {
-    background-image: url('../img/bg-experience/experience-lg.jpg');
-  }
-  @include MQ(MM) {
-    background-image: url('../img/bg-experience/experience-md.jpg');
-  }
-  @include MQ(S660) {
-    background-image: url('../img/bg-experience/experience-sm.jpg');
-  }
-  @include MQ(SM) {
-    background-image: url('../img/bg-experience/experience-xs.jpg');
-  }
-}
-
-#contact-section .bg {
-  background-image: url('../img/bg-contact/contact-xl.jpg');
-  @include MQ(L) {
-    background-image: url('../img/bg-contact/contact-lg.jpg');
-  }
-  @include MQ(MM) {
-    background-image: url('../img/bg-contact/contact-md.jpg');
-  }
-  @include MQ(S660) {
-    background-image: url('../img/bg-contact/contact-sm.jpg');
-  }
-  @include MQ(SM) {
-    background-image: url('../img/bg-contact/contact-xs.jpg');
-  }
+.in-view {
+  opacity: 1;
+  transform: translateZ(0);
 }

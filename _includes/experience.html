@@ -1,33 +1,18 @@
-<section id="experience-section" class="section gap">
-  <div class="bg" data-anchor-target="#experience-section"
-  data-bottom-top="transform: translate3d(0px, -150px, 0px);"
-  data-top-bottom="transform: translate3d(0px, 150px, 0px);"
-  ></div>
-  <div class="overlay-wrapper">
-    <div class="fade-in">
-      <div class="center">
-        <h1 class="section-heading">Experience</h1>
-        <span class="divider center"></span>
-        <p class="experience-description">Thanks to Northeastern's co-op program, I've had the privilege of completing two awesome six-month co-ops as a Creative Technologist at <a href="http://us.mullenlowe.com/" target="_blank">MullenLowe U.S.</a> and Software Engineer at <a href="https://starry.com/" target="_blank">Starry</a>. Starting in July 2017, I'll be joining the iTunes team at <a href="https://apple.com/" target="_blank">Apple</a> as a UI Engineer for my third and final co-op!</p>
-      </div>
-      <div class="experience-wrapper">
-        <div id="timeline">
-          {% for item in site.data.timeline %}
-          <div class="timeline-block">
-            <div class="timeline-content">
-              <h2 class="position">{{item.position}}</h2>
-              <h3 class="company"><a href="{{item.url}}" target="_blank">{{item.company}}</a></h3>
-              <p class="job-desc">{{item.description}}</p>
-            </div>
-            <div class="timeline-img">
-              <div class="sprite {{item.sprite}}"></div>
-            </div>
-            <span class="date">{{item.date}}</span>
-          </div>
-          {% endfor %}
+<section class="section experience">
+  <div class="section__title">Experience</div>
+  <div class="section__content">
+    <div class="jobs">
+      {% for job in site.data.experience %}
+      <div class="job">
+        <div class="time-place">
+          <div class="job__company"><a href="{{job.url}}" target="_blank">{{job.company}}</a></div>
+          <div class="job__time">{{job.time}}</div>
         </div>
-        <i class="down-arrow"></i>
+        <div class="job__position">{{job.position}}</div>
       </div>
+      {% endfor %}
     </div>
+
+    <a href="{{site.resume}}" target="_blank" class="arrow-link">View My Resume</a>
   </div>
 </section>

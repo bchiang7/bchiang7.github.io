@@ -1,31 +1,33 @@
-development:
-  - item: JavaScript
-  - item: HTML5
-  - item: CSS3
-  - item: Jekyll
+languages:
+  - item: JavaScript (ES6)
+  - item: HTML
+  - item: CSS/Sass
   - item: Python
-  - item: React
-  - item: Backbone
-  - item: Node.js
-  - item: Angular
+  - item: Java
+  - item: SQL
 
-design:
-  - item: sketch
-  - item: adobe-photoshop
-  - item: adobe-indesign
-  - item: adobe-illustrator
-  - item: invision
+frameworks:
+  - item: Jekyll
+  - item: Ember
+  - item: Backbone
+  - item: D3
+  - item: React
+  - item: Angular
+  - item: Cordova
 
 tools:
-  - item: Git + Github
-  - item: Command Line
+  - item: Node.js
+  - item: Bash
+  - item: Git & Github
+  - item: Gulp & Grunt
   - item: Chrome DevTools
-  - item: Grunt + Gulp
-  - item: Postman
+  - item: MongoDB
+  - item: MySQL
 
-knowledge:
-  - item: CSS Detangling
-  - item: ECMAScript 6
-  - item: Usability
-  - item: SEO
-  - item: TDD
+design:
+  - item: Sketch
+  - item: InDesign
+  - item: InVision
+  - item: Prototyping
+  - item: User Testing
+  - item: Typography

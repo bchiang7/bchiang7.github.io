@@ -1,171 +1,135 @@
-#intro-section {
-  .intro-wrapper {
-    // background: linear-gradient(45deg, $blueRGBA , $purpleRGBA );
-    padding: 0;
-    padding-bottom: 20px;
-    .intro-body {
-      width: 100%;
-      height: 101vh;
-      overflow: hidden;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      @include reveal(reveal-up, 100%);
-      @include reveal(reveal-down, -100%);
-      @keyframes loading-mask {
-        0%,
-        100% {
-          transform: scaleX(0);
+.intro {
+  padding: 120px 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1440px;
+  margin: 0 auto;
+  @include weird-medium {
+    padding: 120px 70px;
+  }
+  @include phablet {
+    padding: 120px 50px;
+  }
+  @include mobile {
+    padding: 70px 50px;
+  }
+
+  &__hello, &__tagline {
+    font-size: 2.5rem;
+    @include desktop {
+      font-size: 2.25rem;
+    }
+    @include tablet {
+      font-size: 2rem;
+    }
+    @include phablet {
+      font-size: 1.75rem;
+    }
+    @include small-mobile {
+      font-size: 1.5rem;
+    }
+    @include tiny-mobile {
+      font-size: 1.4rem;
+    }
+    .emoji {
+      width: 40px;
+      height: 40px;
+      @include desktop {
+        width: 35px;
+        height: 35px;
+      }
+      @include tablet {
+        width: 30px;
+        height: 30px;
+      }
+      @include small-mobile {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  &__hello {
+    font-weight: 300;
+    .wave-hand {
+      background-image: url('../img/emojis/wave.png');
+      margin-left: 10px;
+      cursor: pointer;
+
+      &.animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+      &.wave {
+        animation-name: wave;
+      }
+
+      @keyframes wave {
+        from {
+          transform: none;
         }
-        40%,
+        15% {
+          transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
+        }
+        30% {
+          transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
+        }
+        45% {
+          transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
+        }
         60% {
-          transform: scaleX(1);
+          transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
+        }
+        75% {
+          transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
+        }
+        to {
+          transform: none;
         }
       }
-      .intro-content {
-        text-align: center;
-        padding: 0 5%;
-        width: 100%;
-        position: relative;
-        top: -5%;
-        .heading,
-        .heading .name,
-        .subtext,
-        .btn {
-          opacity: 0;
-          animation-duration: 0.8s;
-          animation-delay: 0.3s;
-          animation-fill-mode: forwards;
-          .no-cssanimations & {
-            opacity: 1;
-          }
-        }
-        .heading {
-          font-size: 4.5em;
-          font-weight: 700;
-          position: relative;
-          padding-bottom: 10px;
-          color: transparent;
-          overflow: hidden;
-          opacity: 1;
-          @include MQ(M) {
-            .name:before {
-              top: calc(100% + 18px);
-            }
-          }
-          @include MQ(SM) {
-            font-size: 4em;
-          }
-          &:after {
-            content: attr(data-content);
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            color: $white;
-            animation-name: reveal-up;
-            animation-fill-mode: backwards;
-            animation-duration: 0.4s;
-            animation-delay: 0.7s;
-          }
-          .name {
-            position: relative;
-            display: inline-block;
-            opacity: 1;
-            &:before {
-              /* this is the line */
-              content: '';
-              position: absolute;
-              top: calc(100% + 8px);
-              left: -1em;
-              height: 2px;
-              width: calc(100% + 2em);
-              background-color: $white;
-              animation: loading-mask 1s .3s both;
-            }
-          }
-        }
-        .action-wrapper {
-          overflow: hidden;
-          .subtext {
-            position: relative;
-            margin: 0;
-            padding: 0;
-            animation-name: reveal-down;
-            animation-duration: 0.4s;
-            animation-delay: 0.7s;
-            .btn {
-              display: inline-block;
-              padding: 1.2em 0;
-              font-size: 1.3rem;
-              font-weight: 500;
-              line-height: 1.5;
-              color: $white;
-              text-transform: uppercase;
-              font-family: $Gotham, $sans-serif-stack;
-              opacity: 1;
-              margin: 0;
-              @include MQ(SM) {
-                font-size: 1.1em;
-              }
-            }
-          }
+    }
+  }
+  &__tagline {
+    font-weight: 300;
+    max-width: 700px;
+    .name {
+      font-weight: 700;
+    }
+    .technologist {
+      background-image: url('../img/emojis/technologist.png');
+    }
+  }
+  &__contact {
+    font-size: 1.25rem;
+    font-weight: 400;
+    @include phablet {
+      font-size: 1rem;
+    }
+    .emoji {
+      &.pointer {
+        background-image: url('../img/emojis/pointright.png');
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+        vertical-align: text-bottom;
+        @include phablet {
+          width: 25px;
+          height: 25px;
         }
       }
-      .scroll-down-wrapper {
-        position: absolute;
-        bottom: 50px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        text-align: center;
+    }
+    .highlight-link {
+      font-weight: 400;
+      text-decoration: none;
+      display: inline-block;
+      padding: 2px 3px;
+      transition: all .2s ease-in-out;
+      text-decoration: none;
+      box-shadow: inset 0 -3px 0 $blue;
+      &:hover {
+        box-shadow: inset 0 -33px 0 0 $blue;
         color: $white;
-        .scroll-down {
-          display: block;
-          width: 70px;
-          margin: 0 auto;
-          transition: all 0.3s ease;
-          &:hover, &:focus {
-            transition: all 0.3s ease;
-            .logo {
-              opacity: 0;
-            }
-            .scroll-down-text {
-              opacity: 1;
-              visibility: visible;
-            }
-          }
-          .logo {
-            width: 35px;
-            transition: opacity 0.5s ease, visibility 0.5s;
-          }
-          .scroll-down-text {
-            color: $white;
-            font-family: $Gotham, $sans-serif-stack;
-            text-transform: uppercase;
-            font-size: 12px;
-            font-weight: 700;
-            text-align: center;
-            height: 100%;
-            opacity: 0;
-            padding-top: 0.5em;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            transition: opacity 0.5s ease, visibility 0.5s;
-            visibility: hidden;
-            width: 100%;
-            .chevron {
-              transform: rotate(90deg);
-              height: 20px;
-              display: block;
-              margin: 10px auto;
-            }
-          }
-        }
       }
     }
   }

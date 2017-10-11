@@ -1,0 +1,52 @@
+.status {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-family: 'Inconsolata', monospace;
+  margin-top: 50px;
+
+  &__light {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__ring {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      animation: pulsate 2s ease-out;
+      animation-iteration-count: infinite;
+      opacity: .0;
+      border: 3px solid $green;
+      border-radius: 30px;
+    }
+
+    @keyframes pulsate {
+      0% {
+        transform: scale(0.1, 0.1);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1.2, 1.2);
+        opacity: 0;
+      }
+    }
+
+    &__led {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: $green;
+      border-radius: 100%;
+    }
+  }
+
+  &__message {
+    margin-left: 10px;
+  }
+}
