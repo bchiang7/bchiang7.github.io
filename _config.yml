@@ -5,9 +5,9 @@ description: Design-minded front-end software engineer focused on building beaut
 url: https://brittanychiang.com/
 baseurl: ""
 email: brittany.chiang@gmail.com
-cover: http://brittanychiang.com/img/og.png
-logo: http://brittanychiang.com/img/emojis/technologist.png
-resume: http://brittanychiang.com/resume.pdf
+cover: https://brittanychiang.com/img/og.png
+logo: https://brittanychiang.com/img/emojis/technologist.png
+resume: https://brittanychiang.com/resume.pdf
 social:
   - title: email
     url: mailto:brittany.chiang@gmail.com
