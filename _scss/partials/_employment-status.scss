@@ -1,9 +1,11 @@
 .status {
   display: flex;
   align-items: center;
-  font-weight: 700;
+  font-size: 1.2rem;
+  // font-weight: 700;
   font-family: 'Inconsolata', monospace;
-  margin-top: 50px;
+  margin-top: 70px;
+  color: $night;
 
   &__light {
     width: 20px;
@@ -47,6 +49,6 @@
   }
 
   &__message {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 }
