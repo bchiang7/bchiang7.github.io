@@ -1,11 +1,12 @@
 .status {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
-  // font-weight: 700;
+  font-size: 1.1rem;
   font-family: 'Inconsolata', monospace;
+  // font-weight: 700;
   margin-top: 70px;
   color: $night;
+  // background-color: $yellow;
 
   &__light {
     width: 20px;
