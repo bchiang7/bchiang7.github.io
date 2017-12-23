@@ -57,14 +57,14 @@ html, body {
     .intro,
     .skills .skillz__category__label,
     .experience .job__time,
-    .footer__copyright {
+    .footer__copyright,
+    .status {
       color: $off-white;
     }
     .section__content .underline-link:after {
       background: $off-white;
     }
   }
-
 
   .emoji {
     display: inline-block;
