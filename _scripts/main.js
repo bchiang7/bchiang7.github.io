@@ -2,7 +2,7 @@ $(function() {
 
   const d = new Date();
   const hours = d.getHours();
-  const nighttime = (hours >= 19) || (hours <= 7); // 7pm <= hours <= 7am
+  const nighttime = (hours >= 19) || (hours <= 7); // between 7pm and 7am
   const body = document.querySelector('body');
   const toggle = document.getElementById('toggle');
   const input = document.getElementById('switch');

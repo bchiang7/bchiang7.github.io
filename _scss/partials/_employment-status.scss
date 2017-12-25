@@ -8,16 +8,16 @@
   // background-color: $yellow;
 
   &__light {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     &__ring {
       position: absolute;
-      width: 18px;
-      height: 18px;
+      width: 25px;
+      height: 25px;
       animation: pulsate 2s ease-out;
       animation-iteration-count: infinite;
       opacity: .0;
@@ -41,8 +41,8 @@
 
     &__led {
       position: absolute;
-      width: 10px;
-      height: 10px;
+      width: 13px;
+      height: 13px;
       background: $green;
       border-radius: 100%;
     }

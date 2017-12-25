@@ -9,7 +9,7 @@
   "author": "Brittany Chiang",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.20.0",
+    "browser-sync": "^2.21.0",
     "eslint-config-starry": "7.0.0",
     "eslint-plugin-starry": "5.0.0",
     "gulp": "3.9.1",

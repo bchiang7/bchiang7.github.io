@@ -12,7 +12,7 @@ module.exports = gulp => {
         useEslintrc: true
       }))
       .pipe(eslint.format())
-      .pipe(uglify())
+      // .pipe(uglify())
       .pipe(gulp.dest(destPath))
       .pipe(gulp.dest('js'));
   });
