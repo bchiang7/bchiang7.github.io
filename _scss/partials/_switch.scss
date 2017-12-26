@@ -47,6 +47,7 @@
       border-radius: 100px;
       position: relative;
       &:after {
+        @include transition;
         content: '';
         position: absolute;
         top: 3px;
@@ -55,7 +56,6 @@
         height: 19px;
         background: #fff;
         border-radius: 100%;
-        transition: 0.25s;
       }
     }
   }

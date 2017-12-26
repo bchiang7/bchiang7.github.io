@@ -19,10 +19,10 @@ html, body {
   line-height: 1.5;
 
   a {
+    @include transition;
     text-decoration: none;
     font-weight: 700;
     color: $black;
-    transition: all 0.25s ease-in-out;
   }
 
   ul {
@@ -141,24 +141,26 @@ html, body {
           transition: height 0.3s, opacity 0.3s, transform 0.3s;
           transform: translateY(-5px);
         }
-        &:hover:after,
-        &:focus:after {
-          height: 2px;
-          border-radius: 3px;
-          opacity: 1;
-          transform: translateY(-2px);
+        &:hover, &:focus {
+          &:after {
+            height: 2px;
+            border-radius: 3px;
+            opacity: 1;
+            transform: translateY(-2px);
+          }
         }
       }
     }
   }
 
   .arrow-link {
+    @include transition;
     font-weight: 700;
     display: inline-block;
-    transition: all 0.15s ease-in-out;
     background-color: transparent;
     white-space: nowrap;
     &:after {
+      @include transition;
       position: relative;
       bottom: 2px;
       margin-left: 15px;
@@ -169,7 +171,6 @@ html, body {
       height: 15px;
       display: inline-block;
       vertical-align: middle;
-      -webkit-transition: all .15s ease-in-out;
     }
     &:hover:after {
       transform: translateX(7px);
@@ -187,6 +188,7 @@ html, body {
   }
 
   #top-button {
+    @include transition;
     background: transparent;
     border: none;
     outline: none;
@@ -195,7 +197,6 @@ html, body {
     bottom: 25px;
     right: 10px;
     cursor: pointer;
-    transition: all 0.25s ease;
     display: none;
     @include desktop {
       bottom: 20px;
@@ -214,14 +215,13 @@ html, body {
       width: 100%;
     }
   }
-
 }
 
 
 .waypoint {
- opacity: 0;
- transform: translate3d(0,20px,0);
- transition: opacity .6s cubic-bezier(.694,0,.335,1),transform .6s cubic-bezier(.694,0,.335,1);
+  opacity: 0;
+  transform: translate3d(0,20px,0);
+  transition: opacity .6s cubic-bezier(.694,0,.335,1),transform .6s cubic-bezier(.694,0,.335,1);
 }
 
 .in-view {
