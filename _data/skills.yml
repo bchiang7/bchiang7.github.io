@@ -10,20 +10,19 @@ languages:
 frameworks:
   - item: Ember / Glimmer
   - item: Jekyll
-  - item: Backbone
   - item: D3
+  - item: Node
+  - item: Backbone
   - item: React
-  - item: Angular
   - item: Cordova
 
 tools:
-  - item: Node.js
   - item: Bash
   - item: Git & Github
   - item: Gulp & Grunt
   - item: Chrome DevTools
+  - item: Postman
   - item: MongoDB
-  - item: MySQL
 
 design:
   - item: Sketch
