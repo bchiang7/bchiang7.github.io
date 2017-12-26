@@ -1,13 +1,12 @@
 $(function() {
-
   const d = new Date();
   const hours = d.getHours();
-  const nighttime = (hours >= 19) || (hours <= 7); // between 7pm and 7am
+  const night = (hours >= 19) || (hours <= 7); // between 7pm and 7am
   const body = document.querySelector('body');
   const toggle = document.getElementById('toggle');
   const input = document.getElementById('switch');
 
-  if (nighttime) {
+  if (night) {
     input.checked = true;
     body.classList.add('night');
   }

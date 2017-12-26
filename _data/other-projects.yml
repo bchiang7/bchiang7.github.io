@@ -1,3 +1,11 @@
+- name: Halcyon Theme
+  url: https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode
+  code: https://github.com/bchiang7/halcyon-vscode
+  description: A dark UI & syntax theme for Visual Studio Code. Published to Visual Studio Marketplace.
+  used:
+    - thing: JSON
+    - thing: VS Code
+
 - name: Lonely Planet DBMS
   url: https://github.com/bchiang7/CS3200-Project
   code: https://github.com/bchiang7/CS3200-Project
