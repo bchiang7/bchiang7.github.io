@@ -2,10 +2,7 @@
   display: flex;
   align-items: center;
   font-size: 1.1rem;
-  font-family: 'Inconsolata', monospace;
   margin-top: 70px;
-  color: $night;
-  // background-color: $yellow;
 
   &__light {
     width: 30px;
@@ -20,7 +17,7 @@
       height: 25px;
       animation: pulsate 2s ease-out;
       animation-iteration-count: infinite;
-      opacity: .0;
+      opacity: 0;
       border: 3px solid $green;
       border-radius: 30px;
     }

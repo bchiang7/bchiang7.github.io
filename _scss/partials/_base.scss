@@ -10,12 +10,13 @@
   background: $yellow;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: $white;
   color: $dark-grey;
-  font-family: $Apercu, $sans-serif-stack;
+  font-family: $Apercu;
   line-height: 1.5;
 
   a {
@@ -141,7 +142,8 @@ html, body {
           transition: height 0.3s, opacity 0.3s, transform 0.3s;
           transform: translateY(-5px);
         }
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           &:after {
             height: 2px;
             border-radius: 3px;
@@ -164,7 +166,7 @@ html, body {
       position: relative;
       bottom: 2px;
       margin-left: 15px;
-      content: "";
+      content: '';
       background: url('../img/arrow.png') no-repeat center;
       background-size: 100%;
       width: 15px;
@@ -208,7 +210,8 @@ html, body {
       right: 3px;
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       transform: translateY(-10px);
     }
     img {
@@ -217,11 +220,11 @@ html, body {
   }
 }
 
-
 .waypoint {
   opacity: 0;
-  transform: translate3d(0,20px,0);
-  transition: opacity .6s cubic-bezier(.694,0,.335,1),transform .6s cubic-bezier(.694,0,.335,1);
+  transform: translate3d(0, 20px, 0);
+  transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1),
+    transform 0.6s cubic-bezier(0.694, 0, 0.335, 1);
 }
 
 .in-view {

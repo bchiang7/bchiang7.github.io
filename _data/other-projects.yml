@@ -1,10 +1,14 @@
 - name: Halcyon Theme
-  url: https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode
-  code: https://github.com/bchiang7/halcyon-vscode
-  description: A dark UI & syntax theme for Visual Studio Code. Published to Visual Studio Marketplace.
+  url: https://brittanychiang.com/halcyon-site/
+  code: https://github.com/bchiang7/halcyon-site
+  description: A minimal, dark theme for Sublime Text, Atom, VS Code, and more published to <a class="underline-link" href="https://packagecontrol.io/packages/Halcyon%20Theme">Package Control</a>, <a class="underline-link" href="https://atom.io/themes/halcyon-syntax">Atom Package Manager</a>, <a class="underline-link" href="https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode">Visual Studio Marketplace</a>, and <a class="underline-link" href="https://www.npmjs.com/package/hyper-halcyon-theme">NPM</a>.
   used:
-    - thing: JSON
+    - thing: Gatsby
+    - thing: Sublime Text
+    - thing: Atom
     - thing: VS Code
+    - thing: iTerm2
+    - thing: Hyper
 
 - name: Lonely Planet DBMS
   url: https://github.com/bchiang7/CS3200-Project

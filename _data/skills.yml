@@ -10,10 +10,10 @@ languages:
 frameworks:
   - item: Ember / Glimmer
   - item: Jekyll
-  - item: D3
   - item: Node
-  - item: Backbone
   - item: React
+  - item: Backbone
+  - item: D3
   - item: Cordova
 
 tools:

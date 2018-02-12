@@ -20,6 +20,7 @@ $(function() {
     }
   });
 
+  console.log('added a line here');
 
   const introHeight = document.querySelector('.intro').offsetHeight;
   const topButton = document.getElementById('top-button');
@@ -36,8 +37,6 @@ $(function() {
   topButton.addEventListener('click', function() {
     $('html, body').animate({scrollTop: 0}, 500);
   });
-
-
 
   const hand = document.querySelector('.emoji.wave-hand');
 
