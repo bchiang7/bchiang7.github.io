@@ -66,7 +66,7 @@ $(function() {
     duration: 600,
     easing: 'cubic-bezier(.694,0,.335,1)',
     scale: 1,
-    viewFactor: 0.3
+    viewFactor: 0.3,
   });
 
   sr.reveal('.background');

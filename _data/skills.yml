@@ -8,10 +8,10 @@ languages:
   - item: SQL
 
 frameworks:
-  - item: Ember / Glimmer
+  - item: Ember & Glimmer
+  - item: React
   - item: Jekyll
   - item: Node
-  - item: React
   - item: Backbone
   - item: D3
   - item: Cordova
@@ -29,5 +29,5 @@ design:
   - item: InDesign
   - item: InVision
   - item: Prototyping
+  - item: Wireframing
   - item: User Testing
-  - item: Typography

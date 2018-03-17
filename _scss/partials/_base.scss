@@ -1,9 +1,11 @@
-*,
-*:after,
-*:before {
+html {
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 ::selection {
@@ -14,27 +16,14 @@ html,
 body {
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: $white;
   color: $dark-grey;
   font-family: $Apercu;
   line-height: 1.5;
-
-  a {
-    @include transition;
-    text-decoration: none;
-    font-weight: 700;
-    color: $black;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  strong {
-    font-weight: 700;
-    color: $black;
-  }
+  width: 100%;
+  height: 100%;
 
   &.night {
     background-color: $night;
@@ -66,157 +55,186 @@ body {
       background: $off-white;
     }
   }
+}
 
-  .emoji {
-    display: inline-block;
-    vertical-align: text-top;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+a {
+  @include transition;
+  text-decoration: none;
+  font-weight: 700;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+strong {
+  font-weight: 700;
+  color: $black;
+}
+
+.emoji {
+  display: inline-block;
+  vertical-align: text-top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 100px 170px;
+  @include thirteen {
+    padding: 100px;
   }
-
-  .section {
-    display: flex;
-    justify-content: center;
-    padding: 100px 170px;
-    @include thirteen {
-      padding: 100px;
-    }
+  @include desktop {
+    padding: 50px;
+  }
+  @include tablet {
+    display: block;
+  }
+  @include mobile {
+    padding: 50px 35px;
+  }
+  &__title {
+    flex-shrink: 0;
+    width: 200px;
+    margin-right: 70px;
+    color: $blue;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: 700;
+    letter-spacing: 2px;
     @include desktop {
-      padding: 50px;
+      margin-right: 50px;
+    }
+    @include little-desktop {
+      width: 150px;
     }
     @include tablet {
-      display: block;
-    }
-    @include mobile {
-      padding: 50px 35px;
-    }
-    &__title {
-      flex-shrink: 0;
-      width: 200px;
-      margin-right: 70px;
-      color: $blue;
-      text-transform: uppercase;
-      text-align: right;
-      font-weight: 700;
-      letter-spacing: 2px;
-      @include desktop {
-        margin-right: 50px;
-      }
-      @include little-desktop {
-        width: 150px;
-      }
-      @include tablet {
-        text-align: left;
-        width: auto;
-      }
-    }
-    &__content {
-      font-weight: 300;
-      font-size: 1rem;
-      width: 100%;
-      max-width: 650px;
-      @include tablet {
-        padding-top: 30px;
-        padding-left: 50px;
-      }
-      @include mobile {
-        padding-left: 30px;
-      }
-      p {
-        margin-top: 0;
-        margin-bottom: 25px;
-      }
-      .underline-link {
-        position: relative;
-        display: inline-block;
-        &:after {
-          position: absolute;
-          top: 100%;
-          left: 0;
-          width: 100%;
-          height: 1px;
-          background: $black;
-          content: '';
-          opacity: 0;
-          transition: height 0.3s, opacity 0.3s, transform 0.3s;
-          transform: translateY(-5px);
-        }
-        &:hover,
-        &:focus {
-          &:after {
-            height: 2px;
-            border-radius: 3px;
-            opacity: 1;
-            transform: translateY(-2px);
-          }
-        }
-      }
+      text-align: left;
+      width: auto;
     }
   }
-
-  .arrow-link {
-    @include transition;
-    font-weight: 700;
-    display: inline-block;
-    background-color: transparent;
-    white-space: nowrap;
-    &:after {
-      @include transition;
+  &__content {
+    font-weight: 300;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 650px;
+    @include tablet {
+      padding-top: 30px;
+      padding-left: 50px;
+    }
+    @include mobile {
+      padding-left: 30px;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+    .underline-link {
       position: relative;
-      bottom: 2px;
-      margin-left: 15px;
-      content: '';
-      background: url('../img/arrow.png') no-repeat center;
-      background-size: 100%;
-      width: 15px;
-      height: 15px;
       display: inline-block;
-      vertical-align: middle;
-    }
-    &:hover:after {
-      transform: translateX(7px);
+      &:after {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $black;
+        content: '';
+        opacity: 0;
+        transition: height 0.3s, opacity 0.3s, transform 0.3s;
+        transform: translateY(-5px);
+      }
+      &:hover,
+      &:focus {
+        &:after {
+          height: 2px;
+          border-radius: 3px;
+          opacity: 1;
+          transform: translateY(-2px);
+        }
+      }
     }
   }
+}
 
-  .small {
-    font-family: 'Inconsolata', monospace;
-    font-size: 0.85rem;
-    display: inline-block;
-    margin-top: 15px;
-    &:after {
-      display: none;
-    }
-  }
-
-  #top-button {
+.arrow-link {
+  @include transition;
+  font-weight: 700;
+  display: inline-block;
+  background-color: transparent;
+  white-space: nowrap;
+  &:after {
     @include transition;
-    background: transparent;
-    border: none;
-    outline: none;
-    width: 40px;
-    position: fixed;
-    bottom: 25px;
-    right: 10px;
-    cursor: pointer;
-    display: none;
-    @include desktop {
-      bottom: 20px;
-      right: 7px;
-      width: 35px;
-    }
-    @include mobile {
-      bottom: 15px;
-      right: 3px;
-    }
+    position: relative;
+    bottom: 2px;
+    margin-left: 15px;
+    content: '';
+    background: url('../img/arrow.png') no-repeat center;
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &:hover:after {
+    transform: translateX(7px);
+  }
+}
 
-    &:hover,
-    &:focus {
-      transform: translateY(-10px);
-    }
-    img {
-      width: 100%;
-    }
+.small {
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-top: 15px;
+  &:after {
+    display: none;
+  }
+}
+
+#top-button {
+  @include transition;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 40px;
+  position: fixed;
+  bottom: 25px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  @include desktop {
+    bottom: 20px;
+    right: 7px;
+    width: 35px;
+  }
+  @include mobile {
+    bottom: 15px;
+    right: 3px;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-10px);
+  }
+  img {
+    width: 100%;
   }
 }
 

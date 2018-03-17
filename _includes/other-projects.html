@@ -3,7 +3,9 @@
   <div class="section__content">
     {% for project in site.data.other-projects %}
     <div class="project">
-      <div class="project__name"><a href="{{project.url}}" target="_blank" class="arrow-link">{{project.name}}</a></div>
+      <div class="project__name">
+        <a href="{{project.url}}" target="_blank" class="arrow-link">{{project.name}}</a>
+      </div>
       <p>{{project.description}}</p>
       <div class="project__used">
         {% for item in project.used %}
