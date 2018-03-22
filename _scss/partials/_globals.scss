@@ -11,11 +11,14 @@ $green: #bae67e;
 $purple: #7d0ce8;
 $red: #ff0000;
 $orange: #e8850c;
-$yellow: #ffcc66;
-
+$yellow: #ffdc00;
+$accent: #ffcc66;
 // Fonts
-$Apercu: 'Apercu', 'Source Sans Pro', Helvetica, Arial, sans-serif;
-
+$Apercu: 'Apercu',
+'Source Sans Pro',
+Helvetica,
+Arial,
+sans-serif;
 // Media queries
 $fifteen-inch: 1440px;
 $thirteen-inch: 1280px;
@@ -27,7 +30,6 @@ $phablet-width: 550px;
 $mobile-width: 480px;
 $small-mobile-width: 360px;
 $tiny-mobile-width: 330px;
-
 @mixin transition {
   transition: all 0.2s ease-in-out;
 }
@@ -37,41 +39,49 @@ $tiny-mobile-width: 330px;
     @content;
   }
 }
+
 @mixin desktop {
   @media screen and (max-width: #{$desktop-width}) {
     @content;
   }
 }
+
 @mixin little-desktop {
   @media screen and (max-width: #{$little-desktop}) {
     @content;
   }
 }
+
 @mixin tablet {
   @media screen and (max-width: #{$tablet-width}) {
     @content;
   }
 }
+
 @mixin weird-medium {
   @media screen and (max-width: #{$weird-not-tablet-width}) {
     @content;
   }
 }
+
 @mixin phablet {
   @media screen and (max-width: #{$phablet-width}) {
     @content;
   }
 }
+
 @mixin mobile {
   @media screen and (max-width: #{$mobile-width}) {
     @content;
   }
 }
+
 @mixin small-mobile {
   @media screen and (max-width: #{$small-mobile-width}) {
     @content;
   }
 }
+
 @mixin tiny-mobile {
   @media screen and (max-width: #{$tiny-mobile-width}) {
     @content;
