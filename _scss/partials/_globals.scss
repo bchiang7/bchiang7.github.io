@@ -14,11 +14,9 @@ $orange: #e8850c;
 $yellow: #ffdc00;
 $accent: #ffcc66;
 // Fonts
-$Apercu: 'Apercu',
-'Source Sans Pro',
-Helvetica,
-Arial,
-sans-serif;
+$font-stack: 'Source Sans Pro', system, system-ui, -apple-system,
+  BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+$Apercu: 'Apercu', $font-stack;
 // Media queries
 $fifteen-inch: 1440px;
 $thirteen-inch: 1280px;
