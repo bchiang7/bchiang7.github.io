@@ -4,17 +4,17 @@ languages:
   - item: HTML
   - item: CSS/Sass
   - item: Python
-  - item: Java
   - item: SQL
+  - item: R
 
 frameworks:
   - item: Ember & Glimmer
   - item: React
   - item: Jekyll
   - item: Node
-  - item: Backbone
   - item: D3
-  - item: Cordova
+  - item: Wordpress
+  - item: Timber
 
 tools:
   - item: Bash
