@@ -6,7 +6,7 @@ $grey: #777777;
 $blue: #007bff;
 $slate: #afafbf;
 $off-white: #e7e7e7;
-$white: #fff;
+$white: #ffffff;
 $green: #bae67e;
 $purple: #7d0ce8;
 $red: #ff0000;
@@ -28,6 +28,7 @@ $phablet-width: 550px;
 $mobile-width: 480px;
 $small-mobile-width: 360px;
 $tiny-mobile-width: 330px;
+
 @mixin transition {
   transition: all 0.2s ease-in-out;
 }

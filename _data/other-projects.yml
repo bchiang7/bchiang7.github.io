@@ -1,3 +1,14 @@
+- name: Surf Videos
+  url: https://github.com/bchiang7/Surf-Videos
+  code: https://github.com/bchiang7/Surf-Videos
+  description: Small React project created during an interview process to browse and search surf videos via the YouTube API.
+  used:
+    - thing: JavaScript
+    - thing: React
+    - thing: React Router
+    - thing: Axios
+    - thing: YouTube API
+
 - name: Halcyon Theme
   url: https://brittanychiang.com/halcyon-site/
   code: https://github.com/bchiang7/halcyon-site
@@ -67,6 +78,17 @@
 #   - thing: Backbone
 #   - thing: Marionette
 #   - thing: Cordova
+
+- name: Personal Website V2
+  url: http://brittanychiang.com/v2
+  code: https://github.com/bchiang7/v2
+  description: Second iteration of my personal website. Designed and developed with a conscious effort to avoid using any superfluous frameworks like Bootstrap.
+  used:
+  - thing: Jekyll
+  - thing: Handlebars
+  - thing: SCSS
+  - thing: JavaScript
+  - thing: Github Pages
 
 - name: React Resume
   url: http://brittanychiang.com/react-profile/
