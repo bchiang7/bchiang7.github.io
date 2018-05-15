@@ -1,8 +1,7 @@
 {
   "name": "brittanychiang.com",
   "version": "0.0.0",
-  "description":
-    "Design-minded front-end software engineer focused on building beautiful interfaces and experiences",
+  "description": "Design-minded front-end software engineer focused on building beautiful interfaces and experiences",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,13 +10,13 @@
   "license": "ISC",
   "devDependencies": {
     "@nuscout/eslint-config": "^0.2.1",
-    "browser-sync": "^2.23.6",
+    "browser-sync": "^2.24.4",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "^5.0.0",
-    "gulp-clean-css": "3.9.0",
+    "gulp-clean-css": "3.9.4",
     "gulp-eslint": "4.0.2",
     "gulp-imagemin": "4.1.0",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^4.0.1",
     "gulp-uglify": "3.0.0"
   },
   "repository": {
