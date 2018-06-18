@@ -40,6 +40,6 @@ keep_files:
   - ".git"
   - ".gitignore"
 
-plugins:
+plugins_dir:
   - jekyll-minifier
   - jekyll-sitemap
