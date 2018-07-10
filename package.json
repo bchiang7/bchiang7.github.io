@@ -4,17 +4,18 @@
   "description": "Design-minded front-end software engineer focused on building beautiful interfaces and experiences",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp serve",
+    "build": "gulp build"
   },
   "author": "Brittany Chiang",
   "license": "ISC",
   "devDependencies": {
     "@nuscout/eslint-config": "^0.2.1",
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.24.5",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "3.9.4",
-    "gulp-eslint": "4.0.2",
+    "gulp-eslint": "5.0.0",
     "gulp-imagemin": "4.1.0",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "3.0.0"
