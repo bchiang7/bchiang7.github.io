@@ -2,6 +2,11 @@
   "name": "brittanychiang.com",
   "version": "0.0.0",
   "description": "Design-minded front-end software engineer focused on building beautiful interfaces and experiences",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bchiang7/bchiang7.github.io"
+  },
+  "homepage": "https://github.com/bchiang7/bchiang7.github.io",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp serve",
@@ -11,18 +16,13 @@
   "license": "ISC",
   "devDependencies": {
     "@nuscout/eslint-config": "^0.2.1",
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.7",
     "gulp": "3.9.1",
-    "gulp-autoprefixer": "^6.0.0",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "3.10.0",
     "gulp-eslint": "5.0.0",
     "gulp-imagemin": "4.1.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-uglify": "3.0.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bchiang7/bchiang7.github.io"
-  },
-  "homepage": "https://github.com/bchiang7/bchiang7.github.io"
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "3.0.2"
+  }
 }
