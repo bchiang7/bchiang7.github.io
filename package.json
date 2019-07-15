@@ -20,8 +20,8 @@
     "gulp": "3.9.1",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "3.10.0",
-    "gulp-eslint": "5.0.0",
-    "gulp-imagemin": "4.1.0",
+    "gulp-eslint": "6.0.0",
+    "gulp-imagemin": "6.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "3.0.2"
   }
