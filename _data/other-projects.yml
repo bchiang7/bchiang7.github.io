@@ -10,7 +10,7 @@
     - thing: YouTube API
 
 - name: Halcyon Theme
-  url: https://brittanychiang.com/halcyon-site/
+  url: https://bchiang7.github.io/halcyon-site/
   code: https://github.com/bchiang7/halcyon-site
   description: A minimal, dark theme for Sublime Text, Atom, VS Code, and more published to <a class="underline-link" href="https://packagecontrol.io/packages/Halcyon%20Theme">Package Control</a>, <a class="underline-link" href="https://atom.io/themes/halcyon-syntax">Atom Package Manager</a>, <a class="underline-link" href="https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode">Visual Studio Marketplace</a>, and <a class="underline-link" href="https://www.npmjs.com/package/hyper-halcyon-theme">NPM</a>.
   used:
@@ -34,7 +34,7 @@
     - thing: JavaScript
 
 - name: myNEU Redesign
-  url: http://brittanychiang.com/Redesign-myNEU/
+  url: https://bchiang7.github.io/Redesign-myNEU/
   code: https://github.com/bchiang7/Redesign-myNEU
   description: myNEU student portal web prototype for my information science senior project. I conducted a study that aimed to answer the question of how myNEU can be improved to provide students at Northeastern with a better user experience. Informed by usability metrics gathered from user tests, I redesigned and developed a web prototype of myNEU.
   used:
@@ -46,7 +46,8 @@
 - name: Crowd DJ
   url: https://github.com/crowddj/crowddj-react
   code: https://github.com/crowddj/crowddj-react
-  description: A web app that allows people who are at a party or social gathering with a DJ to request songs via their smartphones. The web app allows people to see the currently playing song, request songs, upvote songs, and rate songs so the DJ can see how the crowd is feeling and act accordingly. In other words, Crowd DJ is essentially a crowdsourced music queue. <br>
+  description:
+    A web app that allows people who are at a party or social gathering with a DJ to request songs via their smartphones. The web app allows people to see the currently playing song, request songs, upvote songs, and rate songs so the DJ can see how the crowd is feeling and act accordingly. In other words, Crowd DJ is essentially a crowdsourced music queue. <br>
     <a class="small" href="http://projects.hackbeanpot.com/2017-projects.html">🏆 Won Best UI/UX Design at Hackbeanpot 2017 🏆</a>
   used:
     - thing: React
@@ -80,24 +81,24 @@
 #   - thing: Cordova
 
 - name: Personal Website V2
-  url: http://brittanychiang.com/v2
+  url: https://bchiang7.github.io/v2
   code: https://github.com/bchiang7/v2
   description: Second iteration of my personal website. Designed and developed with a conscious effort to avoid using any superfluous frameworks like Bootstrap.
   used:
-  - thing: Jekyll
-  - thing: Handlebars
-  - thing: SCSS
-  - thing: JavaScript
-  - thing: Github Pages
+    - thing: Jekyll
+    - thing: Handlebars
+    - thing: SCSS
+    - thing: JavaScript
+    - thing: Github Pages
 
 - name: React Resume
-  url: http://brittanychiang.com/react-profile/
+  url: https://bchiang7.github.io/react-profile/
   code: https://github.com/bchiang7/react-profile/
   description: An online version of my 2016 resume I made for fun. I was interested in learning React.js, so I found this <a class="underline-link" href="https://medium.com/learning-new-stuff/building-your-first-react-js-app-d53b0c98dc#.1439cdewq">simple tutorial</a> and it kind of spun into this weekend project. I probably didn't need to use React at all, but hey, at least I learned a few things!
   used:
-  - thing: JavaScript
-  - thing: React
-  - thing: CSS
+    - thing: JavaScript
+    - thing: React
+    - thing: CSS
 
 - name: CourseSource
   url: http://webdevspring2016-chiangbrittany.rhcloud.com/project/client/#/login
@@ -124,7 +125,7 @@
     - thing: Bootstrap
 
 - name: Fontipsums
-  url: http://brittanychiang.com/fontipsums
+  url: https://bchiang7.github.io/fontipsums
   code: https://github.com/bchiang7/fontipsums
   description: As someone who has an eye for typography, I wanted a way to visually see different font combinations together. I whipped up this simple website to display some of my favorite pairings combined with some fun lorem ipsum variations I found on the web.
   used:
@@ -132,15 +133,15 @@
     - thing: SCSS
 
 - name: Personal Website V1
-  url: http://brittanychiang.com/v1
+  url: https://bchiang7.github.io/v1
   code: https://github.com/bchiang7/website_2015/
   description: My first portfolio website I designed and built in 2014. I learned quite a bit about HTML, CSS, and SEO. Since then, I think my web development and design skills have improved immensely.
   used:
-  - thing: HTML
-  - thing: CSS
-  - thing: Bootstrap
-  - thing: JavaScript
-  - thing: jQuery
+    - thing: HTML
+    - thing: CSS
+    - thing: Bootstrap
+    - thing: JavaScript
+    - thing: jQuery
 
 - name: One Card For All
   url: http://onecardforall.org
