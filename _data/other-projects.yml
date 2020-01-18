@@ -153,7 +153,7 @@
     - thing: jQuery
 
 - name: JetBlue HumanKinda
-  url: http://jetbluehumankinda.com
+  url: https://us.mullenlowe.com/work/humankinda/
   description: Tumblr site complementing JetBlue's HumanKinda campaign and documentary. The site houses the video documentary, many graphics created by Mullen for the campaign, and an interactive quiz to determine how "HumanKinda" you are. Learn more about this project <a class="underline-link" href="http://us.mullenlowe.com/work/humankinda/" target="_blank">here</a>.
   used:
     - thing: HTML
