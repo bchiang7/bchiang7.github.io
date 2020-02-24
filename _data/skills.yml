@@ -1,12 +1,25 @@
 languages:
   - item: Python
   - item: SQL
-  
+
+
+
+frameworks:
+  - item: Wordpress
+
 
 tools:
+  - item: Bash
+  - item: Git & Github
+  - item: Chrome DevTools
   - item: Anaconda
   - item: Google Colab
-  - item: Tableau
-  - item: postgreSQL/SQLite
   - item: Postman
-  - item: Jupyter Notebook
+  - item: Jupyter Notebooks
+
+design:
+  - item: Tableau
+  - item: InDesign
+  - item: Pandas
+  - item: Dashboards
+  - item: Data Models
