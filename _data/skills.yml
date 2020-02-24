@@ -3,14 +3,6 @@ languages:
   - item: SQL
   
 
-advanced excel techniques:
-  - item: A/B Testing
-  - item: Data Modeling
-  - item: Dashboard Design
-  - item: Pivot Charts/Tables
-  - item: Statistical Analysis
-
-
 tools:
   - item: Anaconda
   - item: Google Colab
