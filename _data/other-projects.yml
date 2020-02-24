@@ -1,11 +1,20 @@
-- name: Lariat Rent-A-Car Report
-  url: https://drive.google.com/open?id=181iWW5EOQwDfBefvAdAx6nAFlA8pAT2H
-  description: My first capstone project in Thinkful's Data Analytics curriculum. I produced a business intelligence report, recommending data driven strategies and projecting growth for Lariat Rent-A-Car.
+- name: Web Scraper
+  url: https://drive.google.com/open?id=1Rf1T21ADqDknmvi5MT4aLhj4_1L6Y_rx
+  description: A web scraper that i made to collect news headlines from Space.com
   used:
-    - thing: Advanced Excel Techniques
-    - thing: Data Modeling
-    - thing: Dashboard Design
-    - thing: PowerPoint
+    - thing: Python
+    - thing: API Interfacing
+    - thing: Web Scraping
+    - thing: Postman
+    
+- name: API Request
+  url: https://drive.google.com/open?id=1UCB3YefB6WmI-Vnl3JGfHbjQMwKCuxaZ
+  description: Making API requests to gather information from various websites and databases.
+  used:
+    - thing: Pyhton
+    - thing: SQL
+    - thing: API Interfacing
+    - thing: Postman
     
 - name: HR Compensation Tool
   url: https://drive.google.com/open?id=1vmo-YCrkQVFqkePcJkDKeQNB0Z-ETm-w
