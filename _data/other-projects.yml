@@ -1,5 +1,5 @@
 - name: Web Scraper
-  url: https://drive.google.com/open?id=1Rf1T21ADqDknmvi5MT4aLhj4_1L6Y_rx
+  url: https://github.com/AfredTX/Webscraper
   description: A web scraper that i made to collect news headlines from Space.com
   used:
     - thing: Python
