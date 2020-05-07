@@ -14,6 +14,10 @@ const templatePath = [
 ];
 
 module.exports = gulp => {
+  const reloadBrowser = done => {
+    browserSync.reload();
+    done();
+  };
   // run `jekyll build`
   gulp.task('jekyll-build', done => {
     return cp.spawn(jekyll, ['build'], { stdio: 'inherit' }).on('close', done);
@@ -29,19 +33,20 @@ module.exports = gulp => {
   });
 
   // Rebuild Jekyll then reload the page
-  gulp.task('jekyll-rebuild', ['jekyll-dev'], () => {
-    browserSync.reload();
-  });
+  gulp.task('jekyll-rebuild', gulp.series(['jekyll-dev', reloadBrowser]));
 
-  gulp.task('serve', ['jekyll-dev'], () => {
-    browserSync.init({
-      server: {
-        baseDir: '_site',
-      },
-    });
+  gulp.task(
+    'serve',
+    gulp.series('jekyll-dev', () => {
+      browserSync.init({
+        server: {
+          baseDir: '_site',
+        },
+      });
 
-    gulp.watch(scssPath, ['sass', browserSync.reload]);
-    gulp.watch(jsPath, ['scripts', browserSync.reload]);
-    gulp.watch(templatePath, ['jekyll-rebuild']);
-  });
+      gulp.watch(scssPath, gulp.series(['sass', reloadBrowser]));
+      gulp.watch(jsPath, gulp.series(['scripts', reloadBrowser]));
+      gulp.watch(templatePath, gulp.task('jekyll-rebuild'));
+    })
+  );
 };

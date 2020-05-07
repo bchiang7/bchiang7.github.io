@@ -9,7 +9,7 @@
   "homepage": "https://github.com/bchiang7/bchiang7.github.io",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp serve",
+    "start": "gulp serve --watch",
     "build": "gulp build"
   },
   "author": "Brittany Chiang",
@@ -17,12 +17,12 @@
   "devDependencies": {
     "@nuscout/eslint-config": "^0.2.1",
     "browser-sync": "^2.26.7",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-clean-css": "^3.10.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-eslint": "^6.0.0",
     "gulp-imagemin": "6.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-uglify": "3.0.2"
   }
 }
