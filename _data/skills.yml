@@ -1,33 +1,32 @@
 languages:
-  - item: JavaScript (ES6)
-  - item: TypeScript
-  - item: HTML
-  - item: CSS/Sass
+  - item: Java
   - item: Python
-  - item: SQL
   - item: R
+  - item: SQL
+  - item: Scala
+  - item: Bash
 
-frameworks:
-  - item: Ember & Glimmer
-  - item: React
-  - item: Jekyll
-  - item: Node
-  - item: D3
-  - item: Wordpress
-  - item: Timber
+technologies:
+  - item: Spark
+  - item: Hive
+  - item: Oozie
+  - item: Kafka
+  - item: NiFi
+  - item: Elasticsearch
+  - item: Docker
+  - item: Redis
 
 tools:
-  - item: Bash
+  - item: AWS
+  - item: GCP
+  - item: PCF (Cloud Foundry)
   - item: Git & Github
-  - item: Gulp & Grunt
-  - item: Chrome DevTools
+  - item: Jenkins
   - item: Postman
-  - item: MongoDB
 
-design:
-  - item: Sketch
-  - item: InDesign
-  - item: InVision
-  - item: Prototyping
-  - item: Wireframing
-  - item: User Testing
+visualization:
+  - item: Tableau
+  - item: PowerBI
+  - item: R Shiny
+  - item: Dash
+  - item: Cytoscape

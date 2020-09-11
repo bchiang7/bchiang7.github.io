@@ -1,44 +1,35 @@
-- company: Upstatement
-  url: https://www.upstatement.com/
-  time: May 2018 - Present
-  position: Engineer
+- company: Slalom
+  url: https://www.slalom.com/
+  time: Jul 2019 - Present
+  position: Analyst, Data & Analytics
+  location: Minneapolis, MN
 
-- company: Scout
-  url: https://web.northeastern.edu/scout/
-  time: Jan - June 2018
-  position: Studio Developer
+- company: Cludo
+  url: https://www.cludo.com/
+  time: Dec 2018 - May 2019
+  position: Intern, Data Science
 
-- company: Apple Music
-  url: https://www.apple.com/music/
-  time: July - Dec 2017
-  position: UI Engineer Co-op
+- company: Atland Ventures
+  url: https://atlandventures.com/
+  time: Aug 2018 - May 2019
+  position: Director
 
-- company: Scout
-  url: https://web.northeastern.edu/scout/
-  time: Jan - June 2017
-  position: Studio Developer
+- company: West Monroe Partners
+  url: https://www.westmonroepartners.com/
+  time: May 2017 - August 2018
+  position: Intern, Data Engineering
 
-- company: Starry
-  url: https://starry.com/
-  time: July - Dec 2016
-  position: Software Engineer Co-op
+- company: Diffia AS
+  url: https://www.diffia.com/
+  time: Jan 2018 - May 2018
+  position: Intern, Business Strategy
 
-- company: Northeastern University
-  url: http://www.ccis.northeastern.edu/
-  time: Jan - May 2016
-  position: HCI Teaching Assistant
+- company: UnitedHealth Group - Optum
+  url: https://www.optum.com/business.html
+  time: Jun 2016 - Aug 2016
+  position: Technology Development Program
 
-- company: NU Women in Tech
-  url: http://nuwit.ccs.neu.edu/
-  time: Jan 2016 - May 2017
-  position: President & Web Chair
-
-- company: MullenLowe U.S.
-  url: https://us.mullenlowe.com/
-  time: July - Dec 2015
-  position: Creative Technologist Co-op
-
-- company: Northeastern University
-  url: http://www.ccis.northeastern.edu/
-  time: Mar - May 2015
-  position: HCI Research Assistant
+- company: Cargill
+  url: https://www.cargill.com/
+  time: Jan 2015 - Aug 2015
+  position: Intern, Global Trading Analytics

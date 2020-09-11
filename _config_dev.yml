@@ -1,26 +1,12 @@
 # Site settings
-name: Brittany Chiang
-title: Brittany Chiang | Front End Software Engineer
+name: Carston Hernke
+title: Carston Hernke | Data
 description: Design-minded front-end software engineer focused on building beautiful interfaces and experiences
-url: https://bchiang7.github.io/
+url: http://carston.org
 baseurl: ''
-email: brittany.chiang@gmail.com
-cover: https://bchiang7.github.io/img/og.png
-logo: https://bchiang7.github.io/img/emojis/technologist.png
-resume: https://bchiang7.github.io/resume.pdf
-social:
-  - title: email
-    url: mailto:brittany.chiang@gmail.com
-  - title: twitter
-    url: https://twitter.com/bchiang7
-  - title: instagram
-    url: https://instagram.com/bchiang7
-  - title: codepen
-    url: http://codepen.io/bchiang7
-  - title: github
-    url: https://github.com/bchiang7
-  - title: linkedin
-    url: https://www.linkedin.com/in/bchiang7
+email: hernk009@umn.edu
+logo: http://carston.org/img/emojis/male-technologist.png
+resume: http://carston.org/resume.pdf
 
 # Build settings
 markdown: kramdown
