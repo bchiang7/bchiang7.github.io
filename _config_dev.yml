@@ -5,8 +5,9 @@ description: A data engineer that loves geospatial data, cold brew coffee, and n
 url: http://carston.org
 baseurl: ''
 email: hernk009@umn.edu
-logo: http://carston.org/img/emojis/male-technologist.png
-resume: http://carston.org/resume.pdf
+cover: https://carston.org/img/og.png
+logo: http://localhost:3000/img/emojis/male-technologist.png
+resume: http://localhost:3000/resume.pdf
 
 # Build settings
 markdown: kramdown

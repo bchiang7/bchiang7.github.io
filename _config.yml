@@ -1,13 +1,13 @@
 # Site settings
 name: Carston Hernke
 title: Carston Hernke | Data
-description: Design-minded front-end software engineer focused on building beautiful interfaces and experiences
-url: https://bchiang7.github.io/
+description: A data engineer that loves geospatial data, cold brew coffee, and new learning new things.
+url: https://carston.org/
 baseurl: ''
-email: hern
-cover: https://bchiang7.github.io/img/og.png
-logo: https://bchiang7.github.io/img/emojis/technologist.png
-resume: https://bchiang7.github.io/resume.pdf
+email: hernk009@umn.edu
+cover: https://carston.org/img/og.png
+logo: https://carston.org/img/emojis/male-technologist.png
+resume: https://carston.org/resume.pdf
 
 # Build settings
 markdown: kramdown
