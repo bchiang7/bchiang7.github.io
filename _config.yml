@@ -9,6 +9,9 @@ cover: https://carston.org/img/og.png
 logo: https://carston.org/img/emojis/male-technologist.png
 resume: https://carston.org/resume.pdf
 
+# Google services
+google_analytics: UA-117124950-1
+
 # Build settings
 markdown: kramdown
 
