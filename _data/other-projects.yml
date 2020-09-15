@@ -12,7 +12,7 @@
 - name: csstableau
   url: https://github.com/carstonhernke/csstableau
   code: https://github.com/carstonhernke/csstableau
-  description: Tools to apply styling from CSS (Cascading Style Sheets) to dashboards created in Tableau.
+  description: Tools to apply styling from CSS (Cascading Style Sheets) to dashboards created in Tableau. Private GitHub repository for copyright reasons - reach out for more information.
   used:
     - thing: Python
     - thing: CSS
@@ -21,7 +21,7 @@
 - name: Dockless Scooter Analysis
   url: https://github.com/carstonhernke/dockless-scooter-analysis
   code: https://github.com/carstonhernke/dockless-scooter-analysis
-  description: For my honors thesis, I used geospatial analysis techniques to find evidence of disparities in access to dockless scooters in Minneapolis, MN
+  description: For my honors thesis, I used geospatial analysis techniques to find evidence of disparities in access to dockless scooters in Minneapolis, MN.
   used:
     - thing: R
     - thing: sf
