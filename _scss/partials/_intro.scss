@@ -100,6 +100,16 @@
       background-image: url('../img/emojis/technologist.png');
     }
   }
+  &__tagline {
+    font-weight: 300;
+    max-width: 700px;
+    .name {
+      font-weight: 700;
+    }
+    .bar-chart {
+      background-image: url('../img/emojis/bar-chart-whatsapp.png');
+    }
+  }
   &__contact {
     font-size: 1.25rem;
     font-weight: 400;

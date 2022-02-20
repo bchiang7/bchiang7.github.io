@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://bchiang7.github.io/sitemap.xml
+Sitemap: https://paolodelia99.github.io/sitemap.xml

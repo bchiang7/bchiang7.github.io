@@ -1,26 +1,24 @@
 # Site settings
-name: Brittany Chiang
-title: Brittany Chiang | Front End Software Engineer
-description: Design-minded front-end software engineer focused on building beautiful interfaces and experiences
-url: https://bchiang7.github.io/
+name: Paolo D'Elia
+title: Paolo D'Elia | Data Scientist
+description: Let's put the option apart and let's instead the data talk by itself
+url: https://paolodelia99.github.io/
 baseurl: ''
-email: brittany.chiang@gmail.com
-cover: https://bchiang7.github.io/img/og.png
-logo: https://bchiang7.github.io/img/emojis/technologist.png
-resume: https://bchiang7.github.io/resume.pdf
+email: paolo.delia99@gmail.com
+cover: https://paolodelia99.github.io/img/og.png
+logo: https://paolodelia99.github.io/img/emojis/bar-chart-whatsapp.png
+resume: https://paolodelia99.github.io/resume.pdf
 social:
   - title: email
-    url: mailto:brittany.chiang@gmail.com
+    url: mailto:paolo.delia99@gmail.com
   - title: twitter
-    url: https://twitter.com/bchiang7
-  - title: instagram
-    url: https://instagram.com/bchiang7
-  - title: codepen
-    url: http://codepen.io/bchiang7
+    url: https://twitter.com/Delia99Paolo
   - title: github
-    url: https://github.com/bchiang7
+    url: https://github.com/paolodelia99
   - title: linkedin
-    url: https://www.linkedin.com/in/bchiang7
+    url: https://www.linkedin.com/in/paolo-d-elia/
+  - title: blog
+    url: http://paolodelia99.github.io/blog/
 
 # Build settings
 markdown: kramdown
