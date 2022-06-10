@@ -1,18 +1,34 @@
+<head>
+  <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
+  <script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
+  <script type='text/javascript' src='js/planetaryjs.min.js'></script>
+</head>
 <header class="intro">
-  <h1 class="intro__hello">Hey!
-    <span class="emoji wave-hand animated"></span>
-  </h1>
 
-  <h2 class="intro__tagline">I'm
-    <span class="name">Carston Hernke</span>, a data engineer that loves geospatial data, cold brew coffee, and learning new things.
-    <span class="emoji earth"></span>
-  </h2>
 
-  <h3 class="intro__contact">
-    <span>Get in touch </span>
-    <span class="emoji pointer"></span>
-    <span>
-      <a href="mailto:hernk009@umn.edu" target="_blank" class="highlight-link">hernk009@umn.edu</a>
-    </span>
-  </h3>
+  <div class="intro__wrapper">
+    <div class="intro__left">
+      <h1 class="intro__hello">Hey!
+        <span class="emoji wave-hand animated"></span>
+      </h1>
+      <h2 class="intro__tagline">I'm
+        <span class="name">Carston Hernke</span>, a data engineer that loves geospatial data, cold brew coffee, and learning new things.
+        <span class="emoji earth"></span>
+      </h2>
+      <h3 class="intro__contact">
+        <span>Get in touch </span>
+        <span class="emoji pointer"></span>
+        <span>
+          <a href="mailto:hernk009@umn.edu" target="_blank" class="highlight-link">hernk009@umn.edu</a>
+        </span>
+      </h3>
+    </div>
+    <div class="intro__right">
+      <canvas id='rotatingGlobe' width='500' height='500'
+      style='width: 500px; height: 500px; cursor: move;'></canvas>
+      <script type='text/javascript' src='js/globe.js'></script>
+    </div>
+  </div>
+
+
 </header>

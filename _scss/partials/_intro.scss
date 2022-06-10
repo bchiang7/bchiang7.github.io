@@ -16,6 +16,19 @@
     padding: 70px 50px;
   }
 
+  &__wrapper {
+    padding: 0 0 30 0;
+  }
+  
+  &__left {
+    width: 50%;
+    float: left;
+  }
+  
+  &__right {
+    margin-left: 60%;
+  }
+
   &__hello, &__tagline {
     font-size: 2.5rem;
     @include desktop {
