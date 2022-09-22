@@ -1,32 +1,33 @@
 languages:
-  - item: Java
   - item: Python
-  - item: R
   - item: SQL
-  - item: Scala
+  - item: Java
+  - item: Go
+  - item: R
   - item: Bash
 
 technologies:
-  - item: Spark
-  - item: Hive
-  - item: Oozie
-  - item: Kafka
-  - item: NiFi
-  - item: Elasticsearch
   - item: Docker
   - item: Redis
+  - item: Spark
+  - item: Kafka
+  - item: Elasticsearch
 
 tools:
   - item: AWS
+  - item: Terraform
+  - item: Snowflake
+  - item: dbt
   - item: GCP
-  - item: PCF (Cloud Foundry)
   - item: Git & Github
   - item: Jenkins
   - item: Postman
 
 visualization:
+  - item: Looker
   - item: Tableau
+  - item: Carto
+  - item: Kepler.gl
   - item: PowerBI
   - item: R Shiny
   - item: Dash
-  - item: Cytoscape
