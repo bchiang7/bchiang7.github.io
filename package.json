@@ -12,7 +12,7 @@
     "start": "gulp serve --watch",
     "build": "gulp build"
   },
-  "author": "Brittany Chiang",
+  "author": "Alex Anthis",
   "license": "ISC",
   "devDependencies": {
     "@nuscout/eslint-config": "^0.2.1",
