@@ -1,26 +1,22 @@
 # Site settings
-name: Brittany Chiang
-title: Brittany Chiang | Front End Software Engineer
-description: Design-minded front-end software engineer focused on building beautiful interfaces and experiences
-url: https://bchiang7.github.io/
+name: Alex Anthis
+title: Alex Anthis | Back End Software Engineer
+description: Goal driven back-end software engineer focused on building robust and perfomant solutions
+url: https://alexanth.github.io/
 baseurl: ''
-email: brittany.chiang@gmail.com
-cover: https://bchiang7.github.io/img/og.png
-logo: https://bchiang7.github.io/img/emojis/technologist.png
-resume: https://bchiang7.github.io/resume.pdf
+email: anthiswebdev@gmail.com
+cover: https://alexanth.github.io/img/og.png
+logo: https://alexanth.github.io/img/emojis/rocket.png
+resume: https://alexanth.github.io/resume.pdf
 social:
   - title: email
-    url: mailto:brittany.chiang@gmail.com
-  - title: twitter
-    url: https://twitter.com/bchiang7
+    url: mailto:anthiswebdev@gmail.com
   - title: instagram
-    url: https://instagram.com/bchiang7
-  - title: codepen
-    url: http://codepen.io/bchiang7
+    url: https://instagram.com/alpha_squared
   - title: github
-    url: https://github.com/bchiang7
+    url: https://github.com/alexanth
   - title: linkedin
-    url: https://www.linkedin.com/in/bchiang7
+    url: https://www.linkedin.com/in/alex-anthis/
 
 # Build settings
 markdown: kramdown
