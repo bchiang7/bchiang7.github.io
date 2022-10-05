@@ -1,33 +1,19 @@
 languages:
-  - item: JavaScript (ES6)
-  - item: TypeScript
-  - item: HTML
-  - item: CSS/Sass
-  - item: Python
+  - item: Java
   - item: SQL
-  - item: R
+  - item: Bash
 
 frameworks:
-  - item: Ember & Glimmer
-  - item: React
-  - item: Jekyll
-  - item: Node
-  - item: D3
-  - item: Wordpress
-  - item: Timber
+  - item: Spring
+  - item: SpringBoot
+  - item: Android
 
 tools:
-  - item: Bash
-  - item: Git & Github
-  - item: Gulp & Grunt
-  - item: Chrome DevTools
+  - item: Git
   - item: Postman
-  - item: MongoDB
+  - item: SoapUI
 
-design:
-  - item: Sketch
-  - item: InDesign
-  - item: InVision
-  - item: Prototyping
-  - item: Wireframing
-  - item: User Testing
+databases:
+  - item: MySQL
+  - item: Redis
+  - item: Oracle
