@@ -11,12 +11,12 @@ resume: https://alexanth.github.io/resume.pdf
 social:
   - title: email
     url: mailto:anthiswebdev@gmail.com
-  - title: instagram
-    url: https://instagram.com/alpha_squared
+  - title: linkedin
+    url: https://www.linkedin.com/in/alex-anthis/    
   - title: github
     url: https://github.com/alexanth
-  - title: linkedin
-    url: https://www.linkedin.com/in/alex-anthis/
+  - title: instagram
+    url: https://instagram.com/alpha_squared
 
 # Build settings
 markdown: kramdown
