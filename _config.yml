@@ -2,12 +2,12 @@
 name: Alex Anthis
 title: Alex Anthis | Back End Software Engineer
 description: Goal driven back-end software engineer focused on building robust and perfomant solutions
-url: https://alexanth.github.io/
+url: https://alexanthis.com/
 baseurl: ''
 email: anthiswebdev@gmail.com
-cover: https://alexanth.github.io/img/og.png
-logo: https://alexanth.github.io/img/emojis/alpha_squared_64.png
-resume: https://alexanth.github.io/resume.pdf
+cover: https://alexanthis.com/img/og.png
+logo: https://alexanthis.com/img/emojis/alpha_squared_64.png
+resume: https://alexanthis.com/resume.pdf
 social:
   - title: email
     url: mailto:anthiswebdev@gmail.com
