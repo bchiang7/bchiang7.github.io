@@ -16,7 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "@nuscout/eslint-config": "^0.2.1",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^7.0.0",
     "gulp-clean-css": "^4.3.0",
