@@ -3,11 +3,12 @@ name: Carston Hernke
 title: Carston Hernke | Data
 description: A data engineer that loves geospatial data, cold brew coffee, and new learning new things.
 url: https://carston.org/
-baseurl: ''
+baseurl: 'https://carston.org'
 email: hernk009@umn.edu
 cover: https://carston.org/img/og.png
 logo: https://carston.org/img/emojis/male-technologist.png
 resume: https://carston.org/resume.pdf
+permalink: pretty 
 
 # Google services
 google_analytics: UA-117124950-1

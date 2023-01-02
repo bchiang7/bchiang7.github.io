@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div id="maps_page">
+    <div>
+        <div class="maps_title_container">
+            <div class="maps_title">
+                Interactive Maps
+            </div>
+            <a href="https://www.carston.org/" target="_blank" class="arrow-link map-more-info">More info</a>
+        </div>
+    </div>
+    <div class="maps_content">
+        <div class="maps">
+        {% for map in site.data.maps %}
+            <a href={{map.url}}>
+                <div class="map_detail_container">
+                    <img class="caption__media" src={{site.baseurl}}/{{map.image_location}} >
+                    <div class="map_details">
+                        <div class="map_name"> {{map.name}} </div>
+                        <div class="map_desc"> {{map.desc}} </div>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+
