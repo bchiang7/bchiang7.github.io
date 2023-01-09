@@ -1,0 +1,34 @@
+---
+layout: default
+title: Blog
+---
+
+<div id="posts_page">
+    <div>
+        <div class="posts_title_container">
+            <img src="/img/logo/polygon.svg" alt="Polygon" class="polygon_logo">
+            <div class="posts_title">
+                {{ site.data.blog.title }}
+            </div>
+            <div class="posts_subtitle">
+            {{ site.data.blog.subtitle }}
+            </div>
+            <a href="https://www.carston.org/" target="_blank" class="arrow-link map-more-info">About me</a>
+        </div>
+    </div>
+    <div class="posts_content">
+        <div class="posts">
+        {% for post in site.posts %}
+            <a href={{post.url}}>
+                <div class="post_detail_container">
+                    <div class="post_details">
+                        <div class="post_name"> {{post.title}} </div>
+                        <div class="post_desc"> {{post.desc}} </div>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+

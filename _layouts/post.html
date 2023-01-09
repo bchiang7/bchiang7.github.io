@@ -1,0 +1,34 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+<head>
+  {% include head.html %}
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
+</head>
+<body>
+    <div id="single_post_page">
+      <div>
+          <div class="single_post_title_container">
+            <img src="/img/logo/polygon.svg" alt="Polygon" class="polygon_logo">
+            <div class="posts_title">
+              {{ site.data.blog.title }}
+            </div>
+            <div class="posts_subtitle">
+              {{ site.data.blog.subtitle }}
+            </div>
+              <a href="https://www.carston.org/posts" target="_blank" class="arrow-link map-more-info">All posts</a>
+              <a href="https://www.carston.org/" target="_blank" class="arrow-link map-more-info">About me</a>
+          </div>
+      </div>
+        <div class="single_post_content">
+            {{ content }}
+        </div>
+      </div>
+  </div>
+  {% include scripts.html %}
+</body>
+</html>

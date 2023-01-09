@@ -1,0 +1,119 @@
+#maps_page {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+@media screen and (max-width:630px){
+    #maps_page{
+        display: block;
+    }
+}
+
+.map_detail_container {
+    max-width:400px;
+    margin-bottom: 24px;
+}
+
+.inline_map_detail_container {
+    max-width:250px;
+    margin-bottom: 24px;
+}
+
+.map_detail_container:hover {
+    outline-color: #007bff;
+    outline-width: 3px;
+    outline-style: solid;
+    background-color: #007bff;
+    color: white;
+}
+
+.inline_map_detail_container:hover {
+    outline-color: #007bff;
+    outline-width: 3px;
+    outline-style: solid;
+    background-color: #007bff;
+    color: white;
+}
+
+.maps_content {
+    margin-top: 100px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.maps_title_container {
+    width:200px;
+    align-items: right;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+@media screen and (max-width:630px){
+    .maps_title_container{
+        text-align: center;
+        width: unset;
+        margin-right: unset;
+        margin-left: unset;
+    }
+}
+
+.maps_title {
+    -ms-flex-negative:0;
+    flex-shrink:0;
+    color:#007bff;
+    text-transform:uppercase;
+    text-align:right;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-top: 100px;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width:630px){
+    .maps_title{
+        text-align: unset;
+    }
+}
+
+.map-more-info {
+    float: right;
+    margin-top: 12px;
+}
+
+@media screen and (max-width:630px){
+    .map-more-info{
+        float: unset;
+    }
+}
+
+.maps{
+    display:-ms-flexbox;
+    display:flex;
+    flex-wrap: wrap;
+    -webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+    justify-content:space-around;
+}
+@media screen and (max-width:630px){
+    .maps{
+        -ms-flex-wrap:wrap;
+        flex-wrap:wrap
+    }
+}
+
+.map_details {
+    padding: 6px;
+}
+
+.map_name {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 6px;
+}
+
+.map_desc {
+    font-size: 1em;
+    font-weight: 300;
+    padding-right: 20%;
+}

@@ -1,0 +1,131 @@
+#posts_page {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+@media screen and (max-width:630px){
+    #maps_page{
+        display: block;
+    }
+}
+
+.post_detail_container {
+    width: 80%;
+    margin-bottom: 24px;
+    padding-left: 6px;
+}
+
+.inline_post_detail_container {
+    max-width:250px;
+    margin-bottom: 24px;
+}
+
+.post_detail_container:hover {
+    outline-color: #007bff;
+    outline-width: 3px;
+    outline-style: solid;
+    background-color: #007bff;
+    color: white;
+}
+
+.inline_post_detail_container:hover {
+    outline-color: #007bff;
+    outline-width: 3px;
+    outline-style: solid;
+    background-color: #007bff;
+    color: white;
+}
+
+.posts_content {
+    margin-top: 96px;
+    margin-left: 96px;
+    margin-right: 96px;
+}
+
+.posts_title_container {
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+@media screen and (max-width:630px){
+    .posts_title_container{
+        text-align: center;
+        width: unset;
+        margin-right: unset;
+        margin-left: unset;
+    }
+}
+
+.posts_title {
+    -ms-flex-negative:0;
+    flex-shrink:0;
+    color:#007bff;
+    text-transform:uppercase;
+    text-align:right;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-top: 12px;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width:630px){
+    .posts_title{
+        text-align: unset;
+    }
+}
+
+.posts-more-info {
+    float: right;
+    margin-top: 12px;
+}
+
+@media screen and (max-width:630px){
+    .posts-more-info{
+        float: unset;
+    }
+}
+
+.posts{
+    display:-ms-flexbox;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    -webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+    justify-content:space-around;
+}
+@media screen and (max-width:630px){
+    .maps{
+        -ms-flex-wrap:wrap;
+        flex-wrap:wrap
+    }
+}
+
+.post_details {
+    padding-bottom: 6px;
+}
+
+.post_name {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.post_desc {
+    font-size: 1em;
+    font-weight: 300;
+    padding-right: 20%;
+}
+
+.posts_subtitle {
+    text-align: right;
+}
+
+.polygon_logo {
+    margin-top: 96px;
+    width: 50%;
+}

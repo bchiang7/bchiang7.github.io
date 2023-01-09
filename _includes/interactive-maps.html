@@ -1,0 +1,18 @@
+<section class="section other-projects">
+  <div class="section__title">Interactive Maps</div>
+  <div class="section__content">
+      <div class="maps">
+      {% for map in site.data.maps %}
+          <a href={{map.url}}>
+              <div class="inline_map_detail_container">
+                  <img class="caption__media" src={{site.baseurl}}/{{map.image_location}} >
+                  <div class="map_details">
+                      <div class="map_name"> {{map.name}} </div>
+                      <div class="map_desc"> {{map.desc}} </div>
+                  </div>
+              </div>
+          </a>
+      {% endfor %}
+      </div>
+  </div>
+</section>
