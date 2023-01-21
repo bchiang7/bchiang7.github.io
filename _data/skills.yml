@@ -1,33 +1,30 @@
 languages:
-  - item: JavaScript (ES6)
-  - item: TypeScript
+  - item: CSS
   - item: HTML
-  - item: CSS/Sass
+  - item: Java
+  - item: JavaScript
   - item: Python
   - item: SQL
-  - item: R
+
 
 frameworks:
-  - item: Ember & Glimmer
-  - item: React
-  - item: Jekyll
-  - item: Node
-  - item: D3
+  - item: Django
   - item: Wordpress
-  - item: Timber
+
 
 tools:
+  - item: Adobe Suite
   - item: Bash
   - item: Git & Github
-  - item: Gulp & Grunt
   - item: Chrome DevTools
-  - item: Postman
-  - item: MongoDB
+  - item: MS365
+  - item: Power BI
+  - item: Tableau
 
-design:
-  - item: Sketch
-  - item: InDesign
-  - item: InVision
-  - item: Prototyping
-  - item: Wireframing
-  - item: User Testing
+
+project management:
+  - item: Agile
+  - item: Asana
+  - item: Lean
+  - item: Microsoft Project
+  - item: Scrum
