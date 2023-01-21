@@ -13,16 +13,11 @@ frameworks:
 
 
 tools:
+  - item: Adobe Suite
   - item: Bash
   - item: Git & Github
   - item: Chrome DevTools
   - item: MS365
-  - item: Google Colab
-  - item: Postman
-
-
-design:
-  - item: Adobe Suite
   - item: Power BI
   - item: Tableau
 
