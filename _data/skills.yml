@@ -1,10 +1,14 @@
 languages:
+  - item: CSS
+  - item: HTML
+  - item: Java
+  - item: JavaScript
   - item: Python
   - item: SQL
 
 
-
 frameworks:
+  - item: Django
   - item: Wordpress
 
 
@@ -12,14 +16,20 @@ tools:
   - item: Bash
   - item: Git & Github
   - item: Chrome DevTools
-  - item: Anaconda
+  - item: MS365
   - item: Google Colab
   - item: Postman
-  - item: Jupyter Notebooks
+
 
 design:
+  - item: Adobe Suite
+  - item: Power BI
   - item: Tableau
-  - item: InDesign
-  - item: Pandas
-  - item: Dashboards
-  - item: Data Models
+
+
+project management:
+  - item: Agile
+  - item: Asana
+  - item: Lean
+  - item: Microsoft Project
+  - item: Scrum
