@@ -1,26 +1,24 @@
 # Site settings
-name: Brittany Chiang
-title: Brittany Chiang | Front End Software Engineer
-description: Design-minded front-end software engineer focused on building beautiful interfaces and experiences
-url: https://bchiang7.github.io/
+name: Arun Setty
+title: Arun Setty | Fullstack Developer, Product Architect
+description: Building Broken
+url: https://arunsetty.github.io/
 baseurl: ''
-email: brittany.chiang@gmail.com
-cover: https://bchiang7.github.io/img/og.png
-logo: https://bchiang7.github.io/img/emojis/technologist.png
-resume: https://bchiang7.github.io/resume.pdf
+email: arunsetty1729@gmail.com
+cover: https://arunsetty.github.io/img/og.png
+logo: https://arunsetty.github.io/img/emojis/technologist.png
+resume: https://arunsetty.github.io/resume.pdf
 social:
   - title: email
-    url: mailto:brittany.chiang@gmail.com
+    url: mailto:arunsetty1729@gmail.com
   - title: twitter
-    url: https://twitter.com/bchiang7
+    url: https://twitter.com/a_s_k_af
   - title: instagram
-    url: https://instagram.com/bchiang7
-  - title: codepen
-    url: http://codepen.io/bchiang7
+    url: https://instagram.com/a_s_k_af
   - title: github
-    url: https://github.com/bchiang7
+    url: https://github.com/arunsetty
   - title: linkedin
-    url: https://www.linkedin.com/in/bchiang7
+    url: https://www.linkedin.com/in/arun-setty-kodavali/
 
 # Build settings
 markdown: kramdown

@@ -1,44 +1,34 @@
-- company: Upstatement
-  url: https://www.upstatement.com/
-  time: May 2018 - Present
-  position: Engineer
+- company: Broken
+  url: https://brokenatom.io
+  time: Jun 2022 - Present
+  position: Software Developer
 
-- company: Scout
-  url: https://web.northeastern.edu/scout/
-  time: Jan - June 2018
-  position: Studio Developer
+- company: Foxsense Innovations
+  url: https://www.foxsense.io
+  time: Jan - Apr 2022
+  position: Software Developer
 
-- company: Apple Music
-  url: https://www.apple.com/music/
-  time: July - Dec 2017
-  position: UI Engineer Co-op
+- company: Hotstar
+  url: https://www.hotstar.com/in
+  time: May - Jul 2021
+  position: Software Developer
 
-- company: Scout
-  url: https://web.northeastern.edu/scout/
-  time: Jan - June 2017
-  position: Studio Developer
+- company: Inscripta
+  url: https://inscripta.ai
+  time: Nov 2020 - Jan 2021
+  position: AI Developer
 
-- company: Starry
-  url: https://starry.com/
-  time: July - Dec 2016
-  position: Software Engineer Co-op
+- company: Oficio Cloud Software
+  url: https://talkingmart.com
+  time: May - Jul 2020
+  position: AI Developer
 
-- company: Northeastern University
-  url: http://www.ccis.northeastern.edu/
-  time: Jan - May 2016
-  position: HCI Teaching Assistant
+- company: The Right Doctors
+  url: https://therightdoctors.com
+  time: Dec 2019 - Jan 2020
+  position: MEAN Stack Developer
 
-- company: NU Women in Tech
-  url: http://nuwit.ccs.neu.edu/
-  time: Jan 2016 - May 2017
-  position: President & Web Chair
-
-- company: MullenLowe U.S.
-  url: https://us.mullenlowe.com/
-  time: July - Dec 2015
-  position: Creative Technologist Co-op
-
-- company: Northeastern University
-  url: http://www.ccis.northeastern.edu/
+- company: Dubbtr
+  url: https://in.linkedin.com/company/dubbtr-edu
   time: Mar - May 2015
-  position: HCI Research Assistant
+  position: Mentor

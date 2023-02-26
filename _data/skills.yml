@@ -2,32 +2,33 @@ languages:
   - item: JavaScript (ES6)
   - item: TypeScript
   - item: HTML
-  - item: CSS/Sass
+  - item: CSS
   - item: Python
   - item: SQL
-  - item: R
+  - item: C
+  - item: C++
+  - item: Java
+  - item: Racket
+  - item: Prolog
 
 frameworks:
-  - item: Ember & Glimmer
+  - item: Angular
   - item: React
-  - item: Jekyll
+  - item: Next.js
+  - item: Tailwind
+  - item: NestJS
   - item: Node
-  - item: D3
-  - item: Wordpress
-  - item: Timber
+  - item: Django
+  - item: Vite
 
 tools:
   - item: Bash
   - item: Git & Github
-  - item: Gulp & Grunt
-  - item: Chrome DevTools
   - item: Postman
   - item: MongoDB
-
-design:
-  - item: Sketch
-  - item: InDesign
-  - item: InVision
-  - item: Prototyping
-  - item: Wireframing
-  - item: User Testing
+  - item: MySQL
+  - item: Postgres
+  - item: SQLite
+  - item: Docker
+  - item: Cloudflare
+  - item: Figma
