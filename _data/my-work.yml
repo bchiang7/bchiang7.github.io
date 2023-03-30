@@ -1,0 +1,31 @@
+- name: Honeycomb
+  desc: A browser-based tool for interactive geospatial analysis
+  image_location: img/maps/honeycomb_screenshot.png
+  url: https://honeycomb.carston.org/docs/index.html
+  used:
+    - thing: JavaScript
+    - thing: DuckDB
+
+- name: Bike Lane Analysis
+  desc: A visualization for TIER Mobility, comparing scooter rides with bike lane infrastructure
+  image_location: img/maps/bike_lane_analysis.jpg
+  used:
+    - thing: CARTO
+    - thing: OpenStreetMap
+
+- name: Polygon to H3 Converter
+  desc: A simple tool for easily converting polygons to h3 indexes
+  image_location: img/maps/polygon_converter.png
+  url: https://www.carston.org/30DayMapChallenge/hexagon_selector/dist/
+  used:
+    - thing: React
+    - thing: H3.js
+    - thing: Turf.js
+
+- name: "Minneapolis: 1890 and Today"
+  desc: A map produced in 1890 digitized and overlaid on a modern web map.
+  image_location: img/maps/historical_minneapolis.png
+  url: https://www.carston.org/30DayMapChallenge/day_07_raster/
+  used:
+  - thing: JavaScript
+  - thing: Deck.gl

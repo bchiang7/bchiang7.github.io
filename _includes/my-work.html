@@ -1,0 +1,38 @@
+<section class="section other-projects">
+  <div class="section__title">Projects</div>
+  <div class="section__content">
+      <div class="maps">
+        <!--This first grouping is for projects with an image-->
+      {% for project in site.data.my-work %}
+          <a href={{project.url}}>
+              <div class="inline_map_detail_container">
+                  <img class="caption__media" src={{site.baseurl}}/{{project.image_location}} >
+                  <div class="map_details">
+                      <div class="map_name"> {{project.name}} </div>
+                      <div class="map_desc"> {{project.desc}} </div>
+                      <div class="project__used">
+                        {% for item in project.used %}
+                        <span class="project__used__item">{{item.thing}}</span>
+                        {% endfor %}
+                      </div>
+                  </div>
+              </div>
+          </a>
+      {% endfor %}
+    <!--This second grouping is for projects with no image-->
+    {% for project in site.data.other-projects %}
+    <div class="project">
+      <div class="map_name">
+        <a href="{{project.url}}" target="_blank" class="arrow-link">{{project.name}}</a>
+      </div>
+      <p>{{project.description}}</p>
+      <div class="project__used">
+        {% for item in project.used %}
+        <span class="project__used__item">{{item.thing}}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+      </div>
+  </div>
+</section>

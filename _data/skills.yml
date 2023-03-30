@@ -1,33 +1,26 @@
 languages:
+  - item: JavaScript
   - item: Python
   - item: SQL
-  - item: Java
   - item: Go
-  - item: R
-  - item: Bash
+  - item: Rust
 
 technologies:
-  - item: Docker
-  - item: Redis
-  - item: Spark
+  - item: Cloud Data Warehouses
+  - item: DuckDB
+  - item: Deck.gl
   - item: Kafka
-  - item: Elasticsearch
 
 tools:
-  - item: AWS
-  - item: Terraform
-  - item: Snowflake
   - item: dbt
-  - item: GCP
   - item: Git & Github
-  - item: Jenkins
-  - item: Postman
+  - item: Jekyll
+  - item: bash/zsh
 
 visualization:
   - item: Looker
-  - item: Tableau
+  - item: Deck.gl
   - item: Carto
-  - item: Kepler.gl
-  - item: PowerBI
-  - item: R Shiny
-  - item: Dash
+  - item: Unfolded
+  - item: Superset
+  - item: Tableau

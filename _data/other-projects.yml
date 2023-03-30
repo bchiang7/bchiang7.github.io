@@ -1,15 +1,4 @@
-- name: Minnesota COVID-19 Model Sandbox
-  url: https://github.com/carstonhernke/mn-covid-model-sandbox
-  code: https://github.com/carstonhernke/mn-covid-model-sandbox
-  description: A web app to easily run the UMN COVID-19 Model with your own parameters, build using R Shiny
-  used:
-    - thing: R
-    - thing: R Shiny
-    - thing: Docker
-    - thing: AWS Fargate
-    - thing: GitHub Actions
-
-- name: csstableau
+- name: csstableau (2019)
   url: https://github.com/carstonhernke/csstableau
   code: https://github.com/carstonhernke/csstableau
   description: Tools to apply styling from CSS (Cascading Style Sheets) to dashboards created in Tableau. Private GitHub repository for copyright reasons - reach out for more information.
@@ -18,7 +7,7 @@
     - thing: CSS
     - thing: Tableau
 
-- name: Dockless Scooter Analysis
+- name: Dockless Scooter Analysis (2019)
   url: https://github.com/carstonhernke/dockless-scooter-analysis
   code: https://github.com/carstonhernke/dockless-scooter-analysis
   description: For my honors thesis, I used geospatial analysis techniques to find evidence of disparities in access to dockless scooters in Minneapolis, MN.
@@ -27,7 +16,7 @@
     - thing: sf
     - thing: LaTeX
 
-- name: AI Pacman
+- name: AI Pacman (2019)
   url: https://github.com/carstonhernke/ai-pacman/tree/master
   code: https://github.com/carstonhernke/ai-pacman/tree/master
   description: CSCI 4511W Final Project. Uses various search algorithms to optimize for score, navigating Ms. Pacman towards points and away from ghosts.
@@ -36,17 +25,7 @@
     - thing: OpenAI Gym
     - thing: LaTeX
 
-- name: Chicago Bike Movement Animation
-  url: https://github.com/carstonhernke/chicago-bike-movements
-  code: https://github.com/carstonhernke/chicago-bike-movements
-  description: An animation of the movement of Divvy bikes throughout Chicago on June 19th, 2017. Built using publicly-available Divvy bike usage data.
-  used:
-    - thing: Jekyll
-    - thing: HTML
-    - thing: SCSS
-    - thing: JavaScript
-
-- name: traveltime-maps
+- name: traveltime-maps (2018)
   url: https://github.com/carstonhernke/traveltime-maps
   code: https://github.com/carstonhernke/traveltime-maps
   description: An experimental approach to creating cartograms that replace geographic distance with travel time, revealing which places are truly close to each other.
@@ -55,7 +34,7 @@
     - thing: R
     - thing: OpenCV
 
-- name: BusBot
+- name: BusBot (2017)
   url: https://github.com/carstonhernke/BusBot
   code: https://github.com/carstonhernke/BusBot
   description: A system designed to track the campus shuttle busses at the University of Minnesota - Twin Cities. Pulls data from the existing NextBus API, cleans and interpolates it, and generates predictions using the scikit-learn machine learning library.
