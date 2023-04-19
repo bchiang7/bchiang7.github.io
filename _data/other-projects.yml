@@ -1,52 +1,12 @@
-- name: Blah Blah
-  description: Small React project created during an interview process to browse and search surf videos via the YouTube API.
-  used:
-    - thing: Java 8
-    - thing: Spring 4.0
-    - thing: REST
-    - thing: SOAP
-    - thing: MySQL
-    - thing: Wildfly
-    - thing: HA proxy
-    - thing: Angular
-
-
-- name: Yah Yah
-  description: A minimal, dark theme for Sublime Text, Atom, VS Code, and more published to <a class="underline-link" href="https://packagecontrol.io/packages/Halcyon%20Theme">Package Control</a>, <a class="underline-link" href="https://atom.io/themes/halcyon-syntax">Atom Package Manager</a>, <a class="underline-link" href="https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode">Visual Studio Marketplace</a>, and <a class="underline-link" href="https://www.npmjs.com/package/hyper-halcyon-theme">NPM</a>.
-  used:
-    - thing: Java 8
-    - thing: Spring 4.0
-    - thing: REST
-    - thing: SOAP
-    - thing: MySQL
-    - thing: Wildfly
-    - thing: HA proxy
-    - thing: Angular
-
-
-- name: Hoho
-  description: Final project for my Database Design course at Northeastern. A simple web application that allows users to filter through a database containing Lonely Planet's <a class="underline-link" href="https://www.amazon.com/Lonely-Planets-Ultimate-Travel-Places/dp/1760342777" target="_blank">Top 500 Travel Destinations</a>. Users are able to add themselves as visitors as well as leave reviews of the destinations.
-  used:
-    - thing: Java 11
-    - thing: SpringBoot
-    - thing: Redis
-    - thing: MySQL
-    - thing: SOAP
-
-- name: Lala
-  description: Final project for my Database Design course at Northeastern. A simple web application that allows users to filter through a database containing Lonely Planet's <a class="underline-link" href="https://www.amazon.com/Lonely-Planets-Ultimate-Travel-Places/dp/1760342777" target="_blank">Top 500 Travel Destinations</a>. Users are able to add themselves as visitors as well as leave reviews of the destinations.
-  used:
-    - thing: Java 8
-    - thing: Spring 4.0
-    - thing: MySQL
-    - thing: REST
-    - thing: Angular
-
-- name: Sisi
-  description: Final project for my Database Design course at Northeastern. A simple web application that allows users to filter through a database containing Lonely Planet's <a class="underline-link" href="https://www.amazon.com/Lonely-Planets-Ultimate-Travel-Places/dp/1760342777" target="_blank">Top 500 Travel Destinations</a>. Users are able to add themselves as visitors as well as leave reviews of the destinations.
+- name: NewsFeed API
+  description: Reactive API microservice built with Spring WebFlux to store and retrieve parliamentary documents in non blocking fashion supported by reactive MongoDB
   used:
     - thing: Java 17
-    - thing: SpringBoot
-    - thing: RabbitMQ
-    - thing: MySQL
-    - thing: RHEL 8
+    - thing: SpringBoot 3
+    - thing: Project Reactor
+    - thing: GraalVM
+    - thing: REST
+    - thing: MongoDB
+    - thing: Swagger
+  link: https://github.com/AlexAnth/NewsFeedAPI
+
