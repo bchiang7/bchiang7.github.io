@@ -40,7 +40,7 @@ $(function() {
     $('html, body').animate({ scrollTop: 0 }, 500);
   });
 
-  const hand = document.querySelector('.emoji.wave-hand');
+  const hand = document.querySelector('.emoji.alpha_squared_64.png');
 
   function waveOnLoad() {
     hand.classList.add('wave');
