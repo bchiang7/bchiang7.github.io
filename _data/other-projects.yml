@@ -1,5 +1,5 @@
 - name: NewsFeed API
-  description: Reactive API microservice built with Spring WebFlux to store and retrieve parliamentary documents in non blocking fashion supported by reactive MongoDB
+  description: Reactive API microservice built with Spring WebFlux to store and retrieve parliamentary articles in non blocking fashion supported by reactive MongoDB
   used:
     - thing: Java 17
     - thing: SpringBoot 3
